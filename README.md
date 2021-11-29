@@ -1,4 +1,4 @@
-# Made-with-Shangaa
+# Made-with-Shangaaa
 A simple e-commerce web application using J-Query Mobile
 
 <p align="center">
