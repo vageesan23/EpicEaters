@@ -1,4 +1,4 @@
-# Made-with-Vageesan
+# Made-with-Foods
 A simple e-commerce web application using J-Query Mobile
 
 <p align="center">
