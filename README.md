@@ -1,4 +1,4 @@
-# Made-with-Desserts
+# Made-with-dangaa
 # Made-with-food
 A simple e-commerce web application using J-Query Mobile
 
