@@ -1,0 +1,1 @@
+<?php include "../../iphone/parts/poiCard.php";

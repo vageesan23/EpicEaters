@@ -1,0 +1,134 @@
+[
+  {
+    "id": 6,
+    "name": "Combat Knife",
+    "description": "3D model Combat Knife Game Asset",
+    "longDescription": "- low-poly knife model for the game. - There are two models low poly and high poly. There is a UVW.- The texture resolution is 2048x2048.- The render was made in Substance Painter.- There is a project in Substance Painter.- I did it based on the CG Masters lesson.- Formats: Blender, FBX, Gltf, OBJ, Substance Painter, Textures PBR, Textures Unity.",
+    "price": "841.94",
+    "rating": 2.9,
+    "comments": "Vivamus vestibulum sagittis sapien.",
+    "image": "../../common/assets/images/products/knife.png",
+    "ar_view": "../../common/assets/models/knife.glb"
+  },
+  {
+    "id": 1,
+    "name": "Dog House",
+    "description": "A simple handmade toy dog house",
+    "longDescription": "A doghouse, dog house, dogshed or kennel is a small shed commonly built in the shape of a house, intended to provide dogs with a sense of security and protection from various weather conditions. Numerous materials can be used, such as wood, plastic, resin, and hardboard.",
+    "price": "581.85",
+    "rating": 4.1,
+    "comments": "Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    "image": "../../common/assets/images/products/wooden_house.png",
+    "ar_view": "../../common/assets/models/doghouse.gltf"
+  },
+  {
+    "id": 4,
+    "name": "Drone Toy",
+    "description": "Essentially, a drone is a flying robot",
+    "longDescription": "A drone, in technological terms, is an unmanned aircraft. ... Essentially, a drone is a flying robot that can be remotely controlled or fly autonomously through software-controlled flight plans in their embedded systems",
+    "price": "321.74",
+    "rating": 4.4,
+    "comments": "Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+    "image": "../../common/assets/images/products/toy_plane_aero.png",
+    "ar_view": "../../common/assets/models/Drone.glb"
+  },
+  {
+    "id": 8,
+    "name": "Hi Poly Car",
+    "description": "Sportcar- Vertices",
+    "longDescription": "A sports car is a car designed with an emphasis on dynamic performance, such as handling, acceleration, top speed, or thrill of driving.",
+    "price": "623.22",
+    "rating": 2.5,
+    "comments": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.",
+    "image": "../../common/assets/images/products/toy_car.png",
+    "ar_view": "../../common/assets/models/sportcar.glb"
+  },
+  {
+    "id": 5,
+    "name": "Leather Chair",
+    "description": "3D Black Leather Chair model",
+    "longDescription": "Clean detailed mesh, fully quad based topology. Modeled in real world scale. Wrinkles are baked to normal map. Fully UV unwrapped non overlapping. Low-Poly. With 4K Color, Roughness and Normalmap in lossless PNG format. 100% PBR compatible. Works in any 3D software / game engine. Native Blender file has all scene, camera and render settings ready.",
+    "price": "827.61",
+    "rating": 4.3,
+    "comments": "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    "image": "../../common/assets/images/products/leather_chair.png",
+    "ar_view": "../../common/assets/models/black_leather_chair.gltf"
+  },
+  {
+    "id": 2,
+    "name": "Poly Car",
+    "description": "Sportcar- Vertices",
+    "longDescription": "A sports car is a car designed with an emphasis on dynamic performance, such as handling, acceleration, top speed, or thrill of driving.",
+    "price": "623.22",
+    "rating": 2.5,
+    "comments": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque.",
+    "image": "../../common/assets/images/products/toy_car.png",
+    "ar_view": "../../common/assets/models/sportcar.glb"
+  },
+  {
+    "id": 9,
+    "name": "Q Toy Plane",
+    "description": "These planes come in two color variations",
+    "longDescription": "Handmade Wooden Toy Biplane These planes come in two color variations using maple and walnut hardwoods. Propeller rotates and wheels roll. They're hand sanded and coated with a non toxic oil and beeswax finish",
+    "price": "529.59",
+    "rating": 4.2,
+    "comments": "Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    "image": "../../common/assets/images/products/toy_plane.png",
+    "ar_view": "../../common/assets/models/WoodenPlane.gltf"
+  },
+  {
+    "id": 7,
+    "name": "Sa Dog House",
+    "description": "A simple handmade toy dog house",
+    "longDescription": "A doghouse, dog house, dogshed or kennel is a small shed commonly built in the shape of a house, intended to provide dogs with a sense of security and protection from various weather conditions. Numerous materials can be used, such as wood, plastic, resin, and hardboard.",
+    "price": "581.85",
+    "rating": 4.1,
+    "comments": "Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    "image": "../../common/assets/images/products/wooden_house.png",
+    "ar_view": "../../common/assets/models/doghouse.gltf"
+  },
+  {
+    "id": 3,
+    "name": "Toy Plane",
+    "description": "These planes come in two color variations",
+    "longDescription": "Handmade Wooden Toy Biplane These planes come in two color variations using maple and walnut hardwoods. Propeller rotates and wheels roll. They're hand sanded and coated with a non toxic oil and beeswax finish",
+    "price": "529.59",
+    "rating": 4.2,
+    "comments": "Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    "image": "../../common/assets/images/products/toy_plane.png",
+    "ar_view": "../../common/assets/models/WoodenPlane.gltf"
+  },
+  {
+    "id": 12,
+    "name": "X Knife",
+    "description": "3D model Combat Knife Game Asset",
+    "longDescription": "- low-poly knife model for the game. - There are two models low poly and high poly. There is a UVW.- The texture resolution is 2048x2048.- The render was made in Substance Painter.- There is a project in Substance Painter.- I did it based on the CG Masters lesson.- Formats: Blender, FBX, Gltf, OBJ, Substance Painter, Textures PBR, Textures Unity.",
+    "price": "841.94",
+    "rating": 2.9,
+    "comments": "Vivamus vestibulum sagittis sapien.",
+    "image": "../../common/assets/images/products/knife.png",
+    "ar_view": "../../common/assets/models/knife.glb"
+  },
+  {
+    "id": 11,
+    "name": "Xi Chair",
+    "description": "3D Black Leather Chair model",
+    "longDescription": "Clean detailed mesh, fully quad based topology. Modeled in real world scale. Wrinkles are baked to normal map. Fully UV unwrapped non overlapping. Low-Poly. With 4K Color, Roughness and Normalmap in lossless PNG format. 100% PBR compatible. Works in any 3D software / game engine. Native Blender file has all scene, camera and render settings ready.",
+    "price": "827.61",
+    "rating": 4.3,
+    "comments": "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    "image": "../../common/assets/images/products/leather_chair.png",
+    "ar_view": "../../common/assets/models/black_leather_chair.gltf"
+  },
+  {
+    "id": 10,
+    "name": "Z Drone Toy",
+    "description": "Essentially, a drone is a flying robot",
+    "longDescription": "A drone, in technological terms, is an unmanned aircraft. ... Essentially, a drone is a flying robot that can be remotely controlled or fly autonomously through software-controlled flight plans in their embedded systems",
+    "price": "321.74",
+    "rating": 4.4,
+    "comments": "Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+    "image": "../../common/assets/images/products/toy_plane_aero.png",
+    "ar_view": "../../common/assets/models/Drone.glb"
+  }
+]
