@@ -15,7 +15,7 @@
     }
 
     footer {
-        background: #000;
+        background: #28292A;
         width: 100%;
         bottom: 0;
         left: 0;
@@ -270,7 +270,7 @@
 
         .bottom-details .bottom_text span,
         .bottom-details .bottom_text a {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 
@@ -300,9 +300,7 @@
 <footer>
     <div class="content">
         <div class="top">
-            <div class="logo-details">
             <img class="logo_name" src="../../common/assets/images/logo-footer.png" style="height: 75px; width: 112px;">
-            </div>
             <div class="media-icons">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -320,30 +318,27 @@
             </ul>
             <ul class="box" style="margin-bottom: 20px;">
                 <li class="link_name">Services</li>
-                <li><a href="#">App Design</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Logo Design</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Book Course</a></li>
+                <li><a href="#">Scan QR</a></li>
             </ul>
             <ul class="box">
                 <li class="link_name">Other services</li>
-                <li><a href="#">SEO</a></li>
-                <li><a href="#">Content Marketing</a></li>
-                <li><a href="#">Prints</a></li>
+                <li><a href="#">Earn with Us</a></li>
+                <li><a href="#">Chat with Us</a></li>
+                <li><a href="#">Contact with Seller</a></li>
             </ul>
             <ul class="box">
                 <li class="link_name">Contact</li>
-                <li><a href="#">+91 8879887262</a></li>
-                <li><a href="#">+91 8879887262</a></li>
-                <li><a href="#">contact@sitesoch.com</a></li>
+                <li><a href="#">+76 6027 633</a></li>
+                <li><a href="#">+71 8879 887</a></li>
+                <li><a href="#">Epiceaters@gmail.com</a></li>
             </ul>
         </div>
     </div>
     <div class="bottom-details">
         <div class="bottom_text">
-            <span class="copyright_text">Copyright © 2021 <a href="#">Sitesoch.</a></span>
-            <!-- <span class="policy_terms">
-          <a href="#">Privacy policy</a>
-        </span> -->
+            <span class="copyright_text">Copyright © Epic Eaters</span>
         </div>
     </div>
 </footer>

@@ -15,7 +15,7 @@
     }
 
     footer {
-        background: #000;
+        background: #28292A;
         width: 100%;
         bottom: 0;
         left: 0;
@@ -129,7 +129,7 @@
 
     .content .link-boxes .box .link_name {
         color: #fff;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         margin-bottom: 10px;
         position: relative;
@@ -152,7 +152,7 @@
 
     .content .link-boxes .box li a {
         color: #fff;
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 400;
         text-decoration: none;
         opacity: 0.8;
@@ -204,7 +204,7 @@
 
     footer .bottom-details {
         width: 100%;
-        
+
     }
 
     footer .bottom-details .bottom_text {
@@ -217,7 +217,7 @@
 
     .bottom-details .bottom_text span,
     .bottom-details .bottom_text a {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 300;
         color: #fff;
         opacity: 0.8;
@@ -298,52 +298,49 @@
 </style>
 
 <footer>
-	<div class="content">
-		<div class="top">
-			
-				<img class="logo_name" src="../../common/assets/images/logo-footer.png" style="height: 75px; width: 112px;">
-			
-			<div class="media-icons">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-youtube"></i></a>
-			</div>
-		</div>
-		<div class="link-boxes">
-			<ul class="box">
-				<li class="link_name">Links</li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About Us</a></li>			
-			</ul>
-			<ul class="box">
-				<li class="link_name">Services</li>
-				<li><a href="#">App Design</a></li>
-				<li><a href="#">Web Design</a></li>
-				<li><a href="#">Logo Design</a></li>			
-			</ul>
-	<ul class="box">
-				<li class="link_name">Other services</li>
-				<li><a href="#">SEO</a></li>
-				<li><a href="#">Content Marketing</a></li>
-				<li><a href="#">Prints</a></li>			
-			</ul>
-			<ul class="box">
-				<li class="link_name">Contact</li>
-				<li><a href="#">+91 8879887262</a></li>
-				<li><a href="#">+91 8879887262</a></li>
-				<li><a href="#">contact@sitesoch.com</a></li>			
-			</ul>
-		</div>
-	</div>
-	    <div class="bottom-details">
-      <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2021 <a href="#">Sitesoch.</a></span>
-        <!-- <span class="policy_terms">
-          <a href="#">Privacy policy</a>
-        </span> -->
-      </div>
+    <div class="content">
+        <div class="top">
+
+            <img class="logo_name" src="../../common/assets/images/logo-footer.png" style="height: 75px; width: 112px;">
+
+            <div class="media-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="link-boxes">
+            <ul class="box">
+                <li class="link_name">Links</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Services</li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Book Course</a></li>
+                <li><a href="#">Scan QR</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Other services</li>
+                <li><a href="#">Earn with Us</a></li>
+                <li><a href="#">Chat with Us</a></li>
+                <li><a href="#">Contact with Seller</a></li>
+            </ul>
+            <ul class="box">
+                <li class="link_name">Contact</li>
+                <li><a href="#">+76 6027 633</a></li>
+                <li><a href="#">+71 8879 887</a></li>
+                <li><a href="#">Epiceaters@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-details">
+        <div class="bottom_text">
+            <span class="copyright_text">Copyright © Epic Eaters</span>
+        </div>
     </div>
 </footer>
