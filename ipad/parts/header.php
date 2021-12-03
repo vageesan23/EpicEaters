@@ -1,4 +1,4 @@
-<!-- side menu-->
+<!-- side menu Bar-->
 <?php include "sideMenu.php" ?>
 <!-- header logo-->
 <div data-role="header" data-position="fixed"
