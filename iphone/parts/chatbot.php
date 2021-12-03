@@ -1,5 +1,28 @@
-<div id="messenger-button" class="messenger-button-shown" style="width: 58px; height: 58px;">
-    <div class="messenger-button-icon">
-        <img alt="Smooch Messenger Button" src="https://media.smooch.io/5bbaff0c89aae20022c23a36/icons/02a198808025ea82342b9689da348339.jpg">
-    </div>
+<style>
+    @media (max-width: 376px) {
+        .chat-bot {
+            left: 305px !important;
+        }
+    }
+
+    .chat-bot {
+        border-radius: 100px;
+        height: 60px;
+        bottom: 60px;
+        position: relative;
+        left: 740px;
+    }
+</style>
+
+<div class="ui-footer-fixed">
+    <a href="#" onclick="collectchat.open()">
+        <img class="chat-bot" alt="Smooch Messenger Button" src="../../common/assets/images/chatbot.jpg">
+    </a>
 </div>
+
+<script>
+    $(window).bind("DOMNodeInserted", function () {
+        $("#chat-bot-iframe").contents().find(".powered-by").empty();
+
+    });
+</script>

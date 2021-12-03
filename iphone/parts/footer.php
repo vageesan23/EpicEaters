@@ -28,7 +28,6 @@
         top: 100px;
         height: 1px;
         width: 100%;
-        background: #000;
     }
 
     footer .content {

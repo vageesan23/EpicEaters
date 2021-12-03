@@ -50,6 +50,7 @@
             ?>
         </div>
         <?php include '../popups/introductoryInformation.php' ?>
+        <?php include '../parts/chatbot.php' ?>
         <?php include '../parts/bottomNavbar.php' ?>
     </div>
     <?php include '../parts/footer.php' ?>
