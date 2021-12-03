@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../images/fav-icon.png" sizes="16x16" type="image/png">
-    <title>EpicEaters</title>
+    <title>Epic Eaters</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&family=Poppins:wght@200;500&display=swap"
           rel="stylesheet">
