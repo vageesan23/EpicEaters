@@ -12,7 +12,7 @@
                 <img alt="page_icon" src="../../common/assets/images/icons/cash.png" height="35" width="35">
             </div>
             <form style="color: #1797F3;">
-                <fieldset class="ui-grid-a">
+                <fieldset class="ui-grid-a" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 50px; width: 40%">
                         <input type="text" name="firstName" id="firstName" value="" placeholder="First Name">
                         <input type="text" name="address" id="address" value="" placeholder="Address">
