@@ -1,17 +1,17 @@
 <?php include '../parts/head.php' ?>
 <!-- This is sell with us page-->
-<div data-role="page" id="sellWithUs"
-     style='background-image: url("../../common/assets/images/christmas.jpg"); background-size: cover;'>
+<div data-role="page" id="sellWithUs" style='background-image: url("../../common/assets/images/christmas.jpg"); background-size: cover;'>
     <?php include '../parts/header.php' ?>
 
-    <div role="main" class="ui-content"
-         style='background-image: url("../common/assets/images/christmas.jpg"); background-size: cover;'>
+    <div role="main" class="ui-content" style='background-image: url("../common/assets/images/christmas.jpg"); background-size: cover;'>
 
-        <div class="header-title">
-            <h3>Sell With Us</h3>
-            <img alt="page_icon" src="../../common/assets/images/icons/cash.png" height="35" width="35">
-        </div>
-        <div class="back-box" style="padding: 50px 20px; background-color: rgba(0, 0, 0, 0.5)">
+
+        <div style="padding: 50px 20px; background-color: rgba(0, 0, 0, 0.7); border-radius:20px">
+
+            <div style="color: white;" class="header-title">
+                <h3>Booking</h3>
+                <img alt="page_icon" src="../../common/assets/images/icons/booking.png" height="35" width="35">
+            </div>
             <form>
 
                 <input type="text" name="firstName" id="firstName" value="" placeholder="First Name">
@@ -24,8 +24,7 @@
 
                 <button style="opacity: 1">Sign Up</button>
                 <center>
-                    <a data-ajax="false" href="logIn.php"
-                       style="font-weight: 100; color: white; font-family: 'Poppins', sans-serif; font-size: 12px;">
+                    <a data-ajax="false" href="logIn.php" style="font-weight: 100; color: white; font-family: 'Poppins', sans-serif; font-size: 12px;">
                         Already have an account?
                     </a>
                 </center>
