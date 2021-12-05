@@ -6,7 +6,7 @@
         <div class="side-menu-info">
             <p>Hi <span id="userName"></span></p>
             <p>Diamonds: <span id="diamondCount"></span></p>
-            <p><a data-ajax="false" href="../pages/profile.php">View Profile</a></p>
+            <p><a data-ajax="false" href="../pages/profile.php">Profile</a></p>
         </div>
     </div>
     <script>
