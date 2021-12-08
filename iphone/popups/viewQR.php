@@ -1,16 +1,19 @@
-<div style="max-width: none; min-width: 200px;" data-role="popup" id="viewQR" data-theme="a" class="ui-content">
+<div style="max-width: none; min-width: 100%;" data-role="popup" id="viewQR" data-theme="a" class="ui-content">
     <div class="header-title" style="margin-top: -10px; display: flex">
-        <h4>Scan Reward QR Code</h4>
-        <img alt="page_icon" src="../../common/assets/images/icons/qr.png" height="35" width="35">
+        <span class="iconify" alt="page_icon" data-icon="heroicons-solid:qrcode" data-width="23" data-height="23"></span>
+        <h4 style="padding-left:10px; padding-top: 2px">Scan QR</h4>
     </div>
     <div style="width: 100%" id="reader"></div>
-    <script src="../../common/js/html5-qrcode.min.js"></script>
-    <script>
-        var scannedd = false;
+    <!-- <video id="preview"></video> -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script>      
+        // var scannedd = false;
+        
 
         function onScanSuccess(qrCodeMessage) {
             // handle on success condition with the decoded message
-            if (!scannedd) {
+            // if (!scannedd) {
+                
                 $("#viewQR").popup("close");
                 $("#qrId").html(qrCodeMessage);
                 const diamonds = qrCodeMessage.substr(0, qrCodeMessage.indexOf(' '));
@@ -21,11 +24,15 @@
                 $("#diamondCount").html(newTotal);
                 const cookieString = "diamondCount=" + newTotal + "; path=/";
                 document.cookie = cookieString;
-                scannedd = true;
-            }
+            // }
             $("#qrRewards").popup("open");
+
+            html5QrcodeScanner.clear();
         }
 
+        function onScanError(errorMessage) {
+    // handle on error condition, with error message
+}
         function readCookie(name) {
             var nameEQ = name + "=";
             var ca = document.cookie.split(';');
