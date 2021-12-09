@@ -1,14 +1,28 @@
+<style>
+    @media screen and (max-width: 768px) {
+                td{
+                    padding: 8px;
+                }
+}
+</style>
 <div data-role="panel" data-display="overlay" data-position-fixed="true" id="sideMenu"
-     style="min-width: 400px; z-index: 1010;">
+     style="min-width: 230px; z-index: 1010;">
     <!-- panel content goes here -->
-    <div style="height: 150px; background-color:#f3f3f3; padding: 20px; display: flex">
-        <img alt="page_icon" src="../../common/assets/images/icons/user.png" height="100px" width="100px">
-        <div class="side-menu-info">
-            <p>Hi <span id="userName"></span></p>
-            <p>Diamonds: <span id="diamondCount"></span></p>
-            <p><a data-ajax="false" href="../pages/profile.php">Profile</a></p>
+    <div style="display: flex; background-color:#E9ECEF">
+    <div style="height: 150px; background-color:#E9ECEF; padding-top: 20px; padding-right: 10px; padding-left: 0px">
+    <span class="iconify" alt="page_icon" data-icon="jam:user-circle" data-width="100" data-height="100"></span>
+    <p style="font-size: 10px; padding-top: 0px; padding-left: 20px"><a data-ajax="false" href="../pages/profile.php" >View Profile</a></p>
+</div>
+        <div class="side-menu-info" style="padding-top: 2px">
+            <p><span id="userName"></span></p>
+            <p>Coins Awarded: <span id="diamondCount"></span></p>
+            <div style="border-radius: 15px; width: 150px; display: flex; background-color:#ffffff">
+            &nbsp<span style=" padding-left:4px; padding-top:2px" class="iconify" alt="page_icon" data-icon="bx:bxs-offer" data-width="20" data-height="20"></span>
+            <p style="font-size: 12px; padding-left:11px;padding-top:2px"><a data-ajax="false" href="../pages/profile.php">Check My Offers</a></p>
+</div>
         </div>
-    </div>
+</div>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script>
         function readCookie(name) {
             var nameEQ = name + "=";
@@ -32,40 +46,34 @@
     </script>
     <table class="side-menu" style="text-align: center">
         <tr>
-            <td><a data-ajax="false" href="../pages/home.php"><img alt="page_icon"
-                                                                   src="../../common/assets/images/icons/home.png"
-                                                                   width="35" height="35"><br/>Home</a>
+            <td><a data-ajax="false" href="../pages/home.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="ant-design:home-filled" data-width="23" data-height="23"></span><p style="font-size: 16px; padding-left: 25px;padding-top: 2px">  Home</p></a>
             </td>
-            <td><a data-ajax="false" href="../pages/booking.php"><img alt="page_icon"
-                                                                      src="../../common/assets/images/icons/booking.png"
-                                                                      width="35"
-                                                                      height="35"><br/>Book Class</a></td>
-            <td><a data-ajax="false" href="../pages/contactUs.php"><img
-                            src="../../common/assets/images/icons/contact_us.png" width="35"
-                            height="35"><br/>Contact Us</a></td>
+    </tr>
+   
+            <tr><td><br><a data-ajax="false" href="../pages/booking.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="tabler:brand-booking" data-width="23" data-height="25"></span><p style="padding-left: 25px;padding-top: 2px">Book Class</p></a></td>
+    </tr>
+    <tr>        
+    <td><br><a data-ajax="false" href="../pages/contactUs.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="fluent:person-call-20-regular" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">Contact Us</p></a></td>
         </tr>
         <tr>
-            <td><a data-ajax="false" href="../pages/shop.php"><img alt="page_icon"
-                                                                   src="../../common/assets/images/icons/shop.png"
-                                                                   width="35" height="35"><br/>Shop</a>
+            <td><br><a data-ajax="false" href="../pages/shop.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="vaadin:shop" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">Shop</p></a>
             </td>
-            <td><a data-ajax="false" href="../pages/orderHistory.php"><img
-                            src="../../common/assets/images/icons/order_history.png"
-                            width="35" height="35"><br/>Order History</a></td>
-            <td><a data-ajax="false" href="../pages/about.php"><img
-                            src="../../common/assets/images/icons/icons8_information_96px.png"
-                            width="35" height="35"><br/>About Us</a></td>
+    </tr>
+    <tr>
+            <td><br><a data-ajax="false" href="../pages/orderHistory.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="icon-park:history-query" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">Order History</p></a></td>
+    </tr>
+        <tr>
+            <td><br><a data-ajax="false" href="../pages/about.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="flat-color-icons:about" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">About Us</p></a></td>
         </tr>
         <tr>
-            <td><a data-rel="popup" data-position-to="window" href="#viewQR"><img
-                            src="../../common/assets/images/icons/qr.png" width="35" height="35"><br/>Scan QR</a></td>
-            <td><a data-ajax="false" href="../pages/sellWithUs.php"><img alt="page_icon"
-                                                                         src="../../common/assets/images/icons/cash.png"
-                                                                         width="35"
-                                                                         height="35"><br/>Sell with Us</a></td>
-            <td><a href="#popupDialog" data-rel="popup" data-position-to="window"
-                   data-transition="pop"><img
-                            src="../../common/assets/images/icons/exit.png" width="35" height="35"><br/>Logout</a></td>
+            <td><br><a data-rel="popup" data-position-to="window" href="#viewQR" style="display: flex"><span class="iconify" alt="page_icon" data-icon="heroicons-solid:qrcode" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">Scan QR</p></a></td>
+    </tr>
+    <tr>
+            <td><br><a data-ajax="false" href="../pages/sellWithUs.php" style="display: flex"><span class="iconify" alt="page_icon" data-icon="ps:promo" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">Sell with Us</p></a></td>
+    </tr>
+        <tr>
+            <td><br><a href="#popupDialog" data-rel="popup" data-position-to="window"
+                   data-transition="pop" style="display: flex"><span class="iconify" alt="page_icon" data-icon="gridicons:sign-out" data-width="23" data-height="23"></span><p style="padding-left: 25px;padding-top: 2px">Logout</p></a></td>
         </tr>
     </table>
 
@@ -77,7 +85,7 @@
                data-transition="flow">Logout</a>
         </div>
     </div>
-    <div style="width: 100%; background-color:#f3f3f3; padding: 0; position:absolute; bottom: 0">
+    <div style="width: 100%; background-color:#E9ECEF; padding: 0; position:absolute; bottom: 0">
         <p style="text-align: center;">Version 1.0.0</p>
     </div>
 </div>
