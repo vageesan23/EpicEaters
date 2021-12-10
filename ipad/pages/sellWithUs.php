@@ -10,20 +10,20 @@
                 <h3>Sell With Us</h3>
                 <img alt="page_icon" src="../../common/assets/images/icons/cash.png" height="35" width="35">
             </div>
-            <form style="color: #1797F3;">
+            <form style="color: #1797F3;" onsubmit="required()">
                 <fieldset class="ui-grid-a" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 50px; width: 40%">
-                        <input type="text" name="firstName" id="firstName" value="" placeholder="First Name">
-                        <input type="text" name="address" id="address" value="" placeholder="Address">
-                        <input type="text" name="username" id="username" value="" placeholder="Username">
-                        <input type="password" name="password" id="password" value="" placeholder="Password">
+                        <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
+                        <input type="text" name="address" id="address" value="" placeholder="Address" required>
+                        <input type="text" name="username" id="username" value="" placeholder="Username" required>
+                        <input type="password" name="password" id="password" value="" placeholder="Password" required>
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
                     <div class="ui-block-c" style="width: 40%">
-                        <input type="text" name="lastName" id="lastName" value="" placeholder="Last Name">
-                        <input type="text" name="nic" id="nic" value="" placeholder="NIC">
+                        <input type="text" name="lastName" id="lastName" value="" placeholder="Last Name" required>
+                        <input type="text" name="nic" id="nic" value="" placeholder="NIC" required>
                         <br /><br />
-                        <input style="margin-top: -5px" type="password" name="rePassword" id="rePassword" value="" placeholder="Re-type Password">
+                        <input style="margin-top: -5px" type="password" name="rePassword" id="rePassword" value="" placeholder="Re-type Password" required>
                     </div>
                 </fieldset><!-- /grid-a -->
 
@@ -41,3 +41,9 @@
         <?php include '../parts/footer.php' ?>
     </div>
 </div>
+
+<script>
+    function required() {
+        alert('Welcome\nHome');
+    }
+</script>
