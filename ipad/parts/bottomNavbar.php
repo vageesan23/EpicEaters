@@ -2,6 +2,13 @@
 $file = basename($_SERVER["SCRIPT_FILENAME"], '.php');
 ?>
 <!-- Navbar -->
+
+<style>
+    .bottom_nav_bar .ui-btn{
+        border-radius: 0px !important;
+    }
+</style>
+
 <div data-role="footer" data-position="fixed" class="bottom_nav_bar">
     <nav data-role="navbar">
         <ul>
