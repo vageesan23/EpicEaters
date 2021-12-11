@@ -35,7 +35,7 @@
     }
 
     .ui-icon-carat-d {
-        border-radius: 5px !important;
+        border-radius: 10px !important;
         max-height: 2.4em !important;
     }
 
@@ -60,9 +60,6 @@
         right: 8px;
     }
 
-    /* input[type=firstName], input[type=password]{
-        background-color: white !important;
-    } */
 </style>
 
 <div data-role="page" id="sellWithUs" style='background-image: url("../../common/assets/images/bg-1.png"); background-size: cover;'>
