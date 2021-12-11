@@ -4,24 +4,28 @@
 <style>
     @media (max-width: 768px) {
         .ui-block-a {
+            margin-left: 0px !important;
+        }
+
+        .ui-side {
             margin-left: 60px !important;
         }
 
-        .header-title{
+        .header-title {
             margin-left: 270px !important;
         }
     }
 
     .header-title {
         margin-bottom: 30px !important;
-        margin-left: 395px; 
+        margin-left: 395px;
     }
 
     .back-box {
         margin-bottom: 0px !important;
     }
 
-    .head-icon{
+    .head-icon {
         position: relative;
         left: -215px;
         bottom: -6px;
@@ -39,7 +43,7 @@
                 <h3>Earn with Us</h3>
             </div>
             <form style="color: #1797F3;" onsubmit="required()">
-                <fieldset class="ui-grid-a" style="min-width: 100%;">
+                <fieldset class="ui-side" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
                         <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
                         <input type="text" name="address" id="address" value="" placeholder="Address" required>
@@ -52,7 +56,7 @@
                         <input type="text" name="nic" id="nic" value="" placeholder="NIC" required>
                         <br /><br />
                         <div class="re-pw" style="margin: -1px;">
-                        <input class="re-password" style="margin-top: -10px ;min-height:2.7em; position:relative; bottom:-4px" type="password" name="rePassword" id="rePassword" value="" placeholder="Re-type Password" required>
+                            <input class="re-password" style="margin-top: -10px ;min-height:2.7em; position:relative; bottom:-4px" type="password" name="rePassword" id="rePassword" value="" placeholder="Re-type Password" required>
                         </div>
                     </div>
                 </fieldset><!-- /grid-a -->
@@ -67,10 +71,10 @@
         </div>
 
     </div>
-        <?php include '../parts/footer.php' ?>
-        <?php include '../parts/bottomNavbar.php' ?>
-        <?php include '../parts/chatbot.php' ?>
-    </div>
+    <?php include '../parts/footer.php' ?>
+    <?php include '../parts/bottomNavbar.php' ?>
+    <?php include '../parts/chatbot.php' ?>
+</div>
 
 <script>
     function required() {
