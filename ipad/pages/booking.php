@@ -15,8 +15,6 @@
             margin-left: 55px !important;
             margin-right: 45px !important;
         }
-
-
     }
 
     .header-title {
@@ -76,7 +74,7 @@
                 <fieldset class="ui-grid-a" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
                         <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
-                        <input type="text" name="address" id="address" value="" placeholder="Address" required>
+                        <input type="text" name="tel" id="tel" value="" placeholder="Mobile No" required>
                         <input type="text" name="username" id="username" value="" placeholder="Username" required>
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
@@ -88,11 +86,11 @@
                 </fieldset><!-- /grid-a -->
                 <fieldset class="ui-grid-a" style="min-width: 100%; margin-top:-8px;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
-                        <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
+                    <input type="text" name="address" id="address" value="" placeholder="Address" required> 
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
                     <div class="ui-block-c" style="width: 40%">
-                        <input type="text" name="lastName" id="lastName" value="" placeholder="Last Name" required>
+                        <input type="text" name="lastName" id="lastName" value="" placeholder="Zip Code" required>
                     </div>
                 </fieldset><!-- /grid-a -->
                 <p style="color:#fff; margin-bottom:12px; margin-left:70px; margin-top:30px;">*Membership Details</p>
@@ -100,18 +98,20 @@
                 <fieldset class="ui-grid-a" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
                         <select class="dropdown-border" name="select-native-1" id="location" required>
-                            <option value="1" disabled hidden selected>Select Location</option>
-                            <option value="2">Nugegoda</option>
-                            <option value="3">Kurunegala</option>
-                            <option value="4">Kandy</option>
+                            <option value="1" disabled hidden selected>Select Membership</option>
+                            <option value="2">Annual Membership ( LKR 25,000 )</option>
+                            <option value="3">Monthly Membership ( LKR 6,000 )</option>
                         </select>
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
                     <div class="ui-block-c" style="width: 40%">
                         <select class="dropdown-border" name="select-native-1" id="session" required>
-                            <option value="1" disabled hidden selected>Select Session</option>
-                            <option value="2">Hand Craft</option>
-                            <option value="3">Wooden Craft</option>
+                            <option value="1" disabled hidden selected>Select Course</option>
+                            <option value="2">Professional Cookery</option>
+                            <option value="3">Baking Breads and Rolls</option>
+                            <option value="4">Kitchen Skills</option>
+                            <option value="5">International Cuisine</option>
+                            <option value="6">Garde Manger</option>
                         </select>
                     </div>
                 </fieldset><!-- /grid-a -->
