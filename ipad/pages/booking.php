@@ -59,7 +59,6 @@
         top: 11px;
         right: 8px;
     }
-
 </style>
 
 <div data-role="page" id="sellWithUs" style='background-image: url("../../common/assets/images/bg-1.png"); background-size: cover;'>
@@ -72,7 +71,7 @@
                 <span class="iconify head-icon" alt="page_icon" data-icon="tabler:brand-booking" data-width="45" data-height="45"></span>
                 <h3>Book Course</h3>
             </div>
-            <form style="color: #1797F3;">
+            <form style="color: #1797F3;" action="https://www.geeksforgeeks.org" target="_blank">
                 <p style="color:#fff; margin-bottom:12px; margin-left:70px">*Personal Details</p>
                 <fieldset class="ui-grid-a" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
