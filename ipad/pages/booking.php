@@ -4,6 +4,10 @@
 <style>
     @media (max-width: 768px) {
         .ui-block-a {
+            margin-left: 0px !important;
+        }
+
+        .ui-side {
             margin-left: 60px !important;
         }
 
@@ -11,12 +15,10 @@
             margin-left: 270px !important;
         }
 
-        p {
+        .p-text {
             margin-left: 55px !important;
             margin-right: 45px !important;
         }
-
-
     }
 
     .header-title {
@@ -35,7 +37,7 @@
     }
 
     .ui-icon-carat-d {
-        border-radius: 5px !important;
+        border-radius: 10px !important;
         max-height: 2.4em !important;
     }
 
@@ -59,10 +61,6 @@
         top: 11px;
         right: 8px;
     }
-
-    /* input[type=firstName], input[type=password]{
-        background-color: white !important;
-    } */
 </style>
 
 <div data-role="page" id="sellWithUs" style='background-image: url("../../common/assets/images/bg-1.png"); background-size: cover;'>
@@ -75,12 +73,12 @@
                 <span class="iconify head-icon" alt="page_icon" data-icon="tabler:brand-booking" data-width="45" data-height="45"></span>
                 <h3>Book Course</h3>
             </div>
-            <form style="color: #1797F3;">
-                <p style="color:#fff; margin-bottom:12px; margin-left:70px">*Personal Details</p>
-                <fieldset class="ui-grid-a" style="min-width: 100%;">
+            <form style="color: #1797F3;" action="https://www.geeksforgeeks.org" target="_blank">
+                <p class="p-text" style="color:#fff; margin-bottom:12px; margin-left:70px">*Personal Details</p>
+                <fieldset class="ui-side" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
                         <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
-                        <input type="text" name="address" id="address" value="" placeholder="Address" required>
+                        <input type="text" name="tel" id="tel" value="" placeholder="Mobile No" required>
                         <input type="text" name="username" id="username" value="" placeholder="Username" required>
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
@@ -90,37 +88,39 @@
                         <br /><br />
                     </div>
                 </fieldset><!-- /grid-a -->
-                <fieldset class="ui-grid-a" style="min-width: 100%; margin-top:-8px;">
+                <fieldset class="ui-side" style="min-width: 100%; margin-top:-8px;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
-                        <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
+                        <input type="text" name="address" id="address" value="" placeholder="Address" required>
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
                     <div class="ui-block-c" style="width: 40%">
-                        <input type="text" name="lastName" id="lastName" value="" placeholder="Last Name" required>
+                        <input type="text" name="lastName" id="lastName" value="" placeholder="Zip Code" required>
                     </div>
                 </fieldset><!-- /grid-a -->
-                <p style="color:#fff; margin-bottom:12px; margin-left:70px; margin-top:30px;">*Membership Details</p>
+                <p class="p-text" style="color:#fff; margin-bottom:12px; margin-left:70px; margin-top:30px;">*Membership Details</p>
 
-                <fieldset class="ui-grid-a" style="min-width: 100%;">
+                <fieldset class="ui-side" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
                         <select class="dropdown-border" name="select-native-1" id="location" required>
-                            <option value="1" disabled hidden selected>Select Location</option>
-                            <option value="2">Nugegoda</option>
-                            <option value="3">Kurunegala</option>
-                            <option value="4">Kandy</option>
+                            <option value="1" disabled hidden selected>Select Membership</option>
+                            <option value="2">Annual Membership ( LKR 25,000 )</option>
+                            <option value="3">Monthly Membership ( LKR 6,000 )</option>
                         </select>
                     </div>
                     <div class="ui-block-b" style="width: 20px"></div>
                     <div class="ui-block-c" style="width: 40%">
                         <select class="dropdown-border" name="select-native-1" id="session" required>
-                            <option value="1" disabled hidden selected>Select Session</option>
-                            <option value="2">Hand Craft</option>
-                            <option value="3">Wooden Craft</option>
+                            <option value="1" disabled hidden selected>Select Course</option>
+                            <option value="2">Professional Cookery</option>
+                            <option value="3">Baking Breads and Rolls</option>
+                            <option value="4">Kitchen Skills</option>
+                            <option value="5">International Cuisine</option>
+                            <option value="6">Garde Manger</option>
                         </select>
                     </div>
                 </fieldset><!-- /grid-a -->
-                <p style="color:#fff; margin-bottom:12px; margin-left:78px; margin-top:30px; margin-right:80px">Note: By clicking the "Place Booking" button you are submiting your online application and will be re-directed to a form to submit your payment. Once we recieve your payment, we will contact you about your Membership.</p>
-                <p style="color:#fff; margin-bottom:12px; margin-left:78px; margin-top:20px;"><input type="checkbox" name="checkbox-0" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agree to the Terms & Conditions</p>
+                <p class="p-text" style="color:#fff; margin-bottom:12px; margin-left:78px; margin-top:30px; margin-right:80px">Note: By clicking the "Place Booking" button you are submiting your online application and will be re-directed to a form to submit your payment. Once we recieve your payment, we will contact you about your Membership.</p>
+                <p class="p-text" style="color:#fff; margin-bottom:12px; margin-left:78px; margin-top:20px;"><input type="checkbox" name="checkbox-0" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agree to the Terms & Conditions</p>
                 <button style="opacity: 1; width: 205px; margin: 25px auto 4px auto">Place Booking</button>
 
             </form>
