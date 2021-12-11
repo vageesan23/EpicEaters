@@ -40,7 +40,7 @@ h3 {
 }
 
 input[type=text], input[type=password] {
-    background-color: #d4d5dc !important;
+    /* background-color: #d4d5dc !important; */
     padding: 5px 20px;
     border-radius: 5px;
 }
