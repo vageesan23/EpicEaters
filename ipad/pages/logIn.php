@@ -6,7 +6,7 @@
     <div role="main" style="display: flex; justify-content: center; margin-bottom: 0px" class="ui-content">
 
 
-        <div class="back-box">
+        <div class="" style="background-color: #fff;">
             <div class="header-title" style="color: white">
                 <img alt="page_icon" src="../../common/assets/images/icons/login.png" height="35" width="35" style="display: inline-flex;">
                 <h3 style="color: #000; display: inline-flex;">Login</h3>
@@ -15,7 +15,7 @@
                 
                 <img src="../../ipad/images/logo(footer).png" alt="login-img" style="height: 300px; display: block; margin: auto; background-color: #000;">
                 <input type="text" name="username" id="username" value="" placeholder="Username/ E-mail" style="box-sizing: border-box; border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-top: 50px; margin-bottom: 50px; background-color: transparent;">
-                <input type="password" name="password" id="password" value="" placeholder="Password" style="box-sizing: border-box; border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-bottom: 10px;">
+                <input type="password" name="password" id="password" value="" placeholder="Password" style="border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-bottom: 10px;">
                 <input type="checkbox" value="rememberMe" id="rememberMe">
                 <label for="rememberMe" style="color: #000; font-size: 15px;">Remember Me</label>
 
