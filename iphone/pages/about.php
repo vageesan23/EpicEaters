@@ -26,18 +26,16 @@
         </div>
         <hr style="border: 2px solid #DADADA; margin-bottom:30px">
         <p style="font-size: 14px; font-family: 'Montserrat', sans-serif; text-align: justify">
-            iCraft is the leading independent home improvement and home repair website. It has been repeatedly honored
-            among the Best on the Web, and was named "One of the Top 50 Sites in the World" by Time Magazine. In
-            addition to our broad list of topics, we operate the most active home improvement forum on the internet,
-            enabling consumers to get personalized advice from professionals in over 100 subjects.
+            The mobile web application "Epic Eaters" represents a platform for start-ups involved in
+            creating home-cooked dessert food delivery to consumers who need to request it online. Users of this web mobile application can obtain useful information about dessert foods
+            provided by various suppliers, as well as place orders and bookings for all of the food
+            products that they choose. The Epic Eaters app allows start-ups to promote their dessert
+            food products and reach a large number of dessert food consumers.
             <br><br>
-            iCraft was established in 1995 with the goal of providing consumers with unbiased home improvement and
-            repair information in a community environment. Today DoItYourself averages over ten million unique visitors
-            per month. With comprehensive how-to content, engaging features and interviews, and expertly moderated
-            community forums, DoItYourself makes it easy and fun to tackle even the most complex home improvement
-            projects.
+            Building a food delivery service with a website and mobile app is a smart strategy to appeal to a large market of interested consumers. For restaurants, it is an additional revenue stream that they would not have otherwise been able to touch.
+            <br><br> With individual consumers, it is a way of sourcing food quickly and easily from their favorite places. People need to eat, and having a means of providing them with the food they are interested in immediately and efficiently is a great strategy.
             <br><br>
-            Would you like to share a project you DIYed? Check out our Projects section.
+            We understand the food delivery market and know how to help you compete and succeed. Our teams can cope with any technical challenge and can work with you to automate the ordering process. With our knowledge, we can help you improve the interactions between a buyer and the restaurant. Contact us to find out how we can help you build a successful Food Delivery Website.
         </p>
 
     </div>
