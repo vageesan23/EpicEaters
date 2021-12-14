@@ -264,8 +264,9 @@ html .ui-panel-page-container-a {
 html .ui-bar-a a,
 html .ui-body-a a,
 html body .ui-group-theme-a a {
-	color: #1797F3 /*{a-link-color}*/;
+	color: #EF005A /*{a-link-color}*/;
 	font-weight: bold;
+	text-decoration: none !important;
 }
 .ui-page-theme-a a:visited,
 html .ui-bar-a a:visited,
