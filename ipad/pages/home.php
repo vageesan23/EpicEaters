@@ -23,7 +23,7 @@
              style="width: fit-content; margin: 200px auto 0 auto">
 
             <div>
-                <h3 style="float: left; font-weight: 800">Recommended DYI</h3>
+                <h3 style="float: left; font-weight: 800;line-height: 3.5em; ">Recommended DYI</h3>
                 <a data-ajax="false" href="shop.php" data-transition="pop" style="float: right; line-height: 3.5em;">View
                     All</a>
             </div>
