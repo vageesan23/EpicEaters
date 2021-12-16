@@ -10,10 +10,10 @@
     </style>
     <div role="main" class="ui-content1">
         <div>
-            <img src="../../common/assets/images/clicker/RulesforiPhone.jpg" 
+            <img src="../../common/assets/images/clicker/clickerforiPhone.jpg" 
                 style="width: 100%;">
             <img src="../../common/assets/images/clicker/doyouknow-iPhone.png" 
-                style="width: 100%; margin: -6px 0px 0px -7px; ">
+                style="width: 103%; margin: -6px 0px 0px -7px; ">
 
             <a data-ajax="false" href="slashItPlay.php">
                 <img src="../../common/assets/images/clicker/letsplay-iPhone.png" 

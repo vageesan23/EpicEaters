@@ -20,7 +20,7 @@
             <img alt="page_icon" src="../../common/assets/images/icons/slashIt.png" height="35" width="35">
         </div> -->
         <div>
-            <img src="../../common/assets/images/clicker/RulesforiPad.jpg" 
+            <img src="../../common/assets/images/clicker/clickerforiPad.jpg" 
                 style="width: 100%;">
             <img src="../../common/assets/images/clicker/doyouknow-iPad.png" 
                 style="width: 35%; margin-left: 63%; margin-top: -250px;">
