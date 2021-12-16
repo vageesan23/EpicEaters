@@ -1,11 +1,17 @@
 <?php include '../parts/head.php' ?>
 <!-- This is slash it page-->
 <div data-role="page" id="slashit">
+    <?php include '../parts/header.php' ?>
+    <!-- <style>
+        .ui-content1 {
+            margin-bottom: 0px;
+        }
+    </style> -->
 
     <div role="main" class="ui-content">
         <center>
-            <img src="../../common/assets/images/slashit/select_product.png"
-                 style="margin: -20px -20px 20px -10px; width: 70%;">
+            <img src="../../common/assets/images/clicker/clickerProduct-iPad.jpg"
+                    style="margin: -16px 0px 0px -16px; width: 105%;">
         </center>
 
         <div style="margin: auto; width: fit-content;">
