@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "name": "Black Forest Cake",
+        "name": "Forest Cake",
         "description": "Several layers of chocolate sponge cake sandwiched.",
         "longDescription": "This Black Forest Cake combines rich chocolate cake layers with fresh cherries, cherry liqueur, and a simple whipped cream frosting.",
         "price": "5500",
@@ -111,7 +111,7 @@
     },
     {
         "id": 11,
-        "name": "Strawberry Cake",
+        "name": "Sprinkle Cake",
         "description": "Moist and fluffy vanilla cake layers.",
         "longDescription": "Strawberry shortcake is typically made with a biscuit-like cake or scone that is split and filled with strawberries and sweetened whipped cream. It's a dessert that is easy to make and really highlights the berries. The name actually dates back long before this current shortcake first appeared.",
         "price": "6500",
@@ -122,7 +122,7 @@
     },
     {
         "id": 12,
-        "name": "Caramel Brownies",
+        "name": "Brownies",
         "description": "Layers of chocolate and caramel.",
         "longDescription": "A chocolate brownie or simply a brownie is a square or rectangular chocolate baked confection. Brownies come in a variety of forms and may be either fudgy or cakey, depending on their density. They may include nuts, frosting, cream cheese, chocolate chips, or other ingredients.",
         "price": "1400",

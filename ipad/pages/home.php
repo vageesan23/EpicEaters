@@ -1,29 +1,50 @@
 <?php include '../parts/head.php' ?>
 <!-- This is page 1-->
+
+<style>
+    @media (min-width: 767px) and (max-width: 1023px) {
+        .advertisement {
+            height: 195px !important;
+        }
+    }
+
+    .card-title {
+        max-width: none;
+        margin-top: 7px;
+    }
+
+    .ui-content {
+        margin-bottom: 45px;
+    }
+
+    .ui-filterable {
+        position: relative;
+        bottom: 17px;
+    }
+</style>
+
 <div data-role="page" id="page1">
     <?php include '../parts/header.php' ?>
 
     <!-- video -->
-    <video style="object-fit: cover;" width="100%" height="240" autoplay>
+    <video style="object-fit: cover;" width="100%" height="300" autoplay>
         <source src="../videos/introduction-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <!-- welcome note-->
     <div style="position: absolute;">
-        <h2 style="padding: 5px 20px; margin-top: -120px; font-size: 20px; color: rgb(255, 255, 255); font-family: 'Poppins', sans-serif; font-weight: 200;">
-            Hello Snoopy, What DIY do you want
-            today?
+        <h2 style="padding: 5px 20px;margin-top: -70px;font-size: 20px;color: rgb(255, 255, 255);font-family: 'Poppins', sans-serif;font-weight: 500;">
+            Hello there, What dessert do you want today?
         </h2>
     </div>
 
     <div role="main" class="ui-content" style="margin-top: -250px;">
         <!-- POI Card-->
-        <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for DIY products"
-             style="width: fit-content; margin: 200px auto 0 auto">
+        <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for Dessert items" style="width: fit-content; margin: 215px auto 0 auto;">
 
             <div>
-                <h3 style="float: left; font-weight: 800;line-height: 3.5em; ">Recommended DYI</h3>
+                <h3 style="float: left; font-weight: 800;line-height: 3.5em; ">Recommended</h3>
                 <a data-ajax="false" href="shop.php" data-transition="pop" style="float: right; line-height: 3.5em;">View
                     All</a>
             </div>
@@ -48,9 +69,9 @@
 
                 if ($key == 4) {
                     echo '
-                    <div class="ui-block-a" style="min-width: 50%; margin-top: 10px">
-                    <img src="http://via.placeholder.com/400x220.png/B7B7B7/808080?text=Advertisement" 
-                    style="width: 100%; height: 230px; border-radius: 20px">
+                    <div class="ui-block-a" style="min-width: 25%; margin-top: 10px">
+                    <img class="advertisement" src="http://via.placeholder.com/400x220.png/B7B7B7/808080?text=Advertisement" 
+                    style="width: 97%; height: 230px; border-radius: 20px">
                 </div>';
                     $column = 'c';
                 } elseif ($key == 5) {
@@ -69,7 +90,7 @@
             ?>
 
             <div class="ui-grid-d" style="width: fit-content; margin: auto">
-                <h3 style="float: left; font-weight: 800">Offers</h3>
+                <h3 style="float: left;font-weight: 800;margin-top: 35px;margin-bottom: 17px;">Offers</h3>
 
                 <?php
                 $data = $GLOBALS['db'];
@@ -108,8 +129,10 @@
 </body>
 <script>
     if (!$.cookie('introduction')) {
-        $(window).on('load', function () {
-            $.cookie('introduction', true, {path: '/'});
+        $(window).on('load', function() {
+            $.cookie('introduction', true, {
+                path: '/'
+            });
             $("#popupIntroductory").popup("open");
         });
     }
@@ -137,7 +160,10 @@
             data.push(id);
             $(e).css('color', 'red')
         }
-        $.cookie('wishList', JSON.stringify(data), {path: '/'});
+        $.cookie('wishList', JSON.stringify(data), {
+            path: '/'
+        });
     }
 </script>
+
 </html>
