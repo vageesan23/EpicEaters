@@ -9,8 +9,8 @@
     ?>
     <div role="main" class="ui-content">
         <center>
-            <img src="../../common/assets/images/SlashitProduct.png"
-                 style="margin: -20px -20px 20px -20px; width: 110%;">
+            <img src="../../common/assets/images/clicker/clickerProduct-iPad.jpg"
+                 style="margin: -16px 0px 0px -16px; width: 105%;">
         </center>
         <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 70%; margin: auto;">
 
