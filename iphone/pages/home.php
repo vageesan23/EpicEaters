@@ -4,8 +4,8 @@
     <?php include '../parts/header.php' ?>
 
     <!-- video -->
-    <video style="object-fit: cover;" width="100%" height="240" autoplay>
-        <source src="../videos/intro.mp4" type="video/mp4">
+    <video style="object-fit: cover;" width="100%" height="270" autoplay>
+        <source src="../videos/introduction-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
