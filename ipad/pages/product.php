@@ -1,4 +1,32 @@
 <?php include '../parts/head.php' ?>
+<style>
+    .ui-grid-a {
+        overflow: initial !important;
+    }
+
+    @media (max-width: 1024px) {
+        .ar-view {
+            margin-left: 130px;
+        }
+
+        .ui-grid-a .rating {
+            font-size: 25px;
+            margin-left: 50px;
+        }
+
+        .fav-icon-card {
+            /* margin-right: 100px; */
+        }
+
+        #addToCart {
+            margin: 0px 30px;
+        }
+
+        .main-pro-img {
+            width: 350px;
+        }
+    }
+</style>
 <!-- This is store page-->
 <div data-role="page" id="product">
 
@@ -19,25 +47,25 @@
         <div class="ui-grid-a" style="padding: 30px;">
             <!--            start of main product block-->
             <div class="ui-block-a">
-            <?php echo '<img class="center" style="height:250px; width: 300px; border-radius: 15px;" src="', $json[$id]['image'], '" >' ?? '' ?>
-                <div class="ui-bar ui-bar-a ui-card product-card" style="height: 330px; max-width: 600px; margin: auto;">
+            <?php echo '<img class="center main-pro-img" style="height:280px; width: 300px; border-radius: 15px; box-shadow: 0 0 20px 0 #343434;" src="', $json[$id]['image'], '" >' ?? '' ?>
+                <div class="ui-bar ui-bar-a ui-card product-card" style="height: 340px; max-width: 600px; margin: auto; margin-top: -5px;">
 
                     
                     <div class="ui-grid-a">
                         <div class="ui-block-a" style="width: 100%">
                         <div class="ui-block-b" style="width: 100%; margin-left: 240px; transform: transitionY(15px); margin-bottom: -10px;">
                             <a href="#viewAR" data-rel="popup" data-position-to="window"
-                               data-transition="pop"><img alt="page_icon" src="../../common/assets/images/icons/ar-1.png" style="height: 75px; width: 75px;"></a>
+                               data-transition="pop"><img alt="page_icon" class="ar-view" src="../../common/assets/images/icons/ar-1.png" style="height: 75px; width: 75px;"></a>
                         </div>
                             <p style="font-size: 26px; font-family: 'Poppins',serif; color: #333; font-weight: 400; text-align: center;"><?php echo $json[$id]['name'] ?? '' ?> </p>
                             <?php
                             for ($i = 0; $i < 5; $i++) {
                                 if ((int)$json[$id]['rating'] <= $i) {
                                     echo
-                                    '<span class="fa fa-star" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
+                                    '<span class="fa fa-star rating" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
                                 } else {
                                     echo
-                                    '<span class="fa fa-star fa-checked" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
+                                    '<span class="fa fa-star fa-checked rating-checked" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
                                 }
                             }
                             ?>
@@ -64,6 +92,7 @@
                     </span>
                     </div>
                 </div>
+
             </div>
             <!--            start of feature product block-->
             <div class="ui-block-b ipad-feature-product">
@@ -78,9 +107,9 @@
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
                                 
                                 <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 1]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-left: 20px;"><?php echo $json[$id + 1]['name'] ?? '' ?> </p>
+                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 1]['name'] ?? '' ?> </p>
                                 <p class="card-price"
-                                   style="position: relative; font-size: 20px; color: #63717a; margin-left: 20px; margin-top: 15px;">
+                                   style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
                                     LKR <?php echo $json[$id + 1]['price'] ?? '' ?></p>
                             </div>
                         </a>
@@ -90,9 +119,9 @@
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
                                 <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-left: 20px;"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
+                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
                                 <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-left: 20px; margin-top: 15px;">
+                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
                                         LKR <?php echo $json[$id + 2]['price'] ?? '' ?></p>
                             </div>
                         </a>
@@ -102,9 +131,9 @@
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
                                 <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 3]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-left: 20px;"><?php echo $json[$id + 3]['name'] ?? '' ?> </p>
+                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 3]['name'] ?? '' ?> </p>
                                 <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-left: 20px; margin-top: 15px;">
+                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
                                         LKR <?php echo $json[$id + 3]['price'] ?? '' ?></p>
                             </div>
                         </a>
@@ -113,9 +142,9 @@
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
                                 <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 4]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-left: 20px;"><?php echo $json[$id + 4]['name'] ?? '' ?> </p>
+                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 4]['name'] ?? '' ?> </p>
                                 <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-left: 20px; margin-top: 15px;">
+                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
                                         LKR <?php echo $json[$id + 4]['price'] ?? '' ?></p>
                             </div>
                         </a>
@@ -162,6 +191,7 @@
         </div>
     </div>
     <?php include '../parts/footer.php' ?>
+    <?php include '../parts/chatbot.php' ?>
 </div>
 </div>
 </body>
