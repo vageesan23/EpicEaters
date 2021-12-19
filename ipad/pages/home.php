@@ -39,13 +39,13 @@
         </h2>
     </div>
 
-    <div role="main" class="ui-content" style="margin-top: -250px;">
+    <div role="main" class="ui-content" style="margin-top: -279px;">
         <!-- POI Card-->
         <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for Dessert items" style="width: fit-content; margin: 215px auto 0 auto;">
 
             <div>
-                <h3 style="float: left; font-weight: 800;line-height: 3.5em; ">Recommended</h3>
-                <a data-ajax="false" href="shop.php" data-transition="pop" style="float: right; line-height: 3.5em;">View
+                <h3 style="float: left; font-weight: 800;line-height: 4.5em; ">Recommended</h3>
+                <a data-ajax="false" href="shop.php" data-transition="pop" style="float: right; line-height: 4.5em;">View
                     All</a>
             </div>
 
@@ -90,7 +90,7 @@
             ?>
 
             <div class="ui-grid-d" style="width: fit-content; margin: auto">
-                <h3 style="float: left;font-weight: 800;margin-top: 35px;margin-bottom: 17px;">Offers</h3>
+                <h3 style="float: left;font-weight: 800;margin-top: 25px;margin-bottom: 17px;">Offers</h3>
 
                 <?php
                 $data = $GLOBALS['db'];
