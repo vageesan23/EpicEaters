@@ -1,7 +1,7 @@
 <!--
 Cart Page
 -->
-<?php 
+<?php
 $origin = 'iphone';
 include '../parts/head.php' ?>
 <!--
@@ -30,8 +30,8 @@ Payment is declined
         <!-- POI Card-->
         <div style="background-color: #ffffffe3;" class="back-box">
             <div class="header-title" style="display: flex">
-            <span class="iconify" data-icon="akar-icons:cart" data-width="35" data-height="35"></span>
-            <h3 style="padding-top: 4px">Cart</h3> 
+                <span class="iconify" data-icon="akar-icons:cart" data-width="35" data-height="35"></span>
+                <h3 style="padding-top: 4px">Cart</h3>
             </div>
             <!--card data will load dynamically-->
             <div id="items">
@@ -40,9 +40,11 @@ Payment is declined
             <div style="text-align: center;">
                 <h1 style="font-size: 15px">Total: <span id="totalPrice" class="price-color" style="font-size: 15px">LKR.0.00</span></h1>
             </div>
-            <div style="text-align: center; width: 75%; padding-left:25%">
-                <button id="checkout-button" disabled>Order</button>
-            </div>
+            <form action="https://www.geeksforgeeks.org" target="_blank">
+                <div style="text-align: center; width: 75%; padding-left:25%">
+                    <button id="">Order</button>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -60,7 +62,10 @@ Payment is declined
             let id = cart[i]['id'];
             let qty = cart[i]['qty'];
             await addCard(id, qty);
-            product_ids.push({"id": id, "qty": qty});
+            product_ids.push({
+                "id": id,
+                "qty": qty
+            });
         }
 
         total = Math.round(total * 100) / 100;
@@ -68,7 +73,7 @@ Payment is declined
     }
 
     const addCard = async (id, qty) =>
-        $.getJSON("<?php echo $GLOBALS['domain'] ?>/common/functions/getProduct.php?id=" + id, function (data, status) {
+        $.getJSON("<?php echo $GLOBALS['domain'] ?>/common/functions/getProduct.php?id=" + id, function(data, status) {
             let price = parseFloat(data["price"]) * qty;
             total += price;
             $('#items').append(
@@ -101,20 +106,22 @@ Payment is declined
     const stripe = Stripe("<?php echo $GLOBALS['stripe_key'] ?>");
     const checkoutButton = document.getElementById("checkout-button");
 
-    checkoutButton.addEventListener("click", function () {
+    checkoutButton.addEventListener("click", function() {
         $('#checkout-button').attr('disabled', true);
         $('#checkout-button').html("Processing");
         fetch("../../common/functions/checkout.php?origin=<?php echo $origin ?>", {
-            method: "POST",
-            body: JSON.stringify(product_ids)
-        })
-            .then(function (response) {
+                method: "POST",
+                body: JSON.stringify(product_ids)
+            })
+            .then(function(response) {
                 return response.json();
             })
-            .then(function (session) {
-                return stripe.redirectToCheckout({sessionId: session.id});
+            .then(function(session) {
+                return stripe.redirectToCheckout({
+                    sessionId: session.id
+                });
             })
-            .then(function (result) {
+            .then(function(result) {
                 // If redirectToCheckout fails due to a browser or network
                 // error, you should display the localized error message to your
                 // customer using error.message.
@@ -122,9 +129,10 @@ Payment is declined
                     alert(result.error.message);
                 }
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.error("Error:", error);
             });
     });
 </script>
+
 </html>
