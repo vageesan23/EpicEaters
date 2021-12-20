@@ -1,7 +1,9 @@
 <!--
 Cart Page
 -->
-<?php include '../parts/head.php' ?>
+<?php 
+$origin = 'iphone';
+include '../parts/head.php' ?>
 <!--
 Testing Card
 
@@ -27,18 +29,18 @@ Payment is declined
 
         <!-- POI Card-->
         <div style="background-color: #ffffffe3;" class="back-box">
-            <div class="header-title" style="margin-bottom: 10px;">
-                <h3>Cart</h3>
-                <img alt="page_icon" src="../../common/assets/images/icons/checkout.png" height="35" width="35">
+            <div class="header-title" style="display: flex">
+            <span class="iconify" data-icon="akar-icons:cart" data-width="35" data-height="35"></span>
+            <h3 style="padding-top: 4px">Cart</h3> 
             </div>
             <!--card data will load dynamically-->
             <div id="items">
             </div>
 
             <div style="text-align: center;">
-                <h1>Total: <span id="totalPrice" class="price-color">LKR.0.00</span></h1>
+                <h1 style="font-size: 15px">Total: <span id="totalPrice" class="price-color" style="font-size: 15px">LKR.0.00</span></h1>
             </div>
-            <div style="text-align: center;">
+            <div style="text-align: center; width: 75%; padding-left:25%">
                 <button id="checkout-button" disabled>Order</button>
             </div>
         </div>
@@ -70,16 +72,16 @@ Payment is declined
             let price = parseFloat(data["price"]) * qty;
             total += price;
             $('#items').append(
-                '<div class="ui-grid-c back-box" style="padding: <?php echo $padding ?? "10px" ?>; margin-bottom: 20px">\n' +
+                '<div class="back-box" style="margin-bottom: 20px; display: flex; width:85%">\n' +
                 '                <div class="ui-block-a " style="width: 25%;">\n' +
                 '                    <img alt="product_image" class="center" src="' + data["image"] + '"\n' +
                 '                         style="top: 50%;;">\n' +
                 '                </div>\n' +
-                '                <div class="ui-block-b" style="width: 50%; font-size: 12px; padding-left: 10px">\n' +
+                '                <div style="width: 40%; font-size: 15px; padding-left: 10px">\n' +
                 '                        <a data-ajax="false" href="product.php?id=' + id + '" \n' +
-                '                           data-transition="pop"><p style="font-size: 22px">' + data["name"] + ' </p><span style="font-size: 20px">x' + qty + '</span></a>\n' +
+                '                           data-transition="pop"><p style="font-size: 15px">' + data["name"] + ' </p><span style="font-size: 15px">x' + qty + '</span></a>\n' +
                 '                </div>\n' +
-                '                <div class="ui-block-c" style="width: 25%; font-size: 22px; ">\n' +
+                '                <div  style="width: 30%; font-size: 15px; padding-left: 10px">\n' +
                 '                    <p> LKR ' + price + '</p>\n' +
                 '                </div>\n' +
                 '            </div>');
@@ -102,7 +104,7 @@ Payment is declined
     checkoutButton.addEventListener("click", function () {
         $('#checkout-button').attr('disabled', true);
         $('#checkout-button').html("Processing");
-        fetch("../../common/functions/checkout.php?origin=<?php echo $origin ?? 'iPhone' ?>", {
+        fetch("../../common/functions/checkout.php?origin=<?php echo $origin ?>", {
             method: "POST",
             body: JSON.stringify(product_ids)
         })

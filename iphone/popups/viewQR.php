@@ -16,13 +16,13 @@
                 
                 $("#viewQR").popup("close");
                 $("#qrId").html(qrCodeMessage);
-                const diamonds = qrCodeMessage.substr(0, qrCodeMessage.indexOf(' '));
-                const existing = readCookie('diamondCount');
-                console.log(diamonds);
+                const coins = qrCodeMessage.substr(0, qrCodeMessage.indexOf(' '));
+                const existing = readCookie('coinCount');
+                console.log(coins);
                 console.log(existing);
-                const newTotal = +diamonds + +existing;
-                $("#diamondCount").html(newTotal);
-                const cookieString = "diamondCount=" + newTotal + "; path=/";
+                const newTotal = +coins + +existing;
+                $("#coinCount").html(newTotal);
+                const cookieString = "coinCount=" + newTotal + "; path=/";
                 document.cookie = cookieString;
             // }
             $("#qrRewards").popup("open");

@@ -12,7 +12,7 @@
             </div>
 
             <div class="back-box"
-            style="padding: 50px 20px; width: 90%; margin: auto; background-color: #ffffff">
+            style="padding: 50px 20px; width: 90%; margin: auto; background-image: url('')">
                 <center>
                     <img alt="page_icon" src="../../common/assets/images/icons/user.png" height="100px" width="100px">
                 </center>
