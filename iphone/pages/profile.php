@@ -11,7 +11,7 @@
 
         <h3>Profile</h3>
     </div>
-    <div style="padding: 10px 20px; background-color: rgba(0, 0, 0, 0); position:relative">
+    <div style="padding: 10px 20px; background-image: url(''); position:relative">
         <div class="back-box" >
             <center>
                 <img alt="page_icon" src="../../common/assets/images/icons/user.png" height="100px" width="100px">
