@@ -11,7 +11,7 @@ Wish List Page
             <h3 style="padding-top: 4px">Favourite List</h3>
         </div>
         <!-- POI Card-->
-        <div id="content" class="ui-grid-a search" data-filter="true" data-filter-placeholder="Search for your favourite dessert" style="margin-top: 10px;">
+        <div id="content" class="ui-grid-a search" data-filter="true" data-filter-placeholder="Search for your favourite dessert" style="margin-top: 40px;margin-bottom: -15px;">
 
             <div id="items"></div>
             <a data-rel="popup" data-position-to="window" data-transition="pop" href="#wishListEmail">
