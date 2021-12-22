@@ -22,6 +22,17 @@ Wish List Page
         position: relative;
         top: 10px;
     }
+
+    .bold-text {
+        position: relative;
+        bottom: 17px;
+        left: 2px
+    }
+
+    .ui-mobile label,
+    .ui-controlgroup-label {
+        margin: 0 0 1em !important;
+    }
 </style>
 
 <?php include '../parts/head.php' ?>
