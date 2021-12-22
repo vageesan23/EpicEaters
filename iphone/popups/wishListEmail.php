@@ -6,9 +6,9 @@ Wish List email function.
     <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
     </script>
     <form id="my-form" action="#" method="POST">
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email" required />
-        <button id="my-form-button">Sendd</button>
+        <label for="email"><span class="iconify" data-icon="iconoir:favourite-book" data-width="43" data-height="43"></span><b class="bold-text">Send Favourites</b></label>
+        <input id="email" type="email" name="email" placeholder="Enter Email" required />
+        <button id="my-form-button">Send</button>
         <p id="my-form-status"></p>
     </form>
 
