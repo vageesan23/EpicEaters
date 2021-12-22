@@ -23,7 +23,7 @@ Payment is declined
 <div data-role="page" id="cart" style='min-height: unset; background-image:linear-gradient(
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
-    ), url("../../common/assets/images/cart-back.jpg")'>
+    ), url("../../common/assets/images/bg-1.png")'>
     <?php include '../parts/header.php' ?>
 
     <div role="main" class="ui-content">
@@ -49,7 +49,7 @@ Payment is declined
 
         </div>
     </div>
-
+    <?php include '../parts/chatbot.php' ?>
     <?php include '../parts/bottomNavbar.php' ?>
     <?php include '../parts/footer.php' ?>
 </div>
