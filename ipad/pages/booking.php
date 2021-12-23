@@ -127,7 +127,7 @@
         </div>
 
     </div>
-    <?php include '../parts/bottomNavbar.php' ?>
     <?php include '../parts/chatbot.php' ?>
     <?php include '../parts/footer.php' ?>
+    <?php include '../parts/bottomNavbar.php' ?>
 </div>

@@ -15,7 +15,7 @@
 
 <div data-role="page" id="about">
     <center>
-        <img class="landscape-view" src="../../common/assets/images/about-us.png" height="200px" width="100%">
+        <img class="landscape-view" src="../../common/assets/images/about-us.png" height="240px" width="100%">
     </center>
     <?php include '../parts/header.php' ?>
 
