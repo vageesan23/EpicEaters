@@ -62,7 +62,7 @@
                 <span class="iconify head-icon" alt="page_icon" data-icon="tabler:brand-booking" data-width="45" data-height="45"></span>
                 <h3>Book Course</h3>
             </div>
-            <form action="https://www.geeksforgeeks.org" target="_blank">
+            <form action="https://www.geeksforgeeks.org" target="_blank" onsubmit="clearForm()">
                 <p class="p-text" style="color:#fff; margin-bottom:15px; margin-left:-8px">*Personal Details</p>
 
                 <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
@@ -108,6 +108,20 @@
 </div>
 </div>
 <script>
+
+    function clearForm() {
+        document.getElementById('firstName').value = '';
+        document.getElementById('lastName').value = '';
+        document.getElementById('tel').value = '';
+        document.getElementById('nic').value = '';
+        document.getElementById('username').value = '';
+        document.getElementById('address').value = '';
+        document.getElementById('lastName').value = '';
+        document.getElementById('location').value = '';
+        document.getElementById('session').value = '';
+        document.getElementById('checkbox').value = '';
+    }
+
     window.addEventListener("DOMContentLoaded", function() {
         var form = document.getElementById("booking-form");
 
