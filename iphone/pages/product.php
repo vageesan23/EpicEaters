@@ -96,7 +96,7 @@
         
 
         <div class="ui-content" style="text-align: center; padding: 20px;" data-role="popup" id="cart-feedback">
-            <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/checked-green.png">
+            <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/icons/green-tick.png">
         </div>
 
         <div class="ui-grid-a" style="margin-top: 50px;">

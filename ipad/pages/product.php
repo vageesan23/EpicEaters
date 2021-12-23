@@ -63,10 +63,10 @@
                             for ($i = 0; $i < 5; $i++) {
                                 if ((int)$json[$id]['rating'] <= $i) {
                                     echo
-                                    '<span class="fa fa-star rating" style="font-size: 18px; text-align: center; margin-left: 52px;"></span>';
+                                    '<span class="fa fa-star rating" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
                                 } else {
                                     echo
-                                    '<span class="fa fa-star fa-checked rating-checked" style="font-size: 18px; text-align: center; margin-left: 52px;"></span>';
+                                    '<span class="fa fa-star fa-checked rating-checked" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
                                 }
                             }
                             ?>
@@ -171,7 +171,7 @@
 
                 <div style="text-align: center; padding: 60px; top: 0; transform: translateX(-50%);" data-role="popup"
                      id="cart-feedback">
-                    <h1>Added to Cart</h1> <img style="width: 90px" src="../../common/assets/images/checked-green.png">
+                    <h1>Added to Cart</h1> <img style="width: 90px" src="../../common/assets/images/icons/green-tick.png">
                 </div>
 
 
