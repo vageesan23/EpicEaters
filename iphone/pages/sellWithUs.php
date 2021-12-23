@@ -51,7 +51,7 @@
                 <input type="password" name="password" id="password" value="" placeholder="Password" required>
                 <input type="password" name="rePassword" id="rePassword" value="" placeholder="Re-type password" required>
 
-                <button style="opacity: 1; margin-top:30px;">Sign Up</button>
+                <button style="opacity: 1;width: 300px;margin: auto;margin-top: 30px;">Sign Up</button>
                 <center>
                     <a data-ajax="false" href="logIn.php" style="font-weight: 100; color: white; font-family: 'Poppins', sans-serif; font-size: 12px; text-decoration:none;">
                         Already have an account?

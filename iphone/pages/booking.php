@@ -93,7 +93,7 @@
                 <p class="p-text" style="color:#fff; margin-bottom:15px; margin-left:-8px; font-size:13px;">Note: By clicking the "Place Booking" button you are submiting your online application and will be re-directed to a form to submit your payment. Once we recieve your payment, we will contact you about your Membership.</p>
                 <p class="p-text" style="color:#fff; margin-left:-13px; font-size:13px;"><input type="checkbox" name="checkbox-0" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agree to the Terms & Conditions</p>
 
-                <button style="opacity: 1; margin-top:30px;">Place Booking</button>
+                <button style="opacity: 1;width: 300px;margin: auto;margin-top: 30px;">Place Booking</button>
                 <center>
                     <a data-ajax="false" href="logIn.php" style="font-weight: 100; color: white; font-family: 'Poppins', sans-serif; font-size: 12px; text-decoration:none;">
                         Already have an account ?

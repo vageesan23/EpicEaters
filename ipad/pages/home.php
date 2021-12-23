@@ -41,7 +41,7 @@
 
     <div role="main" class="ui-content" style="margin-top: -279px;">
         <!-- POI Card-->
-        <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for Dessert items" style="width: fit-content; margin: 215px auto 0 auto;">
+        <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for dessert items" style="width: fit-content; margin: 215px auto 0 auto;">
 
             <div>
                 <h3 style="float: left; font-weight: 800;line-height: 4.5em; ">Recommended</h3>

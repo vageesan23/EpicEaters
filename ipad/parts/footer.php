@@ -304,37 +304,37 @@
             <img class="logo_name" src="../../common/assets/images/logo-footer.png" style="height: 75px; width: 112px;">
 
             <div class="media-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="link-boxes">
             <ul class="box">
                 <li class="link_name">Links</li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="../pages/home.php">Home</a></li>
+                <li><a href="../pages/contactUs.php">Contact</a></li>
+                <li><a href="../pages/about.php">About Us</a></li>
             </ul>
             <ul class="box">
                 <li class="link_name">Services</li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Book Course</a></li>
+                <li><a href="../pages/shop.php">Shop</a></li>
+                <li><a href="../pages/booking.php">Book Course</a></li>
                 <li><a href="#">Scan QR</a></li>
             </ul>
             <ul class="box">
                 <li class="link_name">Other services</li>
-                <li><a href="#">Earn with Us</a></li>
+                <li><a href="../pages/sellWithUs.php">Earn with Us</a></li>
                 <li><a href="#">Chat with Us</a></li>
                 <li><a href="#">Contact with Seller</a></li>
             </ul>
             <ul class="box">
                 <li class="link_name">Contact</li>
-                <li><a href="#">+76 6027 633</a></li>
-                <li><a href="#">+71 8879 887</a></li>
-                <li><a href="#">Epiceaters@gmail.com</a></li>
+                <li><a href="tel:+766027633">+76 6027 633</a></li>
+                <li><a href="tel:+718879887">+71 8879 887</a></li>
+                <li><a href="mailto:epiceaters@gmail.com">Epiceaters@gmail.com</a></li>
             </ul>
         </div>
     </div>
