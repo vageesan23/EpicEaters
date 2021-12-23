@@ -43,7 +43,7 @@
 
             <a data-ajax="false" href="slashItPlay.php">
                 <img src="../../common/assets/images/clicker/letsplay_iPad.png" 
-                    style="width: 20%; margin-top: -78px; margin-left: 70%; position: absolute;">
+                    style="width: 20%; margin-top: -85px; margin-left: 70%; position: absolute;">
                 </a>
 
             <img src="../../common/assets/images/clicker/img-iPad.png" 

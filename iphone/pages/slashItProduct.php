@@ -34,7 +34,7 @@
             </div>
             <center><h3>70%</h3></center>
         </div>
-        <div class="back-box" style="margin-bottom: 20px; font-size: 12px;">
+        <div class="back-box" style="margin-bottom: 20px; margin-left: 10%; border-radius: 0px; font-size: 11px; width:  80%;">
             <center>
                 <a href="#popupBasic" data-rel="popup" data-position-to="window"
                    data-transition="pop"><h3
