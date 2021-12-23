@@ -1,4 +1,11 @@
 <?php include '../parts/head.php' ?>
+<style>
+    @media (max-width: 375px) {
+        .main-part {
+            display: block;
+        }
+    }
+</style>
 <!-- This is store page-->
 <div data-role="page" id="product">
 
@@ -11,85 +18,90 @@
     ?>
     <div role="main" class="ui-content">
 
-        <div class="header-title">
-            <h3>Product</h3>
-            <img alt="page_icon" src="../../common/assets/images/icons/login.png" height="35" width="35">
+        <div class="header-title" style="display: flex;">
+        <span class="iconify" alt="page_icon" data-icon="uil:parcel" data-width="50" data-height="50"></span>
+            <h3 style="margin-top: -3px; margin-bottom: 10px; color: black;">Product</h3>
         </div>
 
-        <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 70%; margin: auto;">
+        <div class="main-part" style="display: inline-flex">
+            <?php echo '<img class="center" src="', $json[$id]['image'], '" style="max-width: 250px; height: 200px; border-radius: 15px; margin-top: 20px; box-shadow: 0 0 20px 0 #343434;">' ?? '' ?>
+            <div class="ui-bar ui-bar-a ui-card" style="height: auto; max-width: 100%; margin: auto; transform: transitionX(-20px;);">
 
-            <span class="flaticon-122-heart fav-icon-card" id="<?php echo $id ?>" onclick="favourite(this)"></span>
-            <?php echo '<img class="center" src="', $json[$id]['image'], '" style="max-width: 120px">' ?? '' ?>
-            <div class="ui-grid-a">
-                <div class="ui-block-a" style="width: 80%">
-                    <p style="font-weight: 200; font-family: 'Poppins';"><?php echo $json[$id]['name'] ?? '' ?> </p>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a" style="width: 100%">
+                    <a href="#viewAR" data-rel="popup" data-position-to="window"
+                       data-transition="pop"><img alt="page_icon" src="../../common/assets/images/icons/ar-1.png" style="height: 75px; width: 75px; margin-left: 320px; margin-top: -20px; margin-bottom: -70px;"></a>
+                    <p style="font-weight: 200; font-family: 'Poppins'; margin-top: 20px;"><?php echo $json[$id]['name'] ?? '' ?> </p>
                     <?php
                     for ($i = 0; $i < 5; $i++) {
                         if ((int)$json[$id]['rating'] <= $i) {
                             echo
-                            '<span class="fa fa-star"></span>';
+                            '<span class="fa fa-star" style="margin-top: 10px;"></span>';
                         } else {
                             echo
-                            '<span class="fa fa-star fa-checked"></span>';
+                            '<span class="fa fa-star fa-checked" style="margin-top: 10px;"></span>';
                         }
                     }
                     ?>
-                    <p class="card-price" style="position: relative">LKR <?php echo $json[$id]['price'] ?? '' ?></p>
-                </div>
-                <div class="ui-block-b" style="width: 20%">
-                    <a href="#viewAR" data-rel="popup" data-position-to="window"
-                       data-transition="pop"><img alt="page_icon" src="../../common/assets/images/icons/ar.png"></a>
+                    <p class="card-price" style="position: relative; margin-top: 20px; color: #63717a;">LKR <?php echo $json[$id]['price'] ?? '' ?></p>
+                    <div class="ui-block-a" style="width:65%">
+                        <div style="margin-top: 1px">
+                            <p style="font-weight: 300;"><?php echo $json[$id]['description'] ?? '' ?></p>
+                            <div data-role="collapsible" data-enhanced="true"
+                                class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
+                                <span class="ui-collapsible-heading ui-collapsible-heading-collapsed" style="margin-top: 10px;
+                                    padding: 0 12px; font-weight: 500;">
+                                    <a data-ajax="false" href="#" class="ui-collapsible-toggle" style="font-weight: 300;">
+                                    Readmore
+                                    </a>
+                                </span>
+
+                                <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                                    <p style="text-align: justify; font-weight: 200;"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
+                                </div>
+            
+                                <div style="display: inline-flex;width: 100%; justify-content: center; margin-left: 55px;">
+                                    <span class="flaticon-122-heart fav-icon-card" id="<?php echo $id ?>"
+                                            onclick="favourite(this)" style="margin-top: 15px; margin-right: 25px;" ></span>
+                                    <span><a href="#" onclick="collectchat.open()">
+                                            <img src="../../common/assets/images/icons/chat.png" alt="chat" style="height: 40px; margin-top: 15px; mnargin-left:35px; margin-right: 25px;">
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="#cart-feedback" data-rel="popup" data-position-to="window" data-transition="pop">
+                                            <img src="../../common/assets/images/icons/product-cart.png" alt="cart" id="addToCart" style="height: 40px; margin-top: 15px; margin-left: 15px; margin-right: 25px;">
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a style="margin: 10px">
+                                            <button id="buyNow" style="margin-left: 15px; margin-top: -15px; width: 150px; border-radius: 30px; font-family: 'Poppins'; font-size: 18px;">Buy</button>
+                                        </a>
+                                    </span>
+                                </div>
                 </div>
             </div>
         </div>
+                <!-- </div>
+                <div class="ui-block-b" style="width: 20%"> -->
+                    
+                </div>
+            </div>
+        </div>
+                </div>
 
         <!-- text area -->
-        <div class="ui-grid-a" style="padding: 12px;">
-            <div class="ui-block-a" style="width:65%">
-                <div style="margin-top: 41px">
-                    <p><?php echo $json[$id]['description'] ?? '' ?></p>
-                </div>
-            </div>
 
-            <div class="ui-block-b" style="width: 35%">
-                <div>
-                    <p>
-                    <center style="margin-bottom: -15px">Have a question?</center>
-                    </p>
-                    <a href="#" onclick="collectchat.open()">
-                        <button style="margin-bottom: 5px; font-size: 12px">Chat Now</button>
-                    </a></div>
-            </div>
-        </div>
-        <div data-role="collapsible" data-enhanced="true"
-             class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
-                        <span class="ui-collapsible-heading ui-collapsible-heading-collapsed" style="margin-top: -30px;
-                         padding: 0 12px;">
-                            <a data-ajax="false" href="#" class="ui-collapsible-toggle">
-                            Readmore
-                            </a>
-                        </span>
-
-            <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
-                <p style="text-align: justify"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
-            </div>
-        </div>
 
         <!-- BUTTONS -->
-        <div style="display: inline-flex;width: 100%; justify-content: center;">
-            <a style="margin: 10px;" href="#cart-feedback" data-rel="popup" data-position-to="window"
-               data-transition="pop">
-                <button id="addToCart">Add to Cart</button>
-            </a>
-            <button id="buyNow" style="margin: 15px">Buy Now</button>
-        </div>
+        
 
         <div class="ui-content" style="text-align: center; padding: 20px;" data-role="popup" id="cart-feedback">
             <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/checked-green.png">
         </div>
 
+        
         <b><span>Similar Items</span></b>
-        <div class="ui-grid-a">
+        <div class="ui-grid-a" style="width: 100%;">
             <?php
             for ($i = $id + 1; $i < $id + 3; $i++) {
                 if ($i == 0) {
