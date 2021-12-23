@@ -23,10 +23,10 @@
             <h3 style="margin-top: -3px; margin-bottom: 10px; color: black;">Product</h3>
         </div>
 
-        <div class="main-part" style="display: inline-flex">
-            <?php echo '<img class="center" src="', $json[$id]['image'], '" style="max-width: 250px; height: 200px; border-radius: 15px; margin-top: 20px; box-shadow: 0 0 20px 0 #343434;">' ?? '' ?>
-            <div class="ui-bar ui-bar-a ui-card" style="height: auto; max-width: 100%; margin: auto; transform: transitionX(-20px;);">
-
+        <div class="main-part" style="width: 100%; display: inline-flex;">
+        <?php echo '<img class="center" src="', $json[$id]['image'], '" style="max-width: 330px; height: 200px; border-radius: 15px; transform: translateX(5px); margin-top: 60px; box-shadow: 0 0 20px 0 #343434; text-align: left;">' ?? '' ?>
+            <div class="ui-bar ui-bar-a ui-card" style="height: auto; max-width: 100%; margin: auto;">
+            
                 <div class="ui-grid-a">
                     <div class="ui-block-a" style="width: 100%">
                     <a href="#viewAR" data-rel="popup" data-position-to="window"
@@ -99,10 +99,10 @@
             <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/checked-green.png">
         </div>
 
-        
-        <b><span>Similar Items</span></b>
-        <div class="ui-grid-a" style="width: 100%;">
-            <?php
+        <div class="ui-grid-a" style="margin-top: 50px;">
+        <!-- <b><span>Similar Items</span></b> -->
+        <div class="ui-block-a" style="width: 50%;">
+            <!-- <?php
             for ($i = $id + 1; $i < $id + 3; $i++) {
                 if ($i == 0) {
                     $column = 'a';
@@ -115,8 +115,33 @@
                 $key = $i;
                 include '../parts/poiCard.php';
             }
-            ?>
+            ?> -->
+            <a target="_parent" href="product.php?id=<?php echo $json[$id + 1]['id'] ?>">
+                            <div class="ui-bar ui-bar-a ui-card"
+                                 style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
+                                
+                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 1]['image'], '" >' ?? '' ?>
+                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 1]['name'] ?? '' ?> </p>
+                                <p class="card-price"
+                                   style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                    LKR <?php echo $json[$id + 1]['price'] ?? '' ?></p>
+                            </div>
+                        </a>
         </div>
+        <div class="ui-block-b" style="width: 50%;">
+        <a target="_parent" href="product.php?id=<?php echo $json[$id + 2]['id'] ?>">
+                            <div class="ui-bar ui-bar-a ui-card"
+                                 style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
+                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
+                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
+                                <p class="card-price"
+                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                        LKR <?php echo $json[$id + 2]['price'] ?? '' ?></p>
+                            </div>
+                        </a>
+    </div>
+        </div>
+        
     </div>
     <?php include '../parts/comments.php' ?>
 
