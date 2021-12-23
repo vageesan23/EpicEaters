@@ -40,12 +40,29 @@
                             style="color: #EF005A;">Invite your friends to get the offer prices</h3></a>
             </center>
         </div>
-        <div style="width: 400px; padding: 30px; text-align: center" data-role="popup" id="popupBasic">
-            <h2>Share with Social Media</h2>
-            <div class="share-social"><a style="color: white;" href="#" class="fa fa-facebook"></a>
-                <a style="color: white;" href="#" class="fa fa-twitter"></a>
-                <a style="color: white;" href="#" class="fa fa-instagram"></a>
-                <a style="color: white;" href="#" class="fa fa-snapchat-ghost"></a></div>
+        <div style="width: 600px; padding: 30px; margin: 5px; text-align: center" data-role="popup" id="popupBasic">
+            <h2>Invite your friends to get the offer price</h2>
+            <div class="share-social">
+                <img src="../../common/assets/images/social-icons/link.png" 
+                    style="color: white;" href="#";>
+                    <!-- <p>Copy link</p> -->
+                <img src="../../common/assets/images/social-icons/facebook.png" 
+                    style="color: white;" href="#">
+                    <!-- <p>Facebook</p> -->
+                <img src="../../common/assets/images/social-icons/twitter.png" 
+                    style="color: white;" href="#">
+                    <!-- <p>Twitter</p> -->
+                <img src="../../common/assets/images/social-icons/instagram.png" 
+                    style="color: white;" href="#">
+                    <!-- <p>Instagram</p> -->
+                <img src="../../common/assets/images/social-icons/whatsapp.png" 
+                    style="color: white;" href="#">
+                    <!-- <p>Whatsapp</p> -->
+                <img src="../../common/assets/images/social-icons/more.png" 
+                    style="color: white;" href="#">
+                    <!-- <p>Other</p> -->
+                
+            </div>
         </div>
     </div>
         <script>
