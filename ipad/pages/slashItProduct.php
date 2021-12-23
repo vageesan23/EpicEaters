@@ -14,7 +14,7 @@
         </center>
         <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 70%; margin: auto;">
 
-            <img class="center" src="../images/cat.png" style="max-width: 120px">
+            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 120px">
             <div class="ui-grid-a">
                 <div class="ui-block-a" style="width: 80%">
                     <p style="font-weight: 200; font-family: 'Poppins';"><?php echo $json[$id]['name'] ?? '' ?> </p>
@@ -40,26 +40,26 @@
                             style="color: #EF005A;">Invite your friends to get the offer prices</h3></a>
             </center>
         </div>
-        <div style="width: 600px; padding: 30px; margin: 5px; text-align: center" data-role="popup" id="popupBasic">
+        <div style="width: 600px; padding: 30px; text-align: center"  data-role="popup" id="popupBasic">
             <h2>Invite your friends to get the offer price</h2>
             <div class="share-social">
                 <img src="../../common/assets/images/social-icons/link.png" 
-                    style="color: white;" href="#";>
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#";>
                     <!-- <p>Copy link</p> -->
                 <img src="../../common/assets/images/social-icons/facebook.png" 
-                    style="color: white;" href="#">
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
                     <!-- <p>Facebook</p> -->
                 <img src="../../common/assets/images/social-icons/twitter.png" 
-                    style="color: white;" href="#">
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
                     <!-- <p>Twitter</p> -->
                 <img src="../../common/assets/images/social-icons/instagram.png" 
-                    style="color: white;" href="#">
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
                     <!-- <p>Instagram</p> -->
                 <img src="../../common/assets/images/social-icons/whatsapp.png" 
-                    style="color: white;" href="#">
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
                     <!-- <p>Whatsapp</p> -->
                 <img src="../../common/assets/images/social-icons/more.png" 
-                    style="color: white;" href="#">
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
                     <!-- <p>Other</p> -->
                 
             </div>
@@ -70,6 +70,7 @@
                 $('#popupBasic').popup('reposition', 'positionTo: window');
             });
         </script>
+        <?php include '../parts/chatbot.php' ?>
         <?php include '../parts/bottomNavbar.php' ?>
         <?php include '../parts/footer.php' ?>
     </div>

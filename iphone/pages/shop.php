@@ -38,6 +38,7 @@
             }
             ?>
         </div>
+        <?php include '../parts/chatbot.php' ?>
         <?php include '../parts/bottomNavbar.php' ?>
         <?php include '../parts/footer.php' ?>
     </div>
