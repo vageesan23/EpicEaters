@@ -34,12 +34,11 @@
             </div>
             <center><h3>70%</h3></center>
         </div>
-        <div class="back-box" style="margin-bottom: 20px">
+        <div class="back-box" style="margin-bottom: 20px; font-size: 12px;">
             <center>
                 <a href="#popupBasic" data-rel="popup" data-position-to="window"
                    data-transition="pop"><h3
-                            style="color: #1797F3;">Invite Friends
-                        to slash prices</h3></a>
+                            style="color: #EF005A;">Invite your friends to get the offer prices</h3></a>
             </center>
         </div>
         <div style="width: 200px; text-align: center" data-role="popup" id="popupBasic">
