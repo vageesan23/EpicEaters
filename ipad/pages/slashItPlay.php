@@ -19,11 +19,16 @@
             $data = $GLOBALS['db'];
             $json = json_decode($data, true);
 
+
             foreach ($json as $key => $item) {
-                if ($key % 2 == 0) {
+                if ($key % 4 == 0) {
                     $column = 'a';
-                } else {
+                } else if ( $key % 3 == 0) {
                     $column = 'b';
+                } else if ( $key % 2 == 0) {
+                    $column = 'c';
+                } else {
+                    $column = 'd';
                 }
                 $name = $item['name'];
                 $price = $item['price'];

@@ -9,10 +9,10 @@
             <img alt="page_icon" src="../../common/assets/images/icons/shop.png" height="35" width="35">
         </div>
         <!-- POI Card-->
-        <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for DIY products"
+        <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for food Products"
              style="padding: 15px; width: fit-content; margin: 10px auto 100px auto;">
             <div>
-                <h3 style="float: left; font-weight: 800">DYI Products</h3>
+                <!-- <h3 style="float: left; font-weight: 800">DYI Products</h3> -->
                 <button onclick=sort()><?php if ($_COOKIE['sortDb'] == 'db') {
                         echo "Sort A-Z";
                     } else echo "Reset Sort" ?></button>

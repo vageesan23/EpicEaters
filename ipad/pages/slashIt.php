@@ -12,7 +12,24 @@
         .ui-content1 {
             margin-bottom: 0px;
         }
+
+        @media (max-width: 768px) {
+            .doyouknow {
+                margin-left: 62%  !important;
+                width: 35%  !important;
+                margin-top: -240px  !important;
+                position: absolute  !important;
+            }
+        }
+        .doyouknow{
+            /* margin-left: -830px; */
+            margin-left: 60%;
+            width: 35%;
+            margin-top: -315px;
+            position: absolute;
+        }
     </style>
+    
 
     <div   class="ui-content1" style="padding: 0%;">
         <!-- <div class="header-title" style="margin-bottom: 10px;">
@@ -22,12 +39,11 @@
         <div>
             <img src="../../common/assets/images/clicker/clickerforiPad.jpg" 
                 style="width: 100%;">
-            <img src="../../common/assets/images/clicker/doyouknow-iPad.png" 
-                style="width: 35%; margin-left: 63%; margin-top: -250px;">
+            <img class="doyouknow" src="../../common/assets/images/clicker/doyouknow-iPad.png">
 
             <a data-ajax="false" href="slashItPlay.php">
-                <img src="../../common/assets/images/clicker/letsplay-iPad.png" 
-                    style="width: 20%; margin-top: -120px; margin-left: 74%;">
+                <img src="../../common/assets/images/clicker/letsplay_iPad.png" 
+                    style="width: 20%; margin-top: -78px; margin-left: 70%; position: absolute;">
                 </a>
 
             <img src="../../common/assets/images/clicker/img-iPad.png" 
