@@ -15,7 +15,7 @@
         <div class="m" style ="display:flex">
         <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 90%; margin-top: 50px; margin-left: 50px;">
 
-            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px">
+            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 30px;">
            
         </div>
         <p style="font-weight: bold; font-size: 22px; font-family: 'Poppins'; margin: 50px 0px 0px 150px;">

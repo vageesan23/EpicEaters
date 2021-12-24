@@ -1,5 +1,37 @@
 <?php include '../parts/head.php' ?>
 <!-- This is slash it page-->
+<!-- <style>
+    .ui-filterable {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .ui-content {
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        max-width: none;
+        font-size: 15px;
+        margin-top: -16px;
+    }
+
+    .card-price {
+        font-size: 14px !important;
+    }
+
+    @media (max-width: 376px) {
+        .card-title {
+            font-size: 14px !important;
+            margin-top: -2px !important;
+        }
+
+        .card-price {
+            font-size: 13px !important;
+
+        }
+    }
+</style> -->
 <div data-role="page" id="slashit">
     <?php include '../parts/header.php' ?>
     <?php
@@ -14,15 +46,15 @@
         </center>
 
         <div class="m" style ="display:flex">
-        <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 90%; margin-top: 50px; margin-left: 10px;">
+        <div class="ui-bar ui-bar-a ui-card" style="height: unset;  margin-top: 50px; margin-left: 10px;">
 
-            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px">
+            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 25px;">
            
         </div>
-        <p style="font-weight: bold; font-size: 10x; font-family: 'Poppins'; margin: 50px 0px 0px 20px;">
+        <p style="font-weight: bold; font-size: 12px; font-family: 'Poppins'; margin: 50px 0px 0px 40px;">
             <?php echo $json[$id]['name'] ?? '' ?></p>
 
-        <div class="progress-wrapper" style="margin:100px 0px 0px -180px; width:250px; ">
+        <div class="progress-wrapper" style="margin: 30% 0% 0% -40% ; width:80%; ">
             <div class="progress-bar" style="background-color: #C4C4C4; margin:0px 0px 0px 50px; width: 70%;">
                 <span class="progress-bar-fill" style="width: 70%; background-color: #EF005A;
                 "></span>
