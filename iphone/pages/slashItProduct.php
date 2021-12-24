@@ -72,7 +72,7 @@
         <div class="ui-bar ui-bar-a ui-card" style="height: unset;  margin-top: 50px; margin-left: 10px;">
             <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 25px;">           
         </div>
-        
+
         <p class="dname" style="font-weight: bold; font-family: 'Poppins';">
             <?php echo $json[$id]['name'] ?? '' ?></p>
 
@@ -122,8 +122,7 @@
                     <!-- <p>Whatsapp</p> -->
                 <img src="../../common/assets/images/social-icons/more.png" 
                     style="color: white; margin: 12px; height: 96px; width: 80px;" href="#">
-                    <!-- <p>Other</p> -->
-                
+                    <!-- <p>Other</p> -->                
             </div>
         </div>
     </div>
