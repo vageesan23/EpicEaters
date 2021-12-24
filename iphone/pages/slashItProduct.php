@@ -1,44 +1,67 @@
 <?php include '../parts/head.php' ?>
-<!-- This is slash it page-->
-<!-- <style>
-    .ui-filterable {
-        position: relative;
-        bottom: 4px;
+
+<!-- This is Clicker Play page-->
+
+<style>
+    .dname {
+        /* max-width: none; */
+        font-size: 18px;
+        margin: 60px 0px 0px 125px;
+        white-space: nowrap;
     }
 
-    .ui-content {
-        margin-bottom: 30px;
+    .dbar {
+        margin: -120px 0px 0px 80px;
     }
 
-    .card-title {
-        max-width: none;
+    .dprice {
+        margin: -12px 0px 0px 30px;
         font-size: 15px;
-        margin-top: -16px;
+        white-space: nowrap;
     }
 
-    .card-price {
-        font-size: 14px !important;
+    .doffprice {
+        margin: 0px 0px 0px 70px;
+        font-size: 25px;
+        white-space: nowrap;
     }
 
     @media (max-width: 376px) {
-        .card-title {
+        .dname {
             font-size: 14px !important;
-            margin-top: -2px !important;
+            margin: 50px 0px  0px  50px  !important;
+            white-space: nowrap !important;
         }
 
-        .card-price {
-            font-size: 13px !important;
+        .dbar {
+            margin: -22px 0px 0px 7px !important;
 
+        }
+
+        .dprice {
+            margin: -18px 0px 0px -120px !important;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        .doffprice {
+            margin: 8px 0px 0px 10px !important;
+            font-size: 20px !important;
+            white-space: nowrap;
+            padding-left: 5px;
         }
     }
-</style> -->
+</style>
+
 <div data-role="page" id="slashit">
     <?php include '../parts/header.php' ?>
+
     <?php
     $data = $GLOBALS['db'];
     $json = json_decode($data, true);
     $id = $_GET['id'];
     ?>
+
     <div role="main" class="ui-content">
         <center>
             <img src="../../common/assets/images/clicker/clickerProduct-iPhone.jpg"
@@ -47,26 +70,24 @@
 
         <div class="m" style ="display:flex">
         <div class="ui-bar ui-bar-a ui-card" style="height: unset;  margin-top: 50px; margin-left: 10px;">
-
-            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 25px;">
-           
+            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 25px;">           
         </div>
-        <p style="font-weight: bold; font-size: 12px; font-family: 'Poppins'; margin: 50px 0px 0px 40px;">
+        
+        <p class="dname" style="font-weight: bold; font-family: 'Poppins';">
             <?php echo $json[$id]['name'] ?? '' ?></p>
 
         <div class="progress-wrapper" style="margin: 30% 0% 0% -40% ; width:80%; ">
-            <div class="progress-bar" style="background-color: #C4C4C4; margin:0px 0px 0px 50px; width: 70%;">
+            <div class="progress-bar dbar" style="background-color: #C4C4C4;">
                 <span class="progress-bar-fill" style="width: 70%; background-color: #EF005A;
                 "></span>
             </div>
             <div class="ui-grid-a">
                 <div class="ui-block-a" style="width: 15%; margin:40px 0px 0px 150px">
                     <div style="display: flex;">
-                        <p class="card-price"
-                           style="position: relative; color: #63717A; text-decoration: line-through; font-size: 15px; margin-left: -50px;">LKR <?php echo $json[$id]['price'] ?? '' ?></p>
-                        <p class="card-price"
-                           style="margin-left: 20px; position: relative; color: #63717A; font-size: 25px; margin: 25px 0px 0px -100px;">
-                           LKR <?php echo $json[$id]['price'] * 0.7 ?? '' ?></p>
+                        <p class="card-price dprice"
+                           style="position: relative; color: #63717A; text-decoration: line-through;">LKR <?php echo $json[$id]['price'] ?? '' ?></p>
+                        <p class="card-price doffprice"
+                           style="position: relative; color: #63717A;">LKR <?php echo $json[$id]['price'] * 0.7 ?? '' ?></p>
                     </div>
                 </div>
             </div>
@@ -80,6 +101,7 @@
                             style="color: #EF005A; font-size: 12px;">Invite your friends to get the offer prices</h3></a>
             </center>
         </div>
+
         <div style="width: 300px; text-align: center; font-size: 12px;" data-role="popup" id="popupBasic">
             <h2>Invite your friends to get the offer price</h2>
             <div class="share-social">

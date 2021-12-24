@@ -1,22 +1,61 @@
 <?php include '../parts/head.php' ?>
+
 <!-- This is shop page-->
+
+<style>
+    .ui-filterable {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .ui-content {
+        margin-bottom: 30px;
+    }
+
+    .card-title {
+        max-width: none;
+        font-size: 15px;
+        margin-top: -16px;
+    }
+
+    .card-price {
+        font-size: 14px !important;
+    }
+
+    @media (max-width: 376px) {
+        .card-title {
+            font-size: 14px !important;
+            margin-top: -2px !important;
+        }
+
+        .card-price {
+            font-size: 13px !important;
+
+        }
+    }
+</style>
+
 <div data-role="page" id="shop">
     <?php include '../parts/header.php' ?>
 
     <div role="main" class="ui-content" style="margin: 0; padding: 0; min-height: 85vh;">
-        <div class="header-title" style="margin-bottom: 10px;">
-            <h3>Shop</h3>
-            <img alt="page_icon" src="../../common/assets/images/icons/shop.png" height="35" width="35">
+    <div class="header-title" style="display: flex;">
+        <span class="iconify" alt="page_icon" data-icon="fluent:building-shop-20-filled" data-width="50" data-height="50"></span>
+            <h3 style="margin-top: -3px; margin-bottom: 10px; color: black;">Shop</h3>
         </div>
+
         <!-- POI Card-->
         <div class="ui-grid-d search" data-filter="true" data-filter-placeholder="Search for food Products"
              style="padding: 15px; width: fit-content; margin: 10px auto 100px auto;">
+        
+             <!-- This is the sort fumction -->
             <div>
                 <!-- <h3 style="float: left; font-weight: 800">DYI Products</h3> -->
-                <button onclick=sort()><?php if ($_COOKIE['sortDb'] == 'db') {
+                <!-- <button onclick=sort()><?php if ($_COOKIE['sortDb'] == 'db') {
                         echo "Sort A-Z";
-                    } else echo "Reset Sort" ?></button>
+                    } else echo "Reset Sort" ?></button> -->
             </div>
+
             <?php
             $data = $GLOBALS[$_COOKIE['sortDb']];
             $json = json_decode($data, true);

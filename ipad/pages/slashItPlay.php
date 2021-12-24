@@ -1,13 +1,10 @@
 <?php include '../parts/head.php' ?>
-<!-- This is slash it page-->
+
+<!-- This is Clicker Select product page-->
+
 <div data-role="page" id="slashit">
     <?php include '../parts/header.php' ?>
-    <!-- <style>
-        .ui-content1 {
-            margin-bottom: 0px;
-        }
-    </style> -->
-
+    
     <div role="main" class="ui-content">
         <center>
             <img src="../../common/assets/images/clicker/clickerProduct-iPad.jpg"

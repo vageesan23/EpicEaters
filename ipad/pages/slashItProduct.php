@@ -1,17 +1,22 @@
 <?php include '../parts/head.php' ?>
-<!-- This is slash it page-->
+
+<!-- This is Clicker Play page-->
+
 <div data-role="page" id="slashit">
     <?php include '../parts/header.php' ?>
+
     <?php
     $data = $GLOBALS['db'];
     $json = json_decode($data, true);
     $id = $_GET['id'];
     ?>
+
     <div role="main" class="ui-content">
         <center>
             <img src="../../common/assets/images/clicker/clickerProduct-iPad.jpg"
                  style="margin: -16px 0px 0px -16px; width: 105%;">
         </center>
+        
         <div class="m" style ="display:flex">
         <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 90%; margin-top: 50px; margin-left: 50px;">
 
@@ -48,6 +53,7 @@
                             style="color: #EF005A;">Invite your friends to get the offer prices</h3></a>
             </center>
         </div>
+
         <div style="width: 600px; padding: 30px; text-align: center"  data-role="popup" id="popupBasic">
             <h2>Invite your friends to get the offer price</h2>
             <div class="share-social">

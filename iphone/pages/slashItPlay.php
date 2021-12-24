@@ -1,5 +1,7 @@
 <?php include '../parts/head.php' ?>
-<!-- This is slash it page-->
+
+<!-- This is Clicker Select product page-->
+
 <style>
     .ui-filterable {
         position: relative;
