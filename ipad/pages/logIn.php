@@ -13,7 +13,7 @@
             </div>
             <form style="color: #1797F3; height: 750px; width: 600px">
                 
-                <img src="../../ipad/images/logo(footer).png" alt="login-img" style="height: 300px; display: block; margin: auto; background-color: #000;">
+                <img src="../../common/assets/images/logo_footer_login.png" alt="login-img" style="height: 300px; display: block; margin: auto; background-color: #000;">
                 <input type="text" name="username" id="username" value="" placeholder="Username/ E-mail" style="box-sizing: border-box; border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-top: 50px; margin-bottom: 50px; background-color: transparent;">
                 <input type="password" name="password" id="password" value="" placeholder="Password" style="border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-bottom: 10px;">
                 <input type="checkbox" value="rememberMe" id="rememberMe">

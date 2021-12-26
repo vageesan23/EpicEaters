@@ -1,8 +1,208 @@
 <?php include '../parts/head.php' ?>
 <style>
-    @media (max-width: 375px) {
-        .main-part {
-            display: block;
+    .page-icon {
+        margin-top: 10px;
+    }
+
+    .main-part .main-card {
+        height: auto; 
+        max-width: 650px; 
+        margin: auto; 
+        position: relative; 
+        display: flex; 
+        transform: translateX(40px);
+    }
+    
+    .main-part .main-img {
+        max-width: 270px; 
+        height: 220px; 
+        border-radius: 15px; 
+        transform: translateX(-60px); 
+        object-fit: cover; 
+        overflow: auto;
+        margin: 45px 0px 0px 0px; 
+        box-shadow: 0 0 20px 0 #343434; 
+        text-align: left;
+        background-size: cover;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .ar-view img {
+        height: 75px; 
+        width: 75px; 
+        margin-left: 240px; 
+        margin-top: -30px; 
+        margin-bottom: -50px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .main-pr-name {
+        font-weight: 200; 
+        font-family: 'Poppins'; 
+        font-size: 18px; 
+        margin-top: 20px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .rating {
+        margin-top: 10px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .rating-checked {
+        margin-top: 10px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .main-pr-price {
+        position: relative;
+        margin-top: 20px;
+        color: #63717a;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .heart-icon {
+        margin-top: 15px; 
+        margin-right: 25px; 
+        height: 30px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .chat-icon {
+        height: 30px; 
+        margin-top: 15px; 
+        margin-left:2px; 
+        margin-right: 20px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .cart-icon {
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 25px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .buy-btn {
+        margin-left: 15px;
+        margin-top: -15px;
+        width: 75px;
+        border-radius: 30px;
+        font-family: 'Poppins';
+        font-size: 18px;
+    }
+
+    .sub-img {
+        height: auto;
+        width: 25%;
+    }
+
+    .sub-name {
+        font-weight: 200;
+        font-family: 'Poppins';
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .sub-price {
+        position: relative;
+        font-size: 20px;
+        color: #63717a;
+        margin-top: 15px;
+    }
+
+    @media (max-width: 400px) {
+        .main-part .main-card {
+            padding: 1px;
+            height: 280px; 
+            max-width: 250px; 
+            margin: auto; 
+            position: relative; 
+            display: flex; 
+            transform: translateX(40px);
+        }
+
+        .main-part .center {
+            width: 200px;
+            height: 200px;
+            transform: translateX(-30px);
+        }
+        .main-part .ui-grid-a .ui-block-a .ar-view img {
+            height: 50px; 
+            width: 50px; 
+            margin-left: 90px; 
+            margin-top: -150px; 
+            margin-bottom: -35px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .main-pr-name {
+            font-weight: 200; 
+            font-family: 'Poppins'; 
+            font-size: 16px; 
+            margin-top: 20px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .rating {
+            margin-top: 5px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .rating-checked {
+            margin-top: 5px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .main-pr-price {
+            position: relative;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #63717a;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .main-desc {
+            font-size: 11px;
+            width: 100%;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .read-more {
+            font-size: 12px;
+            margin-left: -10px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .heart-icon {
+            margin-top: 15px; 
+            margin-left: 10px;
+            margin-right: 2px; 
+            height: 15px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .chat-icon {
+            height: 25px; 
+            margin-top: 15px; 
+            margin-left: 2px; 
+            margin-right: 2px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .cart-icon {
+            height: 25px;
+            margin-top: 15px;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .buy-btn {
+            margin-left: 2px;
+            margin-top: -10px;
+            width: 50px;
+            border-radius: 30px;
+            font-family: 'Poppins';
+            font-size: 12px;
+        }
+
+        .sub-name {
+            font-size: 15px;
+        }
+
+        .sub-price {
+            font-size: 13px;
+        }
+
+        .similar-product {
+            width: 100%;
+        }
+
+        .similar-product .ui-card {
+            display: inline-flex;
         }
     }
 </style>
@@ -19,37 +219,38 @@
     <div role="main" class="ui-content">
 
         <div class="header-title" style="display: flex;">
-        <span class="iconify" alt="page_icon" data-icon="uil:parcel" data-width="50" data-height="50"></span>
+        <span class="iconify page-icon" alt="page_icon" data-icon="uil:parcel" data-width="30" data-height="30"></span>
             <h3 style="margin-top: -3px; margin-bottom: 10px; color: black;">Product</h3>
         </div>
 
-        <div class="main-part" style="width: 100%; display: inline-flex;">
-        <?php echo '<img class="center" src="', $json[$id]['image'], '" style="max-width: 330px; height: 200px; border-radius: 15px; transform: translateX(5px); margin-top: 60px; box-shadow: 0 0 20px 0 #343434; text-align: left;">' ?? '' ?>
-            <div class="ui-bar ui-bar-a ui-card" style="height: auto; max-width: 100%; margin: auto;">
+        <div class="main-part" style="width: 100%;">
+            <div class="ui-bar ui-bar-a ui-card main-card">
+
+            <?php echo '<img class="center main-img" src="', $json[$id]['image'], '">' ?? '' ?>
             
                 <div class="ui-grid-a">
-                    <div class="ui-block-a" style="width: 100%">
+                    <div class="ui-block-a main-content" style="width: 100%">
                     <a href="#viewAR" data-rel="popup" data-position-to="window"
-                       data-transition="pop"><img alt="page_icon" src="../../common/assets/images/icons/ar-1.png" style="height: 75px; width: 75px; margin-left: 320px; margin-top: -20px; margin-bottom: -70px;"></a>
-                    <p style="font-weight: 200; font-family: 'Poppins'; margin-top: 20px;"><?php echo $json[$id]['name'] ?? '' ?> </p>
+                       data-transition="pop" class="ar-view"><img alt="page_icon" src="../../common/assets/images/icons/ar-1.png"></a>
+                    <p class="main-pr-name"><?php echo $json[$id]['name'] ?? '' ?> </p>
                     <?php
                     for ($i = 0; $i < 5; $i++) {
                         if ((int)$json[$id]['rating'] <= $i) {
                             echo
-                            '<span class="fa fa-star" style="margin-top: 10px;"></span>';
+                            '<span class="fa fa-star rating"></span>';
                         } else {
                             echo
-                            '<span class="fa fa-star fa-checked" style="margin-top: 10px;"></span>';
+                            '<span class="fa fa-star fa-checked rating-checked"></span>';
                         }
                     }
                     ?>
-                    <p class="card-price" style="position: relative; margin-top: 20px; color: #63717a;">LKR <?php echo $json[$id]['price'] ?? '' ?></p>
-                    <div class="ui-block-a" style="width:65%">
+                    <p class="card-price main-pr-price">LKR <?php echo $json[$id]['price'] ?? '' ?></p>
+                    <div class="ui-block-a" style="width:80%">
                         <div style="margin-top: 1px">
-                            <p style="font-weight: 300;"><?php echo $json[$id]['description'] ?? '' ?></p>
+                            <p class="main-desc" style="font-weight: 300;"><?php echo $json[$id]['description'] ?? '' ?></p>
                             <div data-role="collapsible" data-enhanced="true"
                                 class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
-                                <span class="ui-collapsible-heading ui-collapsible-heading-collapsed" style="margin-top: 10px;
+                                <span class="ui-collapsible-heading ui-collapsible-heading-collapsed read-more" style="margin-top: 10px;
                                     padding: 0 12px; font-weight: 500;">
                                     <a data-ajax="false" href="#" class="ui-collapsible-toggle" style="font-weight: 300;">
                                     Readmore
@@ -57,24 +258,24 @@
                                 </span>
 
                                 <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
-                                    <p style="text-align: justify; font-weight: 200;"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
+                                    <p style="text-align: justify; font-weight: 200; position: relative"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
                                 </div>
             
-                                <div style="display: inline-flex;width: 100%; justify-content: center; margin-left: 55px;">
-                                    <span class="flaticon-122-heart fav-icon-card" id="<?php echo $id ?>"
-                                            onclick="favourite(this)" style="margin-top: 15px; margin-right: 25px;" ></span>
+                                <div style="display: inline-flex;width: 100%; justify-content: center; margin-left: 10px;">
+                                    <span class="flaticon-122-heart fav-icon-card heart-icon" id="<?php echo $id ?>"
+                                            onclick="favourite(this)" ></span>
                                     <span><a href="#" onclick="collectchat.open()">
-                                            <img src="../../common/assets/images/icons/chat.png" alt="chat" style="height: 40px; margin-top: 15px; mnargin-left:35px; margin-right: 25px;">
+                                            <img src="../../common/assets/images/icons/chat.png" alt="chat" class="chat-icon">
                                         </a>
                                     </span>
                                     <span>
                                         <a href="#cart-feedback" data-rel="popup" data-position-to="window" data-transition="pop">
-                                            <img src="../../common/assets/images/icons/product-cart.png" alt="cart" id="addToCart" style="height: 40px; margin-top: 15px; margin-left: 15px; margin-right: 25px;">
+                                            <img src="../../common/assets/images/icons/product-cart.png" alt="cart" id="addToCart" class="cart-icon">
                                         </a>
                                     </span>
                                     <span>
                                         <a style="margin: 10px">
-                                            <button id="buyNow" style="margin-left: 15px; margin-top: -15px; width: 150px; border-radius: 30px; font-family: 'Poppins'; font-size: 18px;">Buy</button>
+                                            <button id="buyNow" class="buy-btn">Buy</button>
                                         </a>
                                     </span>
                                 </div>
@@ -98,45 +299,33 @@
         <div class="ui-content" style="text-align: center; padding: 20px;" data-role="popup" id="cart-feedback">
             <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/icons/green-tick.png">
         </div>
-
-        <div class="ui-grid-a" style="margin-top: 50px;">
-        <!-- <b><span>Similar Items</span></b> -->
-        <div class="ui-block-a" style="width: 50%;">
-            <!-- <?php
-            for ($i = $id + 1; $i < $id + 3; $i++) {
-                if ($i == 0) {
-                    $column = 'a';
-                } else {
-                    $column = 'b';
-                }
-                $name = $json[$i]['name'];
-                $price = $json[$i]['price'];
-                $image = $json[$i]['image'];
-                $key = $i;
-                include '../parts/poiCard.php';
-            }
-            ?> -->
+        <b><span style="margin-left: 25px;  margin-top: 100px;">Similar Items</span></b>
+        <div class="ui-grid-a" style="margin-top: 20px;">
+        
+        <div class="ui-block-a similar-product" style="width: 50%;">
             <a target="_parent" href="product.php?id=<?php echo $json[$id + 1]['id'] ?>">
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
                                 
-                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 1]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 1]['name'] ?? '' ?> </p>
-                                <p class="card-price"
-                                   style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                <?php echo '<img class="center sub-img" src="', $json[$id + 1]['image'], '" >' ?? '' ?>
+                                <div>
+                                <p class="sub-name"><?php echo $json[$id + 1]['name'] ?? '' ?> </p>
+                                <p class="card-price sub-price">
                                     LKR <?php echo $json[$id + 1]['price'] ?? '' ?></p>
+                                    </div>
                             </div>
                         </a>
         </div>
-        <div class="ui-block-b" style="width: 50%;">
+        <div class="ui-block-b similar-product" style="width: 50%;">
         <a target="_parent" href="product.php?id=<?php echo $json[$id + 2]['id'] ?>">
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
-                                <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                <?php echo '<img class="center sub-img" style="height: auto; width: 25%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
+                                <div>
+                                <p class="sub-name"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
+                                <p class="card-price sub-price">
                                         LKR <?php echo $json[$id + 2]['price'] ?? '' ?></p>
+                                        </div>
                             </div>
                         </a>
     </div>
