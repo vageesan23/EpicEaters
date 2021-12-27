@@ -1,8 +1,5 @@
-# Made-with-shanga
-# Testing for Shanan
-# Made-with-food
-# testing-04
-# welcome to pravin
+Welcome to EpicEaters
+
 A simple e-commerce web application using J-Query Mobile
 
 <p align="center">
@@ -14,31 +11,31 @@ A simple e-commerce web application using J-Query Mobile
 <table align="center">
 <tr>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/gigara>
-            <img src=https://avatars.githubusercontent.com/u/16335290?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=BobAnkh/>
+        <a href=https://github.com/vageesan23>
+            <img src=https://avatars.githubusercontent.com/u/60152176?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=BobAnkh/>
             <br />
-            <sub style="font-size:14px"><b>Chamupathi Gigara</b></sub>
+            <sub style="font-size:14px"><b>Pavalarajan Vageesan</b></sub>
         </a>
     </td>
     <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/vikumkbv>
-            <img src=https://avatars.githubusercontent.com/u/33031034?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
+        <a href=https://github.com/pravin9>
+            <img src=https://avatars.githubusercontent.com/u/60386144?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
             <br />
-            <sub style="font-size:14px"><b>Vikum Sanjeewa</b></sub>
+            <sub style="font-size:14px"><b>Sivakumar Pravin</b></sub>
         </a>
     </td>
   <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/charithjayasanka>
-            <img src=https://avatars.githubusercontent.com/u/33053033?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
+        <a href=https://github.com/ShangarShan>
+            <img src=https://avatars.githubusercontent.com/u/50742146?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
             <br />
-            <sub style="font-size:14px"><b>Charith Jayasanka</b></sub>
+            <sub style="font-size:14px"><b>Manivannan ShangarShanan </b></sub>
         </a>
     </td>
   <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/ManiWee>
-            <img src=https://avatars.githubusercontent.com/u/37861406?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
+        <a href=https://github.com/shangeeran>
+            <img src=https://avatars.githubusercontent.com/u/28043204?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Bailey Harrington/>
             <br />
-            <sub style="font-size:14px"><b>Manishi Weerasekara</b></sub>
+            <sub style="font-size:14px"><b>Kulasegaram Shangeeran</b></sub>
         </a>
     </td>
 </tr>
