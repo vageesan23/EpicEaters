@@ -4,7 +4,19 @@
         overflow: initial !important;
     }
 
-    @media (max-width: 1024px) {
+    .rating {
+        font-size: 18px;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .rating-checked {
+        font-size: 18px;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    @media (max-height: 768px) {
         .ar-view {
             margin-left: 130px;
         }
@@ -14,8 +26,12 @@
             margin-left: 50px;
         }
 
-        .fav-icon-card {
-            /* margin-right: 100px; */
+        .rating {
+            margin-left: 50px;
+        }
+
+        .rating-checked {
+            margin-left: 50px;
         }
 
         #addToCart {
@@ -63,10 +79,10 @@
                             for ($i = 0; $i < 5; $i++) {
                                 if ((int)$json[$id]['rating'] <= $i) {
                                     echo
-                                    '<span class="fa fa-star rating" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
+                                    '<span class="fa fa-star rating"></span>';
                                 } else {
                                     echo
-                                    '<span class="fa fa-star fa-checked rating-checked" style="font-size: 18px; text-align: center; margin-left: 30px;"></span>';
+                                    '<span class="fa fa-star fa-checked rating-checked"></span>';
                                 }
                             }
                             ?>

@@ -2,7 +2,7 @@
     margin-top: 3vh;
     padding: 2px;
 ">
-    <h2>Comments</h2>
+    <!-- <h2>Comments</h2> -->
     <table style="min-width: 100%;">
         <tr>
             <td width="100%">
