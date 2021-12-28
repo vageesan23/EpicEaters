@@ -1,7 +1,12 @@
 <!-- <?php include '../parts/head.php' ?> -->
+<style>
+    .login-page {
+        background-color: #fff; 
+        overflow: hidden;
+    }
+</style>
 <!-- This is login page-->
-<div data-role="page" id="login"
-     style='background-color: #fff; overflow: hidden;'>
+<div class="login-page" data-role="page" id="login">
 
     <div role="main" style="display: flex; justify-content: center; margin-bottom: 0px" class="ui-content">
 
