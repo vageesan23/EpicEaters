@@ -29,7 +29,7 @@
                         </td>
                         <td>
                             <div class="product-comment"></div>
-                            <h3>Snoopy</h3>
+                            <h3>Pravin</h3>
                             <p>What are the Flavours available?</p>
 
 
