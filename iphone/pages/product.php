@@ -18,8 +18,7 @@
         border-radius: 15px;
         object-fit: cover; 
         overflow: auto;
-        margin: 45px 0px 0px 0px; 
-        box-shadow: 0 0 20px 0 #343434; 
+        margin: 45px 0px 0px 0px;
         text-align: left;
         background-size: cover;
     }
@@ -68,6 +67,19 @@
     .main-part .ui-grid-a .ui-block-a .read-more {
         margin-left: 40px;
     }
+
+    .main-part .ui-grid-a .ui-block-a .long-desc {
+        font-size: 16px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .long-desc p {
+            text-align: justify;
+            font-weight: 200;
+            /* height: 60px;
+            width: 100%;
+            overflow-y: scroll; */
+            margin-left: 35px;
+        }
 
     .main-part .ui-grid-a .ui-block-a .heart-icon {
         margin-top: 15px; 
@@ -123,7 +135,7 @@
     @media (max-width: 400px) {
         .main-part .main-card {
             padding: 1px;
-            height: 270px; 
+            height: auto; 
             max-width: 320px; 
             margin: auto; 
             position: relative; 
@@ -185,6 +197,19 @@
             margin-left: 10px;
         }
 
+        .main-part .ui-grid-a .ui-block-a .long-desc {
+            font-size: 11px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .long-desc p {
+            text-align: justify;
+            font-weight: 200;
+            /* height: 30px;
+            width: 100%;
+            overflow-y: scroll; */
+            margin-left: 5px;
+        }
+
         .main-part .ui-grid-a .ui-block-a .heart-icon {
             margin-top: 15px; 
             margin-left: 10px;
@@ -221,7 +246,7 @@
         }
 
         .sub-img {
-            width: 25%;
+            width: 40%;
         }
 
         .sub-price {
@@ -282,14 +307,14 @@
                             <div data-role="collapsible" data-enhanced="true"
                                 class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
                                 <span class="ui-collapsible-heading ui-collapsible-heading-collapsed read-more" style="margin-top: 10px;
-                                    padding: 0 12px; font-weight: 500;">
+                                    padding: 0 10px; font-weight: 500;">
                                     <a data-ajax="false" href="#" class="ui-collapsible-toggle" style="font-weight: 300;">
                                     Readmore
                                     </a>
                                 </span>
 
-                                <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
-                                    <p style="text-align: justify; font-weight: 200; position: relative"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
+                                <div class="ui-collapsible-content ui-collapsible-content-collapsed long-desc" aria-hidden="true">
+                                    <p><?php echo $json[$id]['longDescription'] ?? '' ?></p>
                                 </div>
             
                                 <div style="display: inline-flex;width: 100%; justify-content: center; margin-left: 10px;">
@@ -330,7 +355,7 @@
         <div class="ui-content" style="text-align: center; padding: 20px;" data-role="popup" id="cart-feedback">
             <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/icons/green-tick.png">
         </div>
-        <b><span style="margin-left: 25px;  margin-top: 100px;">Similar Items</span></b>
+        <b><span style="margin-left: 25px; position: relative; top: 30px;">Similar Items</span></b>
         <div class="ui-grid-a" style="margin-top: 20px;">
         
         <div class="ui-block-a similar-product" style="width: 50%;">

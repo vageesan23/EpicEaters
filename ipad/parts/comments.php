@@ -5,6 +5,11 @@
     <!-- <h2>Comments</h2> -->
     <table style="min-width: 100%;">
         <tr>
+            <td> 
+                <h2 style="margin-top: 40px;">Comments</h2>
+            </td>
+        </tr>
+        <tr>
             <td width="100%">
                 <div style="margin-left: -10px; margin-right:8px">
                     <input type="text" data-clear-btn="true" name="comment" id="inputComment" value="">
