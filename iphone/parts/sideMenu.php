@@ -14,16 +14,25 @@
                 td{
                     padding: 8px;
                 }
+                .versio{
+                    bottom: 0;
+                }
 }
 
 @media screen and (max-width: 812px) {
                 td{
                     padding: 8px;
                 }
+                .sid{
+                    position: fixed; 
+                    overflow-y: scroll;
+                    top: 0;
+                    bottom: 0;
+                }
 }
 </style>
 <!--    -->
-    <div data-role="panel" data-display="overlay" id="sideMenu"  data-position-fixed="true">
+    <div class="sid" data-role="panel" data-display="overlay" id="sideMenu"  data-position-fixed="true">
     
     <div style="display: flex; background-color:#E9ECEF">
     <div style="height: 150px; background-color:#E9ECEF; padding-top: 20px; padding-right: 10px; padding-left: 0px">
@@ -101,7 +110,7 @@
         </div>
     </div>
 
-    <div style="width: 100%; background-color:#f3f3f3; padding: 0; position:absolute; bottom: 0">
+    <div class="versio" style="width: 100%; background-color:#f3f3f3; padding: 0; position:absolute;">
         <p style="text-align: center;">Version 1.0.0</p>
     </div>
 </div><!-- /panel -->
