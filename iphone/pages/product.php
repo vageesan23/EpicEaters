@@ -6,18 +6,16 @@
 
     .main-part .main-card {
         height: auto; 
-        max-width: 650px; 
+        max-width: 750px; 
         margin: auto; 
         position: relative; 
-        display: flex; 
-        transform: translateX(40px);
+        display: flex;
     }
     
     .main-part .main-img {
         max-width: 270px; 
         height: 220px; 
-        border-radius: 15px; 
-        transform: translateX(-60px); 
+        border-radius: 15px;
         object-fit: cover; 
         overflow: auto;
         margin: 45px 0px 0px 0px; 
@@ -29,7 +27,7 @@
     .main-part .ui-grid-a .ui-block-a .ar-view img {
         height: 75px; 
         width: 75px; 
-        margin-left: 240px; 
+        margin-left: 350px; 
         margin-top: -30px; 
         margin-bottom: -50px;
     }
@@ -39,20 +37,36 @@
         font-family: 'Poppins'; 
         font-size: 18px; 
         margin-top: 20px;
+        margin-left: 50px;
     }
 
     .main-part .ui-grid-a .ui-block-a .rating {
         margin-top: 10px;
+        font-size: 18px;
+        margin-left: 40px;
     }
 
     .main-part .ui-grid-a .ui-block-a .rating-checked {
         margin-top: 10px;
+        font-size: 18px;
+        margin-left: 40px;
     }
 
     .main-part .ui-grid-a .ui-block-a .main-pr-price {
         position: relative;
         margin-top: 20px;
         color: #63717a;
+        margin-left: 50px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .main-desc {
+        font-size: 18px;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .read-more {
+        margin-left: 40px;
     }
 
     .main-part .ui-grid-a .ui-block-a .heart-icon {
@@ -87,6 +101,7 @@
     .sub-img {
         height: auto;
         width: 25%;
+        float: left;
     }
 
     .sub-name {
@@ -94,6 +109,7 @@
         font-family: 'Poppins';
         font-size: 22px;
         margin-top: 10px;
+        margin-left: 15px;
     }
 
     .sub-price {
@@ -101,28 +117,31 @@
         font-size: 20px;
         color: #63717a;
         margin-top: 15px;
+        margin-left: 15px;
     }
 
     @media (max-width: 400px) {
         .main-part .main-card {
             padding: 1px;
-            height: 280px; 
-            max-width: 250px; 
+            height: 270px; 
+            max-width: 320px; 
             margin: auto; 
             position: relative; 
             display: flex; 
-            transform: translateX(40px);
+            /* transform: translateX(40px); */
         }
 
-        .main-part .center {
+        .main-part .main-img {
             width: 200px;
-            height: 200px;
-            transform: translateX(-30px);
+            height: 150px;
+            margin-top: 60px;
+            padding: 20px;
+            /* transform: translateX(-30px); */
         }
         .main-part .ui-grid-a .ui-block-a .ar-view img {
             height: 50px; 
             width: 50px; 
-            margin-left: 90px; 
+            margin-left: 120px; 
             margin-top: -150px; 
             margin-bottom: -35px;
         }
@@ -132,14 +151,19 @@
             font-family: 'Poppins'; 
             font-size: 16px; 
             margin-top: 20px;
+            margin-left: 20px;
         }
 
         .main-part .ui-grid-a .ui-block-a .rating {
             margin-top: 5px;
+            margin-left: 10px;
+            font-size: 14px;
         }
 
         .main-part .ui-grid-a .ui-block-a .rating-checked {
             margin-top: 5px;
+            font-size: 14px;
+            margin-left: 10px;
         }
 
         .main-part .ui-grid-a .ui-block-a .main-pr-price {
@@ -147,16 +171,18 @@
             margin-top: 15px;
             font-size: 14px;
             color: #63717a;
+            margin-left: 20px;
         }
 
         .main-part .ui-grid-a .ui-block-a .main-desc {
             font-size: 11px;
             width: 100%;
+            margin-left: 20px;
         }
 
         .main-part .ui-grid-a .ui-block-a .read-more {
             font-size: 12px;
-            margin-left: -10px;
+            margin-left: 10px;
         }
 
         .main-part .ui-grid-a .ui-block-a .heart-icon {
@@ -171,6 +197,7 @@
             margin-top: 15px; 
             margin-left: 2px; 
             margin-right: 2px;
+            
         }
 
         .main-part .ui-grid-a .ui-block-a .cart-icon {
@@ -190,11 +217,15 @@
         }
 
         .sub-name {
-            font-size: 15px;
+            font-size: 12px;
+        }
+
+        .sub-img {
+            width: 25%;
         }
 
         .sub-price {
-            font-size: 13px;
+            font-size: 10px;
         }
 
         .similar-product {
@@ -320,7 +351,7 @@
         <a target="_parent" href="product.php?id=<?php echo $json[$id + 2]['id'] ?>">
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                <?php echo '<img class="center sub-img" style="height: auto; width: 25%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
+                                <?php echo '<img class="center sub-img" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
                                 <div>
                                 <p class="sub-name"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
                                 <p class="card-price sub-price">
