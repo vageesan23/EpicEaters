@@ -1,8 +1,12 @@
-<div class="ui-grid-a" style="padding:0 10px 80px 10px;">
+<div class="ui-grid-a" style="padding:0 10px 30px 10px; margin-top: -80px">
 
 
-<h2>Comments</h2>
     <table style="min-width: 100%;">
+        <tr>
+            <td>
+                <h2 style="margin-top: -10px;">Comments</h2>
+            </td>
+        </tr>
         <tr>
             <td width="100%">
                 <div style="margin-left: -10px; margin-right:8px">
@@ -28,7 +32,7 @@
                         </td>
                         <td>
                             <div class="product-comment"></div>
-                            <h3>Snoopy</h3>
+                            <h3>Pravin</h3>
                             <p style="width:100%">What are the Flavours available?</p>
 
 

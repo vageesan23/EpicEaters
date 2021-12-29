@@ -38,7 +38,7 @@ Payment is declined
             </div>
 
             <div style="text-align: center;">
-                <h1 style="font-size: 15px">Total: <span id="totalPrice" class="price-color" style="font-size: 15px">LKR.0.00</span></h1>
+                <h1 style="font-size: 15px; color: #333333">Total: <span id="totalPrice" class="price-color" style="color: #63717A;font-size: 15px">LKR.0.00</span></h1>
             </div>
             <form action="https://www.geeksforgeeks.org" target="_blank">
                 <div style="text-align: center; width: 75%; padding-left:25%">
@@ -85,10 +85,10 @@ Payment is declined
                 '                </div>\n' +
                 '                <div style="width: 40%; font-size: 15px; padding-left: 10px">\n' +
                 '                        <a data-ajax="false" href="product.php?id=' + id + '" \n' +
-                '                           data-transition="pop"><p style="font-size: 15px">' + data["name"] + ' </p><span style="font-size: 15px">x' + qty + '</span></a>\n' +
+                '                           data-transition="pop"><p style="font-size: 15px; color: #333333">' + data["name"] + ' </p><span style="color: #333333;font-size: 15px">x' + qty + '</span></a>\n' +
                 '                </div>\n' +
                 '                <div  style="width: 30%; font-size: 15px; padding-left: 10px">\n' +
-                '                    <p> LKR ' + price + '</p>\n' +
+                '                    <p style="color: #63717A;"> LKR ' + price + '</p>\n' +
                 '                </div>\n' +
                 '            </div>');
 

@@ -10,20 +10,44 @@
     </div> --> 
 <!-- panel content goes here -->
 <style>
+    .side-nav-logout-btn {
+        justify-content: center;
+        margin-left: 110px;
+        margin-top: 25px;
+    }
+
+    @media (max-width: 400px) {
+        .side-nav-logout-btn {
+            justify-content: center;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+    }
+
     @media screen and (max-width: 375px) {
-                td{
-                    padding: 8px;
-                }
-}
+        td{
+            padding: 8px;
+        }
+        
+        .versio{
+            bottom: 0;
+        }
+    }
 
 @media screen and (max-width: 812px) {
                 td{
                     padding: 8px;
                 }
+                .sid{
+                    position: fixed; 
+                    overflow-y: scroll;
+                    top: 0;
+                    bottom: 0;
+                }
 }
 </style>
 <!--    -->
-    <div data-role="panel" data-display="overlay" id="sideMenu"  data-position-fixed="true">
+    <div class="sid" data-role="panel" data-display="overlay" id="sideMenu"  data-position-fixed="true">
     
     <div style="display: flex; background-color:#E9ECEF">
     <div style="height: 150px; background-color:#E9ECEF; padding-top: 20px; padding-right: 10px; padding-left: 0px">
@@ -96,12 +120,12 @@
     <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true">
         <div role="main" class="ui-content">
             <h3 class="ui-title">Are you sure you want to Logout?</h3>
-            <a data-ajax="false" href="../pages/logIn.php" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
-               data-transition="flow">Logout</a>
+            <a data-ajax="false" href="../pages/logIn.php" class="side-nav-logout-btn ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+               data-transition="flow" style="background: #ef005a; color: #fff; width: 100px;">Logout</a>
         </div>
     </div>
 
-    <div style="width: 100%; background-color:#f3f3f3; padding: 0; position:absolute; bottom: 0">
+    <div class="versio" style="width: 100%; background-color:#f3f3f3; padding: 0; position:absolute;">
         <p style="text-align: center;">Version 1.0.0</p>
     </div>
 </div><!-- /panel -->

@@ -6,22 +6,19 @@
 
     .main-part .main-card {
         height: auto; 
-        max-width: 650px; 
+        max-width: 750px; 
         margin: auto; 
         position: relative; 
-        display: flex; 
-        transform: translateX(40px);
+        display: flex;
     }
     
     .main-part .main-img {
         max-width: 270px; 
         height: 220px; 
-        border-radius: 15px; 
-        transform: translateX(-60px); 
+        border-radius: 15px;
         object-fit: cover; 
         overflow: auto;
-        margin: 45px 0px 0px 0px; 
-        box-shadow: 0 0 20px 0 #343434; 
+        margin: 45px 0px 0px 0px;
         text-align: left;
         background-size: cover;
     }
@@ -29,7 +26,7 @@
     .main-part .ui-grid-a .ui-block-a .ar-view img {
         height: 75px; 
         width: 75px; 
-        margin-left: 240px; 
+        margin-left: 350px; 
         margin-top: -30px; 
         margin-bottom: -50px;
     }
@@ -39,21 +36,50 @@
         font-family: 'Poppins'; 
         font-size: 18px; 
         margin-top: 20px;
+        margin-left: 50px;
     }
 
     .main-part .ui-grid-a .ui-block-a .rating {
         margin-top: 10px;
+        font-size: 18px;
+        margin-left: 40px;
     }
 
     .main-part .ui-grid-a .ui-block-a .rating-checked {
         margin-top: 10px;
+        font-size: 18px;
+        margin-left: 40px;
     }
 
     .main-part .ui-grid-a .ui-block-a .main-pr-price {
         position: relative;
         margin-top: 20px;
         color: #63717a;
+        margin-left: 50px;
     }
+
+    .main-part .ui-grid-a .ui-block-a .main-desc {
+        font-size: 18px;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .read-more {
+        margin-left: 40px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .long-desc {
+        font-size: 16px;
+    }
+
+    .main-part .ui-grid-a .ui-block-a .long-desc p {
+            text-align: justify;
+            font-weight: 200;
+            /* height: 60px;
+            width: 100%;
+            overflow-y: scroll; */
+            margin-left: 35px;
+        }
 
     .main-part .ui-grid-a .ui-block-a .heart-icon {
         margin-top: 15px; 
@@ -87,6 +113,7 @@
     .sub-img {
         height: auto;
         width: 25%;
+        float: left;
     }
 
     .sub-name {
@@ -94,6 +121,7 @@
         font-family: 'Poppins';
         font-size: 22px;
         margin-top: 10px;
+        margin-left: 15px;
     }
 
     .sub-price {
@@ -101,28 +129,31 @@
         font-size: 20px;
         color: #63717a;
         margin-top: 15px;
+        margin-left: 15px;
     }
 
     @media (max-width: 400px) {
         .main-part .main-card {
             padding: 1px;
-            height: 280px; 
-            max-width: 250px; 
+            height: auto; 
+            max-width: 320px; 
             margin: auto; 
             position: relative; 
             display: flex; 
-            transform: translateX(40px);
+            /* transform: translateX(40px); */
         }
 
-        .main-part .center {
+        .main-part .main-img {
             width: 200px;
-            height: 200px;
-            transform: translateX(-30px);
+            height: 150px;
+            margin-top: 60px;
+            padding: 20px;
+            /* transform: translateX(-30px); */
         }
         .main-part .ui-grid-a .ui-block-a .ar-view img {
             height: 50px; 
             width: 50px; 
-            margin-left: 90px; 
+            margin-left: 120px; 
             margin-top: -150px; 
             margin-bottom: -35px;
         }
@@ -132,14 +163,19 @@
             font-family: 'Poppins'; 
             font-size: 16px; 
             margin-top: 20px;
+            margin-left: 20px;
         }
 
         .main-part .ui-grid-a .ui-block-a .rating {
             margin-top: 5px;
+            margin-left: 10px;
+            font-size: 14px;
         }
 
         .main-part .ui-grid-a .ui-block-a .rating-checked {
             margin-top: 5px;
+            font-size: 14px;
+            margin-left: 10px;
         }
 
         .main-part .ui-grid-a .ui-block-a .main-pr-price {
@@ -147,16 +183,31 @@
             margin-top: 15px;
             font-size: 14px;
             color: #63717a;
+            margin-left: 20px;
         }
 
         .main-part .ui-grid-a .ui-block-a .main-desc {
             font-size: 11px;
             width: 100%;
+            margin-left: 20px;
         }
 
         .main-part .ui-grid-a .ui-block-a .read-more {
             font-size: 12px;
-            margin-left: -10px;
+            margin-left: 10px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .long-desc {
+            font-size: 11px;
+        }
+
+        .main-part .ui-grid-a .ui-block-a .long-desc p {
+            text-align: justify;
+            font-weight: 200;
+            /* height: 30px;
+            width: 100%;
+            overflow-y: scroll; */
+            margin-left: 5px;
         }
 
         .main-part .ui-grid-a .ui-block-a .heart-icon {
@@ -171,6 +222,7 @@
             margin-top: 15px; 
             margin-left: 2px; 
             margin-right: 2px;
+            
         }
 
         .main-part .ui-grid-a .ui-block-a .cart-icon {
@@ -190,11 +242,15 @@
         }
 
         .sub-name {
-            font-size: 15px;
+            font-size: 12px;
+        }
+
+        .sub-img {
+            width: 40%;
         }
 
         .sub-price {
-            font-size: 13px;
+            font-size: 10px;
         }
 
         .similar-product {
@@ -251,14 +307,14 @@
                             <div data-role="collapsible" data-enhanced="true"
                                 class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
                                 <span class="ui-collapsible-heading ui-collapsible-heading-collapsed read-more" style="margin-top: 10px;
-                                    padding: 0 12px; font-weight: 500;">
+                                    padding: 0 10px; font-weight: 500;">
                                     <a data-ajax="false" href="#" class="ui-collapsible-toggle" style="font-weight: 300;">
                                     Readmore
                                     </a>
                                 </span>
 
-                                <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
-                                    <p style="text-align: justify; font-weight: 200; position: relative"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
+                                <div class="ui-collapsible-content ui-collapsible-content-collapsed long-desc" aria-hidden="true">
+                                    <p><?php echo $json[$id]['longDescription'] ?? '' ?></p>
                                 </div>
             
                                 <div style="display: inline-flex;width: 100%; justify-content: center; margin-left: 10px;">
@@ -299,7 +355,7 @@
         <div class="ui-content" style="text-align: center; padding: 20px;" data-role="popup" id="cart-feedback">
             <h3>Added to Cart</h3> <img style="width: 60px" src="../../common/assets/images/icons/green-tick.png">
         </div>
-        <b><span style="margin-left: 25px;  margin-top: 100px;">Similar Items</span></b>
+        <b><span style="margin-left: 25px; position: relative; top: 30px;">Similar Items</span></b>
         <div class="ui-grid-a" style="margin-top: 20px;">
         
         <div class="ui-block-a similar-product" style="width: 50%;">
@@ -320,7 +376,7 @@
         <a target="_parent" href="product.php?id=<?php echo $json[$id + 2]['id'] ?>">
                             <div class="ui-bar ui-bar-a ui-card"
                                  style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                <?php echo '<img class="center sub-img" style="height: auto; width: 25%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
+                                <?php echo '<img class="center sub-img" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
                                 <div>
                                 <p class="sub-name"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
                                 <p class="card-price sub-price">

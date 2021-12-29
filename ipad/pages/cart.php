@@ -39,7 +39,7 @@ Payment is declined
             </div>
 
             <div style="text-align: center;">
-                <h1>Total: <span id="totalPrice" class="price-color">LKR.0.00</span></h1>
+                <h1 style="color: #333333">Total: <span id="totalPrice" class="price-color" style="color: #63717A;">LKR.0.00</span></h1>
             </div>
             <form action="https://www.geeksforgeeks.org" target="_blank">
                 <div style="text-align: center; width: 75%; padding-left:25%">
@@ -84,11 +84,11 @@ Payment is declined
                 '                    <img alt="product_image" class="center" src="' + data["image"] + '"\n' +
                 '                         style="top: 50%;;">\n' +
                 '                </div>\n' +
-                '                <div style="width: 25%; font-size: 12px; padding-left: 10px">\n' +
+                '                <div style=" width: 25%; font-size: 12px; padding-left: 50px">\n' +
                 '                        <a data-ajax="false" href="product.php?id=' + id + '" \n' +
-                '                           data-transition="pop"><p style="font-size: 22px">' + data["name"] + ' </p><span style="font-size: 20px">x' + qty + '</span></a>\n' +
+                '                           data-transition="pop"><p style="color: #333333; font-size: 22px">' + data["name"] + ' </p><span style="color: #333333; font-size: 20px">x' + qty + '</span></a>\n' +
                 '                </div>\n' +
-                '                <div  style="width: 25%; font-size: 22px; padding-left: 10px">\n' +
+                '                <div  style="color: #63717A; width: 50%; font-size: 22px; padding-left: 80px">\n' +
                 '                    <p> LKR ' + price + '</p>\n' +
                 '                </div>\n' +
                 '            </div>');
