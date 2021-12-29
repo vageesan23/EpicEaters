@@ -54,6 +54,7 @@
         text-align: center;
         font-size: 20px;
         margin-bottom: 80px;
+        background-color: transparent;
     }
 
     .ui-input-text {
