@@ -2,6 +2,28 @@
 
 <!-- This is Clicker Select product page-->
 
+<style>
+    @media (min-width: 767px) and (max-width: 1023px) {
+        .advertisement {
+            height: 195px !important;
+        }
+    }
+
+    .card-title {
+        max-width: none;
+        margin-top: 7px;
+    }
+
+    .ui-content {
+        margin-bottom: 45px;
+    }
+
+    .ui-filterable {
+        position: relative;
+        bottom: 17px;
+    }
+</style>
+
 <div data-role="page" id="slashit">
     <?php include '../parts/header.php' ?>
     
