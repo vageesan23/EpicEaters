@@ -3,6 +3,12 @@
 <!-- This is Clicker Play page-->
 
 <style>
+    .product-view {
+        height: 100px;
+        width: 100px;
+        margin: 50px 0px 0px 10px;
+    }
+
     .dname {
         /* max-width: none; */
         font-size: 18px;
@@ -25,6 +31,12 @@
         font-size: 25px;
         white-space: nowrap;
     }
+
+    .clicker-Pro{
+        margin: -16px 0px 0px -16px; 
+        width: 105%;
+    }
+
 
     @media (max-width: 376px) {
         .dname {
@@ -50,6 +62,12 @@
             white-space: nowrap;
             padding-left: 5px;
         }
+
+        .clicker-Pro{
+            margin: -16px 0px 0px -16px !important; 
+            width: 110% !important;
+        }
+
     }
 </style>
 
@@ -64,20 +82,20 @@
 
     <div role="main" class="ui-content">
         <center>
-            <img src="../../common/assets/images/clicker/clickerProduct-iPhone.jpg"
-                 style="margin: -15px 0px 0px -15px; width: 108%;">
+            <img class="clicker-Pro" src="../../common/assets/images/clicker/clickerProduct-iPhone.jpg">
         </center>
 
-        <div class="m" style ="display:flex">
-        <div class="ui-bar ui-bar-a ui-card" style="height: unset;  margin-top: 50px; margin-left: 10px;">
-            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 25px;">           
+        <div class="" style ="display:flex">
+        <div class="ui-bar ui-bar-a ui-card product-view">
+            <!-- <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 25px;">  -->
+            <?php echo '<img class="center sub-img" style="max-width: 320px; margin-top: 25px;" src="', $json[$id]['image'], '" >' ?? '' ?>          
         </div>
 
         <p class="dname" style="font-weight: bold; font-family: 'Poppins';">
             <?php echo $json[$id]['name'] ?? '' ?></p>
 
-        <div class="progress-wrapper" style="margin: 30% 0% 0% -40% ; width:80%; ">
-            <div class="progress-bar dbar" style="background-color: #C4C4C4;">
+        <div class="progress-wrapper" style="margin: 30% 0% 0% -30% ; width:70%; ">
+            <div class="dbar" style="background-color: #C4C4C4;">
                 <span class="progress-bar-fill" style="width: 70%; background-color: #EF005A;
                 "></span>
             </div>
@@ -105,25 +123,32 @@
         <div style="width: 300px; text-align: center; font-size: 12px;" data-role="popup" id="popupBasic">
             <h2>Invite your friends to get the offer price</h2>
             <div class="share-social">
-                <img src="../../common/assets/images/social-icons/link.png" 
-                    style="color: white; margin: 12px; height: 96px; width: 80px;" href="#";>
-                    <!-- <p>Copy link</p> -->
-                <img src="../../common/assets/images/social-icons/facebook.png" 
-                    style="color: white; margin: 12px; height: 96px; width: 80px;" href="#">
-                    <!-- <p>Facebook</p> -->
-                <img src="../../common/assets/images/social-icons/twitter.png" 
-                    style="color: white; margin: 12px; height: 96px; width: 80px;" href="#">
-                    <!-- <p>Twitter</p> -->
-                <img src="../../common/assets/images/social-icons/instagram.png" 
-                    style="color: white; margin: 12px; height: 96px; width: 80px;" href="#">
-                    <!-- <p>Instagram</p> -->
-                <img src="../../common/assets/images/social-icons/whatsapp.png" 
-                    style="color: white; margin: 12px; height: 96px; width: 80px;" href="#">
-                    <!-- <p>Whatsapp</p> -->
-                <img src="../../common/assets/images/social-icons/more.png" 
-                    style="color: white; margin: 12px; height: 96px; width: 80px;" href="#">
-                    <!-- <p>Other</p> -->                
+                <!-- <p>Copy link</p> -->
+                <a onclick="myFunction()">
+                    <img src="../../common/assets/images/social-icons/link.png" 
+                    style="color: white; margin: 12px; height: 96px; width: 80px;" ></a>
+                <!-- <p>Facebook</p> -->
+                <a href="https://www.facebook.com/">
+                    <img src="../../common/assets/images/social-icons/facebook.png" 
+                    style="color: white; margin: 12px; height: 96px; width: 80px;" ></a>
+                <!-- <p>Twitter</p> -->
+                <a href="https://www.twitter.com/">
+                    <img src="../../common/assets/images/social-icons/twitter.png" 
+                    style="color: white; margin: 12px; height: 96px; width: 80px;" ></a>
+                <!-- <p>Instagram</p> -->
+                <a href="https://www.instagram.com/">
+                    <img src="../../common/assets/images/social-icons/instagram.png" 
+                    style="color: white; margin: 12px; height: 96px; width: 80px;" ></a>
+                <!-- <p>Whatsapp</p> -->
+                <a href="https://www.whatsapp.com/">
+                    <img src="../../common/assets/images/social-icons/whatsapp.png" 
+                    style="color: white; margin: 12px; height: 96px; width: 80px;" ></a>
+                <!-- <p>Other</p> -->
+                <a href="#">
+                    <img src="../../common/assets/images/social-icons/more.png" 
+                    style="color: white; margin: 12px; height: 96px; width: 80px;" ></a>                
             </div>
+            
         </div>
     </div>
         <?php include '../parts/chatbot.php' ?>

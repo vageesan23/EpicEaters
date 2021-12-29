@@ -13,7 +13,7 @@
     }
 
     .card-title {
-        max-width: none;
+        max-width: 135px;
         font-size: 15px;
         margin-top: -16px;
     }
@@ -22,8 +22,14 @@
         font-size: 14px !important;
     }
 
+    .clicker-Pro{
+        margin: 0px 0px 0px 0px; 
+        width: 100%;
+    }
+
     @media (max-width: 376px) {
         .card-title {
+            max-width: 135px !important;
             font-size: 13px !important;
             margin-top: -10px !important;
         }
@@ -32,6 +38,12 @@
             font-size: 11px !important;
 
         }
+
+        .clicker-Pro{
+            margin: 0px 0px 0px 0px !important; 
+            width: 100% !important;
+        }
+
     }
 </style>
 
@@ -39,8 +51,7 @@
     <?php include '../parts/header.php' ?>
     <div role="main" class="ui-content" style="padding: 0">
         <center>
-            <img src="../../common/assets/images/clicker/clickerProduct-iPhone.jpg"
-                 style="margin: 0px 0px 0px 0px; width: 104%;">
+            <img class="clicker-Pro" src="../../common/assets/images/clicker/clickerProduct-iPhone.jpg">
         </center>
 
         <div style="margin: auto; width: fit-content;">

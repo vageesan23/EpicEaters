@@ -2,6 +2,23 @@
 
 <!-- This is Clicker Play page-->
 
+<style>
+    .product-view {
+        height: 100px;
+        width: 100px;
+        margin: 50px 0px 0px 10px;
+    }
+
+    .dname {
+        /* max-width: none; */
+        font-size: 22px;
+        font-family: 'Poppins';
+        margin: 50px 0px 0px 150px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+</style>
+
 <div data-role="page" id="slashit">
     <?php include '../parts/header.php' ?>
 
@@ -20,13 +37,12 @@
         <div class="m" style ="display:flex">
         <div class="ui-bar ui-bar-a ui-card" style="height: unset; max-width: 90%; margin-top: 50px; margin-left: 50px;">
 
-            <img class="center" src="../../common/assets/images/products/product-1.jpg" style="max-width: 320px; margin-top: 30px;">
+            <?php echo '<img class="center" style="max-width: 320px; margin-top: 30px;" src="', $json[$id]['image'], '" >' ?? '' ?>
            
         </div>
-        <p style="font-weight: bold; font-size: 22px; font-family: 'Poppins'; margin: 50px 0px 0px 150px;">
-            <?php echo $json[$id]['name'] ?? '' ?> </p>
+        <p class="dname"><?php echo $json[$id]['name'] ?? '' ?> </p>
 
-        <div class="progress-wrapper" style="margin:100px 0px 0px -330px; width:500px; ">
+        <div class="progress-wrapper" style="margin:100px 0px 0px -280px; width:70%; ">
             <div class="progress-bar" style="background-color: #C4C4C4;">
                 <span class="progress-bar-fill" style="width: 70%; background-color: #EF005A;
                 "></span>
@@ -57,25 +73,30 @@
         <div style="width: 600px; padding: 30px; text-align: center"  data-role="popup" id="popupBasic">
             <h2>Invite your friends to get the offer price</h2>
             <div class="share-social">
-                <img src="../../common/assets/images/social-icons/link.png" 
-                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#";>
-                    <!-- <p>Copy link</p> -->
-                <img src="../../common/assets/images/social-icons/facebook.png" 
-                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
-                    <!-- <p>Facebook</p> -->
-                <img src="../../common/assets/images/social-icons/twitter.png" 
-                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
-                    <!-- <p>Twitter</p> -->
-                <img src="../../common/assets/images/social-icons/instagram.png" 
-                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
-                    <!-- <p>Instagram</p> -->
-                <img src="../../common/assets/images/social-icons/whatsapp.png" 
-                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
-                    <!-- <p>Whatsapp</p> -->
-                <img src="../../common/assets/images/social-icons/more.png" 
-                    style="color: white; margin: 15px; height: 144px; width: 120px;" href="#">
-                    <!-- <p>Other</p> -->
-                
+                <!-- <p>Copy link</p> -->
+                <a onclick="myFunction()">
+                    <img src="../../common/assets/images/social-icons/link.png" 
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" ></a>
+                <!-- <p>Facebook</p> -->
+                <a href="https://www.facebook.com/">
+                    <img src="../../common/assets/images/social-icons/facebook.png" 
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" ></a>
+                <!-- <p>Twitter</p> -->
+                <a href="https://www.twitter.com/">
+                    <img src="../../common/assets/images/social-icons/twitter.png" 
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" ></a>
+                <!-- <p>Instagram</p> -->
+                <a href="https://www.instagram.com/">
+                    <img src="../../common/assets/images/social-icons/instagram.png" 
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" ></a>
+                <!-- <p>Whatsapp</p> -->
+                <a href="https://www.whatsapp.com/">
+                    <img src="../../common/assets/images/social-icons/whatsapp.png" 
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" ></a>
+                <!-- <p>Other</p> -->
+                <a href="#">
+                    <img src="../../common/assets/images/social-icons/more.png" 
+                    style="color: white; margin: 15px; height: 144px; width: 120px;" ></a>                
             </div>
         </div>
     </div>
@@ -88,5 +109,23 @@
         <?php include '../parts/bottomNavbar.php' ?>
         <?php include '../parts/footer.php' ?>
     </div>
+
+    <!-- <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copied: " + copyText.value;
+        }
+        
+        function outFunc() {
+          var tooltip = document.getElementById("myTooltip");
+          tooltip.innerHTML = "Copy to clipboard";
+        }
+        </script> -->
+
     </body>
     </html>
