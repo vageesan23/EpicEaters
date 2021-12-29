@@ -2,34 +2,141 @@
 <style>
     .login-page {
         background-color: #fff; 
-        overflow: hidden;
+        overflow: auto;
     }
+
+    .login-main-content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+
+    .header-title {
+        display: flex;
+    }
+
+    .header-title .page-icon {
+        margin-top: 10px;
+    }
+
+    .header-title h3 {
+        color: #000;
+        margin-top: 5px;
+    }
+
+    .login-form { 
+        height: 620px; 
+        width: 600px
+    }
+
+    .login-form img {
+        height: 250px;
+        display: block;
+        margin: 30px 0px 40px 110px;
+    }
+    
+    .login-form .login-un {
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid #000;
+        border-radius: 0px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: transparent;
+    }
+
+    .login-form .login-pwd {
+        border: none;
+        border-bottom: 2px solid #000;
+        border-radius: 0px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 80px;
+    }
+
+    .ui-input-text {
+        border: none;
+        width: 850px;
+        margin-left: -120px;
+    }
+
+    .ui-corner-all {
+        border-radius: 0px;
+    }
+
+    .ui-shadow-inset {
+        box-shadow: none;
+    }
+
+    .sign-in-btn button {
+        opacity: 1;
+        border-radius: 30px;
+        width: 250px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 25px auto auto auto;
+        text-decoration:none;
+    }
+
+    .account-create {
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        color: #000 !important;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .login-form { 
+            height: 800px; 
+            width: 900px
+        }
+
+        .login-form img {
+            height: 300px;
+            display: block;
+            margin: 70px 0px 100px 210px;
+        }
+
+        .ui-input-text {
+            border: none;
+            width: 650px;
+            margin-left: 125px;
+        }
+
+        .login-form .login-un {
+            margin-top: 120px;
+            margin-bottom: 80px;
+        }
+    }
+
 </style>
 <!-- This is login page-->
 <div class="login-page" data-role="page" id="login">
 
-    <div role="main" style="display: flex; justify-content: center; margin-bottom: 0px" class="ui-content">
+    <div role="main" class="ui-content login-main-content">
 
 
         <div class="" style="background-color: #fff;">
-            <div class="header-title" style="color: white">
-                <img alt="page_icon" src="../../common/assets/images/icons/login.png" height="35" width="35" style="display: inline-flex;">
-                <h3 style="color: #000; display: inline-flex;">Login</h3>
+            <div class="header-title">
+                <span class="iconify page-icon" alt="page_icon" data-icon="ri:login-circle-fill" data-width="50" data-height="50"></span>
+                <h3>Login</h3>
             </div>
-            <form style="color: #1797F3; height: 750px; width: 600px">
+            <form class="login-form">
                 
-                <img src="../../common/assets/images/logo_footer_login.png" alt="login-img" style="height: 300px; display: block; margin: auto; background-color: #000;">
-                <input type="text" name="username" id="username" value="" placeholder="Username/ E-mail" style="box-sizing: border-box; border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-top: 50px; margin-bottom: 50px; background-color: transparent;">
-                <input type="password" name="password" id="password" value="" placeholder="Password" style="border: none; border-bottom: 2px solid #000; border-radius: 0px; text-align: center; margin-bottom: 10px;">
-                <input type="checkbox" value="rememberMe" id="rememberMe">
-                <label for="rememberMe" style="color: #000; font-size: 15px;">Remember Me</label>
+                <img src="../../common/assets/images/logo_footer_login.png" alt="login-img">
+                <input type="text" name="username" id="username" value="" placeholder="Username/ E-mail" class="login-un">
+                <input type="password" name="password" id="password" value="" placeholder="Password" class="login-pwd">
 
-                <a href="home.php">
-                    <button style="opacity: 1; width: 205px; margin: 25px auto auto auto; text-decoration:none;">Sign In</button>
+                <a class="sign-in-btn" href="home.php">
+                    <button>Sign In</button>
                 </a>
                 <center>
-                    <a data-ajax="false" href="register.php"
-                       style="font-weight: 100; color: #000; font-family: 'Poppins', sans-serif; font-size: 12px; text-decoration: none;">
+                    <a data-ajax="false" href="register.php" class="account-create">
                         Don't have an account?
                     </a>
                 </center>
