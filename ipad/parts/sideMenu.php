@@ -1,4 +1,28 @@
 <style>
+    .popup-logout {
+        margin-left: -165px;
+    }
+
+    .side-nav-logout-btn {
+        justify-content: center;
+        margin-left: 85px;
+        margin-top: 25px;
+    }
+
+    .popup-logout .ui-content .side-nav-logout-btn {
+        background-color: #ef005a;
+        border-color: #ef005a;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .side-nav-logout-btn {
+            justify-content: center;
+            margin-left: 85px;
+            margin-top: 25px;
+        }
+    }
+
     @media screen and (max-width: 768px) {
                 td{
                     padding: 8px;
@@ -94,12 +118,12 @@
         </tr>
     </table>
 
-    <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true">
+    <div data-role="popup" class="popup-logout" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true">
 
         <div role="main" class="ui-content">
             <h3 class="ui-title">Are you sure you want to Logout?</h3>
-            <a href="../pages/logIn.php" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
-               data-transition="flow">Logout</a>
+            <a href="../pages/logIn.php" class="side-nav-logout-btn ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+               data-transition="flow" style="background: #ef005a; color: #fff; width: 150px;">Logout</a>
         </div>
     </div>
     <div style="width: 100%; background-color:#E9ECEF; padding: 0; position:absolute; bottom: 0">
