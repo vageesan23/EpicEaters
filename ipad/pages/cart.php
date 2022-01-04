@@ -41,7 +41,7 @@ Payment is declined
             <div style="text-align: center;">
                 <h1 style="color: #333333">Total: <span id="totalPrice" class="price-color" style="color: #63717A;">LKR.0.00</span></h1>
             </div>
-            <form action="https://www.geeksforgeeks.org" target="_blank">
+            <form action="https://buy.stripe.com/test_00g01UbYI0bueTm3cj">
                 <div style="text-align: center; width: 75%; padding-left:25%">
                     <button id="">Order</button>
                 </div>
