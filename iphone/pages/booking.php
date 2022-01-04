@@ -62,7 +62,7 @@
                 <span class="iconify head-icon" alt="page_icon" data-icon="tabler:brand-booking" data-width="45" data-height="45"></span>
                 <h3>Book Course</h3>
             </div>
-            <form action="https://www.geeksforgeeks.org" target="_blank" onsubmit="clearForm()">
+            <form action="https://buy.stripe.com/test_14kcOGbYIbUc4eI28e" onsubmit="clearForm()">
                 <p class="p-text" style="color:#fff; margin-bottom:15px; margin-left:-8px">*Personal Details</p>
 
                 <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required>
