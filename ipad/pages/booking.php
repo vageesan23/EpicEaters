@@ -73,7 +73,7 @@
                 <span class="iconify head-icon" alt="page_icon" data-icon="tabler:brand-booking" data-width="45" data-height="45"></span>
                 <h3>Book Course</h3>
             </div>
-            <form style="color: #1797F3;" action="https://www.geeksforgeeks.org" target="_blank" onsubmit="clearForm()">
+            <form style="color: #1797F3;" action="https://buy.stripe.com/test_fZeeWOaUEaQ812wbIN" onsubmit="clearForm()">
                 <p class="p-text" style="color:#fff; margin-bottom:12px; margin-left:70px">*Personal Details</p>
                 <fieldset class="ui-side" style="min-width: 100%;">
                     <div class="ui-block-a" style="margin-left: 80px; width: 40%">
