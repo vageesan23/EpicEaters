@@ -1,13 +1,119 @@
 <?php include '../parts/head.php' ?>
 <style>
-    table, td, th {
-        border: 1px solid black;
+    .sell-pro-card {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        display: flex;
+    }
+
+    .sell-pro-card table {
+        width: 100% !important;
+        padding-top: 40px;
+        border: none;
+    }
+
+    .back-box {
+        padding: 50px 20px;
+        margin-bottom: 20px;
+    }
+
+    .sell-pro-table {
+        width: 100%;
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
+        line-height: 2.0rem;
     }
+
+    table tr td{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .back-box center img {
+        height: 250px;
+        width: 300px;
+    }
+
+    .table-order {
+        margin-bottom: 1px; 
+        border-radius: 10px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .table-order table, .product-table table {
+        margin: 5px 80px 20px 20px;
+        width: 95%;
+    }
+
+    .table-order table tr, .product-table table tr {
+        background-color: #e9ecef;
+        border-radius: 50px;
+        margin: 15px auto;
+    }
+
+    .table-order table th {
+        height: 50px;
+    } 
+
+    .table-order table td, .product-table table td {
+        height: 50px;
+    }
+
+    .table-order table tr td {
+        padding: 15px;
+    }
+
+    .pro-td {
+        padding: 15px;
+    }
+
+    .product-table td:nth-child(2), .product-table td:nth-child(3), .product-table td:nth-child(4), .product-table td:nth-child(5), .product-table td:nth-child(6) {
+        text-align: center;
+    }
+
+    .btns {
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    .btns button {
+        opacity: 1;
+        font-size: 15px;
+        width: 60%;
+        text-align: center;
+    }
+
+    @media (max-width: 800px) {
+        .table-order table, .product-table table {
+            margin: 5px 0px 20px 0px;
+            width: 95%;
+        }
+
+        .table-order table td, .product-table table td {
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        .main-pro-card td {
+            font-size: 12px;
+            padding: 5px;
+        }
+
+        .btns {
+            margin-left: 80px;
+        }
+
+        .btns button {
+            font-size: 13px;
+        }
+    }
+
 </style>
 <!-- This is checkout page-->
 <div data-role="page" id="sellerProfile"
@@ -16,124 +122,132 @@
 
     <?php include '../parts/header.php' ?>
 
-    <div class="header-title" style="margin-top: -10px;">
+    <div class="header-title" style="display: flex; margin-top: 10px;">
+        <span class="iconify" alt="page_icon" data-icon="jam:user-circle" data-width="50" data-height="50"></span>
         <h3>Profile</h3>
-        <img alt="page_icon" src="../../common/assets/images/icons/registration.png" height="35" width="35">
     </div>
-    <div style="padding: 10px 20px; background-color: rgba(0, 0, 0, 0)">
-        <div class="back-box" style="padding: 50px 20px; margin-bottom: 20px">
-            <center>
-                <img alt="page_icon" src="../../common/assets/images/icons/user.png" height="100px" width="100px">
-            </center>
-            <table style="width:100%; padding-top: 40px">
-                <tr>
-                    <td>Username</td>
-                    <td>Smith</td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td>Smith@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>First Name</td>
-                    <td>Smith</td>
-                </tr>
-                <tr>
-                    <td>Last Name</td>
-                    <td>Jackson</td>
-                </tr>
-            </table>
-            <div style="display: flex; padding-top: 20px">
-                <button style="opacity: 1; font-size: 14px;">Order History</button>
-                <div style="width: 20px"></div>
-                <button style="opacity: 1; font-size: 14px;">Edit Details</button>
-            </div>
+    
+    <div class="main-sel-pro-content">
+    <div class="ui-grid-a seller-profile">
+        <div class="ui-block-a sell-pro-card">
+                <div class="back-box">
+                    <center>
+                        <img alt="page_icon" src="../../common/assets/images/seller-profile.jpg">
+                    </center>
+                    <table class="main-pro-card" style="width: 100%;">
+                        <tr>
+                            <td>Username &emsp;&nbsp; : &ensp;</td>
+                            <td>Janice45</td>
+                        </tr>
+                        <tr>
+                            <td>Email &emsp;&emsp;&emsp;&ensp; : &ensp;</td>
+                            <td>janiceharper45@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>First Name &emsp; : &ensp;</td>
+                            <td>Janice</td>
+                        </tr>
+                        <tr>
+                            <td>Last Name &emsp; : &ensp;</td>
+                            <td>Harper</td>
+                        </tr>
+                    </table>
+                    <div class="btns">
+                        <button>Edit Details</button>
+                    </div>
+                </div>
         </div>
+        <div class="ui-block-b"></div>
+        <div class="ui-block-c">
 
-        <!-- table -->
-        <div style="margin-bottom: 70px; border-radius: 10px;
-  -moz-border-radius: 4px
-  -webkit-border-radius: 4px;
-  overflow: hidden; background-color: #F3F4F9;/*notice*/ ">
-            <!--        <div style="margin-bottom: 70px; background-color: #F3F4F9; ">-->
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Item Name</th>
-                    <th>Quantity</th>
-                    <th>Status</th>
-                    <th>Action</th>
-
-                </tr>
-                <tr>
-                    <td>01</td>
-                    <td>Dream catcher</td>
-                    <td>o5</td>
-                    <td>
-                        <button style="opacity: 1; padding: 4px; background-color: #FDFF9E; color: black;
-                                border-color: #fff; box-shadow: none; font-size: 11px" disabled>
-                            Shipped
-                        </button>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>02</td>
-                    <td>Kerosene Lamp</td>
-                    <td>10</td>
-                    <td>
-                        <button style="opacity: 1; padding: 4px; background-color: #9EFFB4; color: black;
-                                border-color: #fff; box-shadow: none; font-size: 11px" disabled>
-                            Completed
-                        </button>
-                    </td>
-                    <td>
-                        <button style="opacity: 1; padding: 4px; background-color: #1797F3; color: white;
-                                border-color: #fff; box-shadow: none; font-size: 11px" disabled>
-                            Mark as done
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>Paper flower</td>
-                    <td>50</td>
-                    <td>
-                        <button style="opacity: 1; padding: 4px; background-color: #FDFF9E; color: black;
-                                border-color: #fff; box-shadow: none; font-size: 11px" disabled>
-                            Shipped
-                        </button>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>Paper flower</td>
-                    <td>50</td>
-                    <td>
-                        <button style="opacity: 1; padding: 4px; background-color: #FDFF9E; color: black;
-                                border-color: #fff; box-shadow: none; font-size: 11px" disabled>
-                            Shipped
-                        </button>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>Paper flower</td>
-                    <td>50</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>Paper flower</td>
-                    <td>50</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+                <!-- table -->
+                <div class="order-table-head">
+                       <h2>Order</h2>
+                    <div class="table-order">
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Item Name</th>
+                                <th>Quantity</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td class="id">01</td>
+                                <td class="item-name">Chocolate Cake</td>
+                                <td class="qty">05</td>
+                                <td class="status">
+                                    <button style="opacity: 1; padding: 4px; background-color: #FDFF9E; color: black;
+                                            border-color: #fdff9e; box-shadow: none; font-size: 11px" disabled>
+                                        Shipped
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="id">02</td>
+                                <td class="item-name">Vanilla Cake</td>
+                                <td class="qty">10</td>
+                                <td class="status">
+                                    <button style="opacity: 1; padding: 4px; background-color: #9EFFB4; color: black;
+                                            border-color: #9effb4; box-shadow: none; font-size: 11px" disabled>
+                                        Completed
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="id">03</td>
+                                <td class="item-name">Strawberry Cake</td>
+                                <td class="qty">15</td>
+                                <td class="status"></td>
+                            </tr>
+                            <tr>
+                                <td class="id"></td>
+                                <td class="item-name"></td>
+                                <td class="qty"></td>
+                                <td class="status"></td>
+                            </tr>
+                            <tr>
+                                <td class="id"></td>
+                                <td class="item-name"></td>
+                                <td class="qty"></td>
+                                <td class="status"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="product-table-head">
+                    <h2>Products</h2>
+                    <div class="product-table">
+                        <table>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Qty</th>
+                            </tr>
+                            <tr>
+                                <td>Chocolate Cake</td>
+                                <td class="qty">05</td>
+                            </tr>
+                            <tr>
+                                <td>Vanilla Cake</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Butterscotch Cake</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Blackforest Cake</td>
+                                <td>05</td>
+                            </tr>
+                            <tr>
+                                <td>Whiteforest Cake</td>
+                                <td>04</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
         </div>
+    </div>
+    </div>
         <?php include '../parts/bottomNavbar.php' ?>
         <?php include '../parts/footer.php' ?>
     </div>
