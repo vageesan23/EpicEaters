@@ -27,6 +27,12 @@
         margin-top: -315px;
         position: absolute;
     }
+
+    .regulationiPad {
+        width: 58%;
+        /* height: 10%; */
+        margin: 0px 0px 25px 0px;
+    }
 </style>
 
 <div data-role="page" id="slashit">
@@ -45,8 +51,7 @@
 
             <img src="../../common/assets/images/clicker/img-iPad.png" 
                 style="width: 40%;">
-            <img src="../../common/assets/images/clicker/regulation-iPad.png" 
-                style="width: 55%; ">
+            <img class="regulationiPad" src="../../common/assets/images/clicker/regulation_iPad.png">
         </div>
 
     </div>
