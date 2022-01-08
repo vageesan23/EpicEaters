@@ -3,7 +3,9 @@ Welcome to EpicEaters
 A simple e-commerce web application using J-Query Mobile
 
 <p align="center">
-<img src="SS%201.png?raw=true" width="200" height="400" /><img src="SS%2002.png?raw=true" width="200" height="400" /><img src="SS%203.png?raw=true" width="200" height="400" />
+<img src="./common/assets/images/readme/home.jpg" width="200" height="400" />
+<img src="./common/assets/images/readme/booking.jpg" width="200" height="400" />
+<img src="./common/assets/images/readme/game.jpg" width="200" height="400" />
 </p>  
 
 ### Contributors
