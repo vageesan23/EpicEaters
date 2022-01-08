@@ -63,7 +63,7 @@
 <!-- This is checkout page-->
 <div data-role="page" id="contactUs">
     <?php include '../parts/header.php' ?>
-    <div class="header-title">
+    <div class="header-title" style="display: flex;">
         <span class="iconify" alt="page_icon" data-icon="fluent:person-call-20-regular" data-width="50" data-height="50"></span>    
         <h3>Conact Us</h3>
     </div>

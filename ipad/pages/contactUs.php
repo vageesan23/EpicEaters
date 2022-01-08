@@ -86,8 +86,8 @@
     }
 
     .ui-body-inherit {
-        background-color: transparent !important;
-        border-color: transparent !important;
+        /* background-color: transparent !important;
+        border-color: transparent !important; */
     }
 
     .ui-block-a {
