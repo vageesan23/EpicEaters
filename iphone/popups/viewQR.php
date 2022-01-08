@@ -5,14 +5,14 @@
     </div>
     <div style="width: 100%" id="reader"></div>
     <!-- <video id="preview"></video> -->
-    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="../../common/js/html5-qrcode.min.js"></script>
     <script>      
-        // var scannedd = false;
+        var scannedd = false;
         
 
         function onScanSuccess(qrCodeMessage) {
             // handle on success condition with the decoded message
-            // if (!scannedd) {
+             if (!scannedd) {
                 
                 $("#viewQR").popup("close");
                 $("#qrId").html(qrCodeMessage);
@@ -24,10 +24,8 @@
                 $("#coinCount").html(newTotal);
                 const cookieString = "coinCount=" + newTotal + "; path=/";
                 document.cookie = cookieString;
-            // }
+             }
             $("#qrRewards").popup("open");
-
-            html5QrcodeScanner.clear();
         }
 
         function onScanError(errorMessage) {
