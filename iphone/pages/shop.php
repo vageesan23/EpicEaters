@@ -51,9 +51,9 @@
              <!-- This is the sort fumction -->
             <div>
                 <!-- <h3 style="float: left; font-weight: 800">DYI Products</h3> -->
-                <!-- <button onclick=sort()><?php if ($_COOKIE['sortDb'] == 'db') {
+                <button onclick=sort()><?php if ($_COOKIE['sortDb'] == 'db') {
                         echo "Sort A-Z";
-                    } else echo "Reset Sort" ?></button> -->
+                    } else echo "Reset Sort" ?></button>
             </div>
 
             <?php
