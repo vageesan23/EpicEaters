@@ -119,9 +119,9 @@
     </table>
     <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true">
         <div role="main" class="ui-content">
-            <h3 class="ui-title">Are you sure you want to Logout?</h3>
+            <h3 class="ui-title">Are you sure you want to Sign-out?</h3>
             <a data-ajax="false" href="../pages/logIn.php" class="side-nav-logout-btn ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
-               data-transition="flow" style="background: #ef005a; color: #fff; width: 100px;">Logout</a>
+               data-transition="flow" style="background: #ef005a; color: #fff; width: 100px;">Sign-out</a>
         </div>
     </div>
 

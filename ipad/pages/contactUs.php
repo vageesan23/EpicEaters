@@ -1,4 +1,73 @@
 <?php include '../parts/head.php' ?>
+<style>
+    .header-title {
+        display: flex;
+    }
+
+    .contactus-head {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contactus-head h4 {
+        text-shadow: none;
+        margin-top: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .back-box {
+        padding: 30px 20px;
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    .loca-img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .location-map {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    .map-location {
+        width: 30%;
+        margin: 0px 20px;
+    }
+
+    .ui-body-inherit {
+        border-color: transparent;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .map-location .ui-collapsible-content {
+        padding: 0px;
+        border-radius: 15px;
+        margin-top: 20px;
+        width: 920px;
+        /* border-color: transparent;
+        background-color: transparent; */
+        box-shadow: none;
+    }
+
+    .gmap {
+        width: 920px;
+    }
+
+    .gmap div {
+        border-radius: 15px;
+    }
+
+    .ui-btn {
+        background-color: #282929;
+        color: #fff;
+    }
+
+</style>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script
         src="https://maps.googleapis.com/maps/api/js?key=<API-Key-Here>&callback=initialize"
@@ -61,47 +130,43 @@
 </script>
 
 <!-- This is checkout page-->
-<div data-role="page" id="contactUs" style='background-image: url("../../common/assets/images/ipad-contactus-back.png");'>
+<div data-role="page" id="contactUs" style="background-color: #fff;">
 
     <?php include '../parts/header.php' ?>
 
-    <div class="header-title" style="color: white">
+    <div class="header-title">
+        <span class="iconify" alt="page_icon" data-icon="fluent:person-call-20-regular" data-width="50" data-height="50"></span>    
         <h3>Conact Us</h3>
-        <img alt="page_icon" src="../../common/assets/images/icons/contact_us.png" height="35" width="35">
     </div>
-    <div class="back-box" style="padding: 30px 20px; background-color: rgba(255, 255, 255, 0.8)">
+    <div class="back-box">
         <div class="ui-grid-a">
-            <div class="ui-block-a">
 
-                <div style="margin-left: 150px">
-                    <img style="float: left" src="../../common/assets/images/icons/contact_us.png" height="35px"
-                         width="35px">
-                    <h2>Locate Us</h2>
+                <div class="contactus-head">
+                    <img class="loca-img" src="../../common/assets/images/icons/location.png">
+                    <h4>Locate Us</h4>
                 </div>
 
                 <!-- locations-->
-                <div onload="initialize()" style="margin-bottom: 70px">
-                    <div data-role="collapsible" data-collapsed="false">
-                        <h4>Nugegoda</h4>
-                        <div>
-                            <div id="map" style="width:100%; height:220px"></div>
+                <div onload="initialize()" class="location-map">
+                    <div class="map-location" data-role="collapsible" data-collapsed="false">
+                        <h4>Daisy Desserts</h4>
+                        <div class="gmap">
+                            <div id="map" style="width:100%; height:320px"></div>
                         </div>
                     </div>
-                    <div data-role="collapsible">
-                        <h4>Kurunegala</h4>
-                        <div>
-                            <div id="map-2" style="width:100%; height:220px"></div>
+                    <div class="map-location" data-role="collapsible">
+                        <h4>Sana's Cakes</h4>
+                        <div class="gmap">
+                            <div id="map-2" style="width:100%; height:320px"></div>
                         </div>
                     </div>
-                    <div data-role="collapsible">
-                        <h4>Kandy</h4>
-                        <div>
-                            <div id="map-3" style="width:100%; height:220px"></div>
+                    <div class="map-location" data-role="collapsible">
+                        <h4>ELe-kuruma</h4>
+                        <div class="gmap">
+                            <div id="map-3" style="width:100%; height:320px"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="ui-block-b">
                 <div style="padding: 10px 20px; background-color: rgba(0, 0, 0, 0)">
                     <form class="form-light" style="font-weight: bolder; font-size: 18px">
                         <h4>You can send your suggestions/feedback :</h4>
@@ -129,7 +194,6 @@
                             <div style="padding: 8px"><i class="fa flaticon-049-telephone"></i> 011-2029079</div>
                         </div>
                     </div>
-                </div>
             </div><!-- /grid-a -->
         </div>
     </div>

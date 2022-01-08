@@ -121,9 +121,9 @@
     <div data-role="popup" class="popup-logout" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true">
 
         <div role="main" class="ui-content">
-            <h3 class="ui-title">Are you sure you want to Logout?</h3>
+            <h3 class="ui-title">Are you sure you want to Sign-out?</h3>
             <a href="../pages/logIn.php" class="side-nav-logout-btn ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
-               data-transition="flow" style="background: #ef005a; color: #fff; width: 150px;">Logout</a>
+               data-transition="flow" style="background: #ef005a; color: #fff; width: 150px;">Sign-out</a>
         </div>
     </div>
     <div style="width: 100%; background-color:#E9ECEF; padding: 0; position:absolute; bottom: 0">

@@ -6,14 +6,107 @@ Order History Page
 ob_start();
 session_start();
 ?>
+<style>
+    .pro-img {
+        width: 150px; 
+        height: 150px; 
+        top: 50%; 
+        position: absolute; 
+        transform: translate(0%, -50%);
+    }
+
+    .img-po {
+        width: 30%;
+    }
+
+    .info {
+        width: 45%; 
+        padding-left: 20px; 
+        font-size: 20px;
+        display: flex;
+        transform: translateX(-40%);
+    }
+
+    .info .ui-block-b span {
+        transform: translateX(25px);
+    }
+
+    .btn-rate {
+        width: 20% !important;
+        font-size: 20px;
+        transform: translateX(155%);
+    }
+
+    .xfactor {
+        margin-left: 100%; 
+        margin-top: 10%;
+    }
+
+    .rating-icon {
+        width: 100px;
+        padding: 0px;
+        margin-left: -20px;
+    }
+
+    @media (max-width: 768px) {
+        .pro-img {
+            height: 100px;
+            width: 100px;
+            transform: translate(15%,-45%);
+        }
+
+        .status {
+            font-size: 12px !important;
+        }
+
+        .rating-icon {
+            width: 100px;
+            margin-bottom: -20px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .pro-img {
+            height: 70px;
+            width: 70px;
+            transform: translate(-10px,-50%);
+        }
+
+        .pro-name {
+            font-size: 14px;
+        }
+
+        .pro-price {
+            font-size: 12px;
+        }
+
+        .status {
+            font-size: 10px !important;
+            margin-top: -20px;
+            width: 70px !important;
+            padding: 2px;
+        }
+
+        .rating-icon {
+            margin-top: -30px;
+            margin-left: -35px;
+        }
+
+        .xfactor span {
+            font-size: 15px !important;
+            margin-left: 40px;
+        }
+    }
+</style>
+
 <!-- This is order history page-->
 <div data-role="page" id="orderHistory">
     <?php include '../parts/header.php' ?>
 
     <div role="main" class="ui-content">
-        <div class="header-title" style="margin-bottom: 10px;">
+        <div class="header-title" style="display: flex;">
+            <span class="iconify" alt="page_icon" data-icon="prime:history" data-width="50" data-height="50"></span>
             <h3>Order History</h3>
-            <img alt="page_icon" src="../../common/assets/images/icons/shop.png" height="35" width="35">
         </div>
         <!-- POI Card-->
 
@@ -72,23 +165,23 @@ session_start();
 
             $('#items').append(
                 '                <div class="ui-grid-c back-box" style="padding: 15px; margin-bottom: 10px">\n' +
-                '                    <div class="ui-block-a " style="width: 30%;">\n' +
-                '                        <img alt="product_image" class="center" src="' + data["image"] + '"\n' +
-                '                             style="width: 100px; height: 100px; top: 50%; position: absolute; transform: translateY(-50%);">\n' +
+                '                    <div class="ui-block-a img-po">\n' +
+                '                        <img alt="product_image" class="center pro-img" src="' + data["image"] + '"\n' +
+                '                             >\n' +
                 '\n' +
                 '                    </div>\n' +
-                '                    <div class="ui-block-b" style="width: 40%; padding-left: 20px; font-size: 22px">\n' +
-                '                        <p>' + data["name"] + '</p><span style="font-size: 20px">x' + qty + '</span>\n' +
-                '                        <button style="opacity: 1; padding: 8px; background-color: #fff63f; color: black;\n' +
-                '                                border-color: #fff; box-shadow: none; font-size: 11px" disabled>\n' +
+                '                    <div class="ui-block-b info">\n' +
+                '                        <div class="ui-block-a" style="width: 50%;"><p class="pro-name">' + data["name"] + '</p>\n' +
+                '                        <div class="status" style="opacity: 1; text-align: center; color: #000; margin-top: 20px; border-radius: 50px; padding: 10px; width: 100%; background-color: #fff63f; color: black;\n' +
+                '                                border-color: #fff63f; box-shadow: none; font-size: 16px" disabled>\n' +
                 '                            Pending\n' +
-                '                        </button>\n' +
+                '                        </div></div><div class="ui-block-b"></div><div class="ui-block-c xfactor" style="width: 50%;"><span style="font-size: 20px">x' + qty + '</span></div>\n' +
                 '                    </div>\n' +
-                '                    <div class="ui-block-c" style="width: 20%; font-size: 20px; ">\n' +
+                '                    <div class="ui-block-c btn-rate">\n' +
                 '                        <a href="#popuprating" style="padding: 10px" data-rel="popup" data-position-to="window"\n' +
-                '                           class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a"\n' +
-                '                           data-transition="pop" onclick="return rate(' + id + ');">Rate</a>\n' +
-                '                        <p>LKR ' + price + '</p>\n' +
+                '                           \n' +
+                '                           data-transition="pop" onclick="return rate(' + id + ');"><img class="rating-icon" src="../../common/assets/images/icons/rating.png"></a>\n' +
+                '                        <p class="pro-price">LKR ' + price + '</p>\n' +
                 '                    </div>\n' +
                 '                </div>\n');
         });
