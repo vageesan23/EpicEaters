@@ -132,6 +132,7 @@ session_start();
         </div>
     </div>
     <?php include '../popups/addRating.php' ?>
+    <?php include '../parts/chatbot.php' ?>
     <?php include '../parts/bottomNavbar.php' ?>
     <?php include '../parts/footer.php' ?>
 </div>

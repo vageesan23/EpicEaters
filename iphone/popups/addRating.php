@@ -48,7 +48,7 @@
 
         <div style="text-align: center; padding: 20px;" data-role="popup" id="rate-feedback">
             <h3>Thank you for your Rating !!! </h3> <img style="width: 60px"
-                                                         src="../../common/assets/images/checked-green.png">
+                                                         src="../../common/assets/images/green-tick.png">
         </div>
         <script src="../../common/js/star/SimpleStarRating.js"></script>
     </div>

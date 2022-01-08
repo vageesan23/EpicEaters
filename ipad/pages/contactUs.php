@@ -48,14 +48,22 @@
         padding: 0px;
         border-radius: 15px;
         margin-top: 20px;
-        width: 920px;
+        width: 920px !important;
         /* border-color: transparent;
         background-color: transparent; */
         box-shadow: none;
     }
 
     .gmap {
-        width: 920px;
+        width: 920px !important;
+    }
+
+    .map2 {
+        transform: translateX(-310px) !important;
+    }
+
+    .map3 {
+        transform: translateX(-630px) !important;
     }
 
     .gmap div {
@@ -65,6 +73,124 @@
     .ui-btn {
         background-color: #282929;
         color: #fff;
+    }
+
+    .ui-input-text {
+        padding: 5px 10px;
+        border: none;
+        width: 280px;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        border-radius: 5px !important;    
+        background-color: #f3f4f9 !important;
+    }
+
+    .ui-body-inherit {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .ui-block-a {
+        text-shadow: none !important;
+    }
+
+    .ui-corner-all {
+        border-radius: 0px;
+    }
+
+    .ui-shadow-inset {
+        box-shadow: none !important;
+    }
+
+    .form-head {
+        text-shadow: none !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .txtarea {
+        width: 545px !important;
+        margin-left: 8px !important;
+        padding: 5px 20px !important;
+    }
+
+    .ui-grid-a > .ui-block-a {
+        width: 50%;
+    }
+
+    .form-contact {
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+    }
+
+    .submit {
+        opacity: 1;
+        width: 250px !important;
+        margin-left: 170px;
+        margin-top: 20px;
+    }
+
+    .in-name, .in-mail, .txtarea {
+        background-color: #f3f4f9 !important;
+    }
+
+    .in-name, .in-mail {
+        border-radius: 5px !important;
+    }
+
+    @media (max-width: 768px) {
+        .map-location .ui-collapsible-content {
+            width: 670px !important;
+        }
+
+        .gmap {
+            width: 670px !important;
+        }
+
+        .form-contact {
+            display: block;
+        }
+
+        .ui-grid-a > .ui-block-a {
+            width: 50%;
+        }
+
+        .ui-input-text {
+            width: 330px;
+        }
+
+        .txtarea {
+            width: 650px !important;
+            padding: 5px 20px !important;
+        }
+
+        .submit {
+            margin-left: 260px;
+            width: 150px !important;
+        }
+
+        .social-net {
+            margin-top: 30px;
+        }
+
+        .social-name {
+            display: flex;
+            text-align: center;
+        }
+
+        .icon {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .map2 {
+            transform: translateX(-225px) !important;
+        }
+
+        .map3 {
+            transform: translateX(-455px) !important;
+        }
     }
 
 </style>
@@ -79,29 +205,29 @@
         var latlng2 = new google.maps.LatLng(7.487436, 80.365025);
         var latlng3 = new google.maps.LatLng(7.268108, 80.598766);
 
-        var nugegoda = {
+        var daisyDes = {
             zoom: 15,
             center: latlng,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-        var kurunegala = {
+        var sanaCake = {
             zoom: 15,
             center: latlng2,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-        var kandy = {
+        var eleKuruma = {
             zoom: 15,
             center: latlng3,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
-        var map = new google.maps.Map(document.getElementById("map"), nugegoda);
+        var map = new google.maps.Map(document.getElementById("map"), daisyDes);
 
-        var map2 = new google.maps.Map(document.getElementById("map-2"), kurunegala);
+        var map2 = new google.maps.Map(document.getElementById("map-2"), sanaCake);
 
-        var map3 = new google.maps.Map(document.getElementById("map-3"), kandy);
+        var map3 = new google.maps.Map(document.getElementById("map-3"), eleKuruma);
 
         var myMarker = new google.maps.Marker(
             {
@@ -150,48 +276,49 @@
                 <div onload="initialize()" class="location-map">
                     <div class="map-location" data-role="collapsible" data-collapsed="false">
                         <h4>Daisy Desserts</h4>
-                        <div class="gmap">
+                        <div class="gmap map1">
                             <div id="map" style="width:100%; height:320px"></div>
                         </div>
                     </div>
                     <div class="map-location" data-role="collapsible">
                         <h4>Sana's Cakes</h4>
-                        <div class="gmap">
+                        <div class="gmap map2">
                             <div id="map-2" style="width:100%; height:320px"></div>
                         </div>
                     </div>
                     <div class="map-location" data-role="collapsible">
                         <h4>ELe-kuruma</h4>
-                        <div class="gmap">
+                        <div class="gmap map3">
                             <div id="map-3" style="width:100%; height:320px"></div>
                         </div>
                     </div>
                 </div>
-                <div style="padding: 10px 20px; background-color: rgba(0, 0, 0, 0)">
+
+                <div class="form-contact">
                     <form class="form-light" style="font-weight: bolder; font-size: 18px">
-                        <h4>You can send your suggestions/feedback :</h4>
+                        <h4 class="form-head">You can send your suggestions/feedback :</h4>
                         <div class="ui-grid-a">
                             <div class="ui-block-a">
-                        <input type="text" name="name" id="name" value="" placeholder="Name">
+                                <input class="in-name" type="text" name="name" id="name" value="" placeholder="Name">
                             </div>
                             <div class="ui-block-b">
-                        <input type="text" name="email" id="email" value="" placeholder="e-mail">
+                                <input class="in-mail" type="text" name="email" id="email" value="" placeholder="e-mail">
                             </div>
-                        </div>
-                        <textarea name="comment" id="comment" placeholder="Comment/Suggestions"></textarea>
-                        <button style="opacity: 1">Submit</button>
+                            </div>
+                            <textarea class="txtarea" name="comment" id="comment" placeholder="Comment/Suggestions"></textarea>
+                            <button class="submit">Submit</button>
                     </form>
-
-                    <div class="back-box" style="padding: 15px; margin-bottom: 20px">
-                        <h3 style="text-align: center">You can reach us on:</h3>
-                        <div class="ui-grid-a">
-                            <div class="ui-block-a" style="padding: 8px"><i class="fa flaticon-080-instagram"></i>
-                                icraft
+                    <div style="width: 10%;"></div>
+                    <div class="social-net" style="padding: 0px; margin-bottom: 20px">
+                        <h3 style="text-align: center; margin-bottom: 20px;">You can reach us on:</h3>
+                        <div class="ui-grid-a social-name">
+                            <div class="icon" style="padding: 8px;"><i class="fa flaticon-080-instagram"></i>
+                                @epic_eaters
                             </div>
-                            <div class="ui-block-b" style="padding: 8px"><i class="fa flaticon-099-facebook"></i>
-                                icraftSL
+                            <div class="icon" style="padding: 8px"><i class="fa flaticon-099-facebook"></i>
+                                epic_eaters
                             </div>
-                            <div style="padding: 8px"><i class="fa flaticon-049-telephone"></i> 011-2029079</div>
+                            <div class="icon" style="padding: 8px"><i class="fa flaticon-049-telephone"></i> +94 11 233 455</div>
                         </div>
                     </div>
             </div><!-- /grid-a -->
