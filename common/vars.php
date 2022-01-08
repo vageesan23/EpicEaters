@@ -10,6 +10,6 @@ if (!isset($_COOKIE['coinCount'])) {
 }
 
 if (!isset($_COOKIE['userName'])) {
-    setcookie('userName', 'Pravin', time() + (86400 * 30), "/");
+    setcookie('userName', 'Smith', time() + (86400 * 30), "/");
 }
 setcookie('sortDb', 'db', time() + (86400 * 30), "/");
