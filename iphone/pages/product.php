@@ -392,6 +392,7 @@
 
     <?php include '../popups/chatWithSeller.php' ?>
     <?php include '../popups/viewAR.php' ?>
+    <?php include '../parts/chatbot.php' ?>
     <?php include '../parts/bottomNavbar.php' ?>
     <?php include '../parts/footer.php' ?>
 </div>

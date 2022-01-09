@@ -8,8 +8,8 @@ session_start();
 ?>
 <style>
     .pro-img {
-        width: 150px; 
-        height: 150px; 
+        width: 120px; 
+        height: 120px; 
         top: 50%; 
         position: absolute; 
         transform: translate(0%, -50%);
