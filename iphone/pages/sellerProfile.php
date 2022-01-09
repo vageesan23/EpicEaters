@@ -26,7 +26,7 @@
     }
 
     .table-order {
-        margin-bottom: 70px; 
+        margin-bottom: 70px;
         border-radius: 10px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
@@ -38,23 +38,29 @@
         border-collapse: collapse;
     }
 
-    .table-order table tr, .table-product table tr {
-        background-color: #e9ecef;/*notice*/
+    .table-order table tr,
+    .table-product table tr {
+        background-color: #e9ecef;
+        /*notice*/
         margin: 15px 5px 15px 5px;
         padding: 15px;
         border-radius: 100px;
         height: 0px;
     }
 
-    table th, table td {
+    table th,
+    table td {
         height: 50px;
     }
 
-    .id, .qty, .status {
+    .id,
+    .qty,
+    .status {
         text-align: center;
     }
 
-    .order-head, .product-head {
+    .order-head,
+    .product-head {
         margin-left: 25px;
         margin-bottom: 20px;
     }
@@ -88,11 +94,9 @@
             width: 25px;
         }
     }
-
 </style>
 <!-- This is checkout page-->
-<div data-role="page" id="sellerProfile"
-     style='background-image: url("../common/assets/images/profile-back.jpg");
+<div data-role="page" id="sellerProfile" style='background-image: url("../common/assets/images/profile-back.jpg");
      background-size: cover; background-position: bottom;'>
 
     <?php include '../parts/header.php' ?>
@@ -108,10 +112,10 @@
             </center>
             <table class="main-sell-card">
                 <tr>
-                    <td>Username  :</td>
+                    <td>Username :</td>
                     <td>Janice45</td>
                 </tr>
-                <tr> 
+                <tr>
                     <td>Email&ensp;&ensp;&ensp;&emsp; :</td>
                     <td>janiceharper45@gmail.com</td>
                 </tr>
@@ -221,10 +225,11 @@
         </div>
         <div style="margin-bottom: 20px;"></div>
 
-        
+
         <?php include '../parts/bottomNavbar.php' ?>
         <?php include '../parts/chatbot.php' ?>
         <?php include '../parts/footer.php' ?>
     </div>
     </body>
+
     </html>

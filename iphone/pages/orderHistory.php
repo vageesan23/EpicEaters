@@ -8,10 +8,10 @@ session_start();
 ?>
 <style>
     .pro-img {
-        width: 150px; 
-        height: 150px; 
-        top: 50%; 
-        position: absolute; 
+        width: 120px;
+        height: 120px;
+        top: 50%;
+        position: absolute;
         transform: translate(0%, -50%);
     }
 
@@ -20,8 +20,8 @@ session_start();
     }
 
     .info {
-        width: 45%; 
-        padding-left: 20px; 
+        width: 45%;
+        padding-left: 20px;
         font-size: 20px;
         display: flex;
         transform: translateX(-40%);
@@ -38,7 +38,7 @@ session_start();
     }
 
     .xfactor {
-        margin-left: 100%; 
+        margin-left: 100%;
         margin-top: 10%;
     }
 
@@ -52,7 +52,7 @@ session_start();
         .pro-img {
             height: 100px;
             width: 100px;
-            transform: translate(15%,-45%);
+            transform: translate(15%, -45%);
         }
 
         .status {
@@ -69,7 +69,7 @@ session_start();
         .pro-img {
             height: 70px;
             width: 70px;
-            transform: translate(-10px,-50%);
+            transform: translate(-10px, -50%);
         }
 
         .pro-name {
@@ -124,7 +124,7 @@ session_start();
         }
         ?>
         <div class="ui-grid-a search" data-filter="true" data-filter-placeholder="Search for orders"
-             style="margin-top: 10px;">
+            style="margin-top: 10px;">
             <p id="loading" style="text-align: center">Loading...</p>
             <div id="items">
                 <!--cards-->
@@ -253,9 +253,10 @@ session_start();
         } else {
             $('.your-choice-was').hide();
         }
-        setTimeout(function(){ $( "#popuprating" ).popup( "close" ); }, 2000);
-        setTimeout(function(){ $( "#rate-feedback" ).popup( "open" );}, 3500);
+        setTimeout(function () { $("#popuprating").popup("close"); }, 2000);
+        setTimeout(function () { $("#rate-feedback").popup("open"); }, 3500);
     }
 
 </script>
+
 </html>

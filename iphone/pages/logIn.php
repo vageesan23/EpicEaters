@@ -14,7 +14,7 @@
         margin-top: 15px;
     }
 
-    .login-form { 
+    .login-form {
         height: 740px;
     }
 
@@ -66,7 +66,7 @@
         font-size: 18px;
         letter-spacing: 1px;
         margin: 25px auto auto auto;
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .account-create {
@@ -116,7 +116,6 @@
             letter-spacing: 0px;
         }
     }
-
 </style>
 
 
@@ -126,7 +125,8 @@
     <div role="main" class="ui-content login-iPhone">
 
         <div class="header-title">
-            <span class="iconify page-icon" alt="page_icon" data-icon="ri:login-circle-fill" data-width="30" data-height="30"></span>
+            <span class="iconify page-icon" alt="page_icon" data-icon="ri:login-circle-fill" data-width="30"
+                data-height="30"></span>
             <h3>Login</h3>
         </div>
         <form class="login-form">
@@ -134,7 +134,7 @@
             <img src="../../common/assets/images/logo_footer_login.png" alt="login-img">
             <input type="text" name="username" id="username" value="" placeholder="Username" class="login-un">
             <input type="password" name="password" id="password" value="" placeholder="Password" class="login-pwd">
-            
+
             <a href="home.php" class="sign-in-btn">
                 <button>Sign In</button>
             </a>
