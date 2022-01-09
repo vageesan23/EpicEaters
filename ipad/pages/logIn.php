@@ -1,7 +1,7 @@
 <!-- <?php include '../parts/head.php' ?> -->
 <style>
     .login-page {
-        background-color: #fff; 
+        background-color: #fff;
         overflow: auto;
     }
 
@@ -24,8 +24,8 @@
         margin-top: 5px;
     }
 
-    .login-form { 
-        height: 620px; 
+    .login-form {
+        height: 620px;
         width: 600px
     }
 
@@ -34,7 +34,7 @@
         display: block;
         margin: 30px 0px 40px 110px;
     }
-    
+
     .login-form .login-un {
         box-sizing: border-box;
         border: none;
@@ -78,7 +78,7 @@
         font-size: 18px;
         letter-spacing: 1px;
         margin: 25px auto auto auto;
-        text-decoration:none;
+        text-decoration: none;
     }
 
     .account-create {
@@ -92,8 +92,8 @@
     }
 
     @media (max-width: 768px) {
-        .login-form { 
-            height: 800px; 
+        .login-form {
+            height: 800px;
             width: 900px
         }
 
@@ -114,7 +114,6 @@
             margin-bottom: 80px;
         }
     }
-
 </style>
 <!-- This is login page-->
 <div class="login-page" data-role="page" id="login">
@@ -124,13 +123,15 @@
 
         <div class="" style="background-color: #fff;">
             <div class="header-title">
-                <span class="iconify page-icon" alt="page_icon" data-icon="ri:login-circle-fill" data-width="50" data-height="50"></span>
+                <span class="iconify page-icon" alt="page_icon" data-icon="ri:login-circle-fill" data-width="50"
+                    data-height="50"></span>
                 <h3>Login</h3>
             </div>
             <form class="login-form">
-                
+
                 <img src="../../common/assets/images/logo_footer_login.png" alt="login-img">
-                <input type="text" name="username" id="username" value="" placeholder="Username/ E-mail" class="login-un">
+                <input type="text" name="username" id="username" value="" placeholder="Username/ E-mail"
+                    class="login-un">
                 <input type="password" name="password" id="password" value="" placeholder="Password" class="login-pwd">
 
                 <a class="sign-in-btn" href="home.php">

@@ -28,7 +28,7 @@
         line-height: 2.0rem;
     }
 
-    table tr td{
+    table tr td {
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -39,19 +39,21 @@
     }
 
     .table-order {
-        margin-bottom: 1px; 
+        margin-bottom: 1px;
         border-radius: 10px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         overflow: hidden;
     }
 
-    .table-order table, .product-table table {
+    .table-order table,
+    .product-table table {
         margin: 5px 80px 20px 20px;
         width: 95%;
     }
 
-    .table-order table tr, .product-table table tr {
+    .table-order table tr,
+    .product-table table tr {
         background-color: #e9ecef;
         border-radius: 50px;
         margin: 15px auto;
@@ -59,9 +61,10 @@
 
     .table-order table th {
         height: 50px;
-    } 
+    }
 
-    .table-order table td, .product-table table td {
+    .table-order table td,
+    .product-table table td {
         height: 50px;
     }
 
@@ -73,7 +76,11 @@
         padding: 15px;
     }
 
-    .product-table td:nth-child(2), .product-table td:nth-child(3), .product-table td:nth-child(4), .product-table td:nth-child(5), .product-table td:nth-child(6) {
+    .product-table td:nth-child(2),
+    .product-table td:nth-child(3),
+    .product-table td:nth-child(4),
+    .product-table td:nth-child(5),
+    .product-table td:nth-child(6) {
         text-align: center;
     }
 
@@ -90,12 +97,15 @@
     }
 
     @media (max-width: 800px) {
-        .table-order table, .product-table table {
+
+        .table-order table,
+        .product-table table {
             margin: 5px 0px 20px 0px;
             width: 95%;
         }
 
-        .table-order table td, .product-table table td {
+        .table-order table td,
+        .product-table table td {
             font-size: 14px;
             line-height: 15px;
         }
@@ -113,11 +123,9 @@
             font-size: 13px;
         }
     }
-
 </style>
 <!-- This is checkout page-->
-<div data-role="page" id="sellerProfile"
-     style='background-image: url("../common/assets/images/profile-back.jpg");
+<div data-role="page" id="sellerProfile" style='background-image: url("../common/assets/images/profile-back.jpg");
      background-size: cover; background-position: bottom;'>
 
     <?php include '../parts/header.php' ?>
@@ -126,10 +134,10 @@
         <span class="iconify" alt="page_icon" data-icon="jam:user-circle" data-width="50" data-height="50"></span>
         <h3>Profile</h3>
     </div>
-    
+
     <div class="main-sel-pro-content">
-    <div class="ui-grid-a seller-profile">
-        <div class="ui-block-a sell-pro-card">
+        <div class="ui-grid-a seller-profile">
+            <div class="ui-block-a sell-pro-card">
                 <div class="back-box">
                     <center>
                         <img alt="page_icon" src="../../common/assets/images/seller-profile.jpg">
@@ -156,13 +164,13 @@
                         <button>Edit Details</button>
                     </div>
                 </div>
-        </div>
-        <div class="ui-block-b"></div>
-        <div class="ui-block-c">
+            </div>
+            <div class="ui-block-b"></div>
+            <div class="ui-block-c">
 
                 <!-- table -->
                 <div class="order-table-head">
-                       <h2>Order</h2>
+                    <h2>Order</h2>
                     <div class="table-order">
                         <table>
                             <tr>
@@ -245,12 +253,13 @@
                         </table>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
-    </div>
-        <?php include '../parts/chatbot.php' ?>
-        <?php include '../parts/bottomNavbar.php' ?>
-        <?php include '../parts/footer.php' ?>
-    </div>
-    </body>
-    </html>
+    <?php include '../parts/chatbot.php' ?>
+    <?php include '../parts/bottomNavbar.php' ?>
+    <?php include '../parts/footer.php' ?>
+</div>
+</body>
+
+</html>

@@ -65,16 +65,22 @@
         <div class="ui-grid-a" style="padding: 30px;">
             <!--            start of main product block-->
             <div class="ui-block-a">
-            <?php echo '<img class="center main-pro-img" style="height:280px; width: 300px; border-radius: 15px; box-shadow: 0 0 20px 0 #343434;" src="', $json[$id]['image'], '" >' ?? '' ?>
-                <div class="ui-bar ui-bar-a ui-card product-card" style="height: auto; max-width: 600px; margin: auto; margin-top: -5px;">
-                    
+                <?php echo '<img class="center main-pro-img" style="height:280px; width: 300px; border-radius: 15px; box-shadow: 0 0 20px 0 #343434;" src="', $json[$id]['image'], '" >' ?? '' ?>
+                <div class="ui-bar ui-bar-a ui-card product-card"
+                    style="height: auto; max-width: 600px; margin: auto; margin-top: -5px;">
+
                     <div class="ui-grid-a">
                         <div class="ui-block-a" style="width: 100%">
-                        <div class="ui-block-b" style="width: 100%; margin-left: 240px; transform: transitionY(15px); margin-bottom: -10px;">
-                            <a href="#viewAR" data-rel="popup" data-position-to="window"
-                               data-transition="pop"><img alt="page_icon" class="ar-view" src="../../common/assets/images/icons/ar-1.png" style="height: 75px; width: 75px;"></a>
-                        </div>
-                            <p style="font-size: 26px; font-family: 'Poppins',serif; color: #333; font-weight: 400; text-align: center;"><?php echo $json[$id]['name'] ?? '' ?> </p>
+                            <div class="ui-block-b"
+                                style="width: 100%; margin-left: 240px; transform: transitionY(15px); margin-bottom: -10px;">
+                                <a href="#viewAR" data-rel="popup" data-position-to="window" data-transition="pop"><img
+                                        alt="page_icon" class="ar-view" src="../../common/assets/images/icons/ar-1.png"
+                                        style="height: 75px; width: 75px;"></a>
+                            </div>
+                            <p
+                                style="font-size: 26px; font-family: 'Poppins',serif; color: #333; font-weight: 400; text-align: center;">
+                                <?php echo $json[$id]['name'] ?? '' ?>
+                            </p>
                             <?php
                             for ($i = 0; $i < 5; $i++) {
                                 if ((int)$json[$id]['rating'] <= $i) {
@@ -86,40 +92,50 @@
                                 }
                             }
                             ?>
-                            <p class="card-price" style="position: relative; font-size: 22px; text-align: center; margin-top: 15px; margin-bottom: 5px; color: #63717a">
-                                LKR <?php echo $json[$id]['price'] ?? '' ?></p>
+                            <p class="card-price"
+                                style="position: relative; font-size: 22px; text-align: center; margin-top: 15px; margin-bottom: 5px; color: #63717a">
+                                LKR
+                                <?php echo $json[$id]['price'] ?? '' ?>
+                            </p>
                         </div>
                     </div>
-                    <p style="font-weight: 200; font-size: 22px; margin-top: 0px"><?php echo $json[$id]['description'] ?? '' ?></p>
+                    <p style="font-weight: 200; font-size: 22px; margin-top: 0px">
+                        <?php echo $json[$id]['description'] ?? '' ?>
+                    </p>
                     <div data-role="collapsible" data-enhanced="true"
-             class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
+                        class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-collapsed">
                         <span class="ui-collapsible-heading ui-collapsible-heading-collapsed" style="margin-top: 10px;
                          padding: 0 5px;">
                             <a data-ajax="false" href="#" class="ui-collapsible-toggle" style="font-size: 20px;">
-                            Readmore
+                                Readmore
                             </a>
                         </span>
 
-            <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
-                <p style="text-align: justify; font-weight: 200;"><?php echo $json[$id]['longDescription'] ?? '' ?></p>
-            </div>
-        </div>
+                        <div class="ui-collapsible-content ui-collapsible-content-collapsed" aria-hidden="true">
+                            <p style="text-align: justify; font-weight: 200;">
+                                <?php echo $json[$id]['longDescription'] ?? '' ?>
+                            </p>
+                        </div>
+                    </div>
                     <div style="display: inline-flex; width: 100%; justify-content: center; font-size: 30px">
-                    <span class="flaticon-122-heart fav-icon-card" id="<?php echo $id ?>"
-                          onclick="favourite(this)" style="margin-top: 15px; margin-right: 25px;" ></span>
-                          <span><a href="#" onclick="collectchat.open()">
-                        <img src="../../common/assets/images/icons/chat.png" alt="chat" style="height: 40px; margin-top: 15px; mnargin-left:35px; margin-right: 25px;">
-                    </a></span>
-                    <span>
-                    <a href="#cart-feedback" data-rel="popup" data-position-to="window" data-transition="pop">
-                        <img src="../../common/assets/images/icons/product-cart.png" alt="cart" id="addToCart" style="height: 40px; margin-top: 15px; margin-left: 15px; margin-right: 25px;">
-                    </a>
-                    </span>
-                    <span>
-                    <a style="margin: 10px">
-                        <button id="buyNow" style="margin-left: 15px; margin-top: -30px; width: 100px; border-radius: 30px; font-family: 'Poppins'; font-size: 18px;">Buy</button>
-                    </a>
-                    </span>
+                        <span class="flaticon-122-heart fav-icon-card" id="<?php echo $id ?>" onclick="favourite(this)"
+                            style="margin-top: 15px; margin-right: 25px;"></span>
+                        <span><a href="#" onclick="collectchat.open()">
+                                <img src="../../common/assets/images/icons/chat.png" alt="chat"
+                                    style="height: 40px; margin-top: 15px; mnargin-left:35px; margin-right: 25px;">
+                            </a></span>
+                        <span>
+                            <a href="#cart-feedback" data-rel="popup" data-position-to="window" data-transition="pop">
+                                <img src="../../common/assets/images/icons/product-cart.png" alt="cart" id="addToCart"
+                                    style="height: 40px; margin-top: 15px; margin-left: 15px; margin-right: 25px;">
+                            </a>
+                        </span>
+                        <span>
+                            <a style="margin: 10px">
+                                <button id="buyNow"
+                                    style="margin-left: 15px; margin-top: -30px; width: 100px; border-radius: 30px; font-family: 'Poppins'; font-size: 18px;">Buy</button>
+                            </a>
+                        </span>
                     </div>
                 </div>
 
@@ -127,67 +143,88 @@
             <!--            start of feature product block-->
             <div class="ui-block-b ipad-feature-product">
                 <div>
-                <h2>Similar Products</h2>
-            <!--                start of mini product grid-->
-            <div>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a" style="width: 100%;">
-                        <a target="_parent" href="product.php?id=<?php echo $json[$id + 1]['id'] ?>">
-                            <div class="ui-bar ui-bar-a ui-card"
-                                 style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                
-                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 1]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 1]['name'] ?? '' ?> </p>
-                                <p class="card-price"
-                                   style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
-                                    LKR <?php echo $json[$id + 1]['price'] ?? '' ?></p>
-                            </div>
-                        </a>
-                    <!-- </div>
-                    <div class="ui-block-b"> -->
-                        <a target="_parent" href="product.php?id=<?php echo $json[$id + 2]['id'] ?>">
-                            <div class="ui-bar ui-bar-a ui-card"
-                                 style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 2]['name'] ?? '' ?> </p>
-                                <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
-                                        LKR <?php echo $json[$id + 2]['price'] ?? '' ?></p>
-                            </div>
-                        </a>
-                    <!-- </div>
-                    <div class="ui-block-c"> -->
-                        <a target="_parent" href="product.php?id=<?php echo $json[$id + 3]['id'] ?>">
-                            <div class="ui-bar ui-bar-a ui-card"
-                                 style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 3]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 3]['name'] ?? '' ?> </p>
-                                <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
-                                        LKR <?php echo $json[$id + 3]['price'] ?? '' ?></p>
-                            </div>
-                        </a>
+                    <h2>Similar Products</h2>
+                    <!--                start of mini product grid-->
+                    <div>
+                        <div class="ui-grid-b">
+                            <div class="ui-block-a" style="width: 100%;">
+                                <a target="_parent" href="product.php?id=<?php echo $json[$id + 1]['id'] ?>">
+                                    <div class="ui-bar ui-bar-a ui-card"
+                                        style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
 
-                        <a target="_parent" href="product.php?id=<?php echo $json[$id + 4]['id'] ?>">
-                            <div class="ui-bar ui-bar-a ui-card"
-                                 style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
-                                <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 4]['image'], '" >' ?? '' ?>
-                                <p style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;"><?php echo $json[$id + 4]['name'] ?? '' ?> </p>
-                                <p class="card-price"
-                                       style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
-                                        LKR <?php echo $json[$id + 4]['price'] ?? '' ?></p>
+                                        <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 1]['image'], '" >' ?? '' ?>
+                                        <p
+                                            style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;">
+                                            <?php echo $json[$id + 1]['name'] ?? '' ?>
+                                        </p>
+                                        <p class="card-price"
+                                            style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                            LKR
+                                            <?php echo $json[$id + 1]['price'] ?? '' ?>
+                                        </p>
+                                    </div>
+                                </a>
+                                <!-- </div>
+                    <div class="ui-block-b"> -->
+                                <a target="_parent" href="product.php?id=<?php echo $json[$id + 2]['id'] ?>">
+                                    <div class="ui-bar ui-bar-a ui-card"
+                                        style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
+                                        <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 2]['image'], '" >' ?? '' ?>
+                                        <p
+                                            style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;">
+                                            <?php echo $json[$id + 2]['name'] ?? '' ?>
+                                        </p>
+                                        <p class="card-price"
+                                            style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                            LKR
+                                            <?php echo $json[$id + 2]['price'] ?? '' ?>
+                                        </p>
+                                    </div>
+                                </a>
+                                <!-- </div>
+                    <div class="ui-block-c"> -->
+                                <a target="_parent" href="product.php?id=<?php echo $json[$id + 3]['id'] ?>">
+                                    <div class="ui-bar ui-bar-a ui-card"
+                                        style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
+                                        <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 3]['image'], '" >' ?? '' ?>
+                                        <p
+                                            style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;">
+                                            <?php echo $json[$id + 3]['name'] ?? '' ?>
+                                        </p>
+                                        <p class="card-price"
+                                            style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                            LKR
+                                            <?php echo $json[$id + 3]['price'] ?? '' ?>
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <a target="_parent" href="product.php?id=<?php echo $json[$id + 4]['id'] ?>">
+                                    <div class="ui-bar ui-bar-a ui-card"
+                                        style="height: unset; max-width: 100%; margin-left: 20px; margin-top: 20px; margin-bottom: 40px;">
+                                        <?php echo '<img class="center" style="height: auto; width: 30%; float: left;" src="', $json[$id + 4]['image'], '" >' ?? '' ?>
+                                        <p
+                                            style="font-weight: 200; font-family: 'Poppins'; font-size: 22px; margin-top: 10px;">
+                                            <?php echo $json[$id + 4]['name'] ?? '' ?>
+                                        </p>
+                                        <p class="card-price"
+                                            style="position: relative; font-size: 20px; color: #63717a; margin-top: 15px;">
+                                            LKR
+                                            <?php echo $json[$id + 4]['price'] ?? '' ?>
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-                    
+
                 </div>
                 <!-- BUTTONS -->
 
                 <div style="text-align: center; padding: 60px; top: 0; transform: translateX(-50%);" data-role="popup"
-                     id="cart-feedback">
-                    <h1>Added to Cart</h1> <img style="width: 90px" src="../../common/assets/images/icons/green-tick.png">
+                    id="cart-feedback">
+                    <h1>Added to Cart</h1> <img style="width: 90px"
+                        src="../../common/assets/images/icons/green-tick.png">
                 </div>
 
 
@@ -199,7 +236,7 @@
             <?php include '../popups/viewAR.php' ?>
         </div>
         <div style="padding: 15px; margin-left: 20px;">
-            
+
 
 
             <!-- comment area -->
@@ -235,26 +272,26 @@
 
             fetch("../../common/functions/checkout.php?origin=<?php echo $origin ?? 'iPhone' ?>", {
                 method: "POST",
-                body: JSON.stringify([{"id": <?php echo $id ?>, "qty": 1}]),
+                body: JSON.stringify([{ "id": <? php echo $id?>, "qty": 1}]),
             })
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (session) {
-                    return stripe.redirectToCheckout({sessionId: session.id});
-                })
-                .then(function (result) {
-                    // If redirectToCheckout fails due to a browser or network
-                    // error, you should display the localized error message to your
-                    // customer using error.message.
-                    if (result.error) {
-                        alert(result.error.message);
-                    }
-                })
-                .catch(function (error) {
-                    console.error("Error:", error);
-                });
-        });
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (session) {
+                return stripe.redirectToCheckout({ sessionId: session.id });
+            })
+            .then(function (result) {
+                // If redirectToCheckout fails due to a browser or network
+                // error, you should display the localized error message to your
+                // customer using error.message.
+                if (result.error) {
+                    alert(result.error.message);
+                }
+            })
+            .catch(function (error) {
+                console.error("Error:", error);
+            });
+    });
     });
 
     function favourite(e) {
@@ -273,7 +310,7 @@
             data.push(id);
             $(e).css('color', 'red')
         }
-        $.cookie('wishList', JSON.stringify(data), {path: '/'});
+        $.cookie('wishList', JSON.stringify(data), { path: '/' });
     }
 
     $addCartButton = $('#addToCart');
@@ -283,22 +320,23 @@
         if ($.cookie('cart') != null) {
             data = JSON.parse($.cookie('cart'));
             for (let i = 0; i < data.length; i++) {
-                if (data[i]['id'] === <?php echo $id ?>) {
-                    data[i]['qty'] = data[i]['qty'] + 1;
-                    qty = data[i]['qty'];
-                    found = true;
-                    break;
-                }
+                if (data[i]['id'] === <? php echo $id ?>) {
+        data[i]['qty'] = data[i]['qty'] + 1;
+        qty = data[i]['qty'];
+        found = true;
+        break;
+    }
             }
         } else {
-            data = [];
+        data = [];
+    }
+    if (!found) {
+        data.push({ "id": <? php echo $id?>, "qty": qty});
         }
-        if (!found) {
-            data.push({"id": <?php echo $id ?>, "qty": qty});
-        }
-        $.cookie('cart', JSON.stringify(data), {path: '/'});
-        $('#addToCart').html('Added ' + qty);
+    $.cookie('cart', JSON.stringify(data), { path: '/' });
+    $('#addToCart').html('Added ' + qty);
         // alert("Added to the cart");
     });
 </script>
+
 </html>
