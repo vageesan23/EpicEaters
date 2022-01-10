@@ -8,7 +8,7 @@
         padding: 0% 5%;
     }
 
-    .main-submit-form h4 {
+    .main-submit-form h4 {  
         margin-top: 5px !important;
         margin-bottom: 5px !important;
     }
@@ -22,11 +22,11 @@
         border-radius: 5px !important;
     }
 
-    .ui-block-a,
-    .ui-block-c {
+    .main-submit-form .ui-block-a,
+    .main-submit-form .ui-block-c {
         width: 45%;
         border-radius: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .ui-block-b {
@@ -115,8 +115,8 @@
             font-size: 14px !important;
         }
 
-        .ui-block-a,
-        .ui-block-c {
+        .main-submit-form .ui-block-a,
+        .main-submit-form .ui-block-c {
             width: 100%;
         }
 

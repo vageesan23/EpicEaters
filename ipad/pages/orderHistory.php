@@ -57,8 +57,9 @@ session_start();
         }
 
         .rating-icon {
-            width: 100px;
-            margin-bottom: -20px;
+            width: 80px;
+            margin-left: -5px;
+            margin-bottom: -5px;
         }
     }
 </style>
