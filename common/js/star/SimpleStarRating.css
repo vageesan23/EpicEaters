@@ -26,9 +26,9 @@ SOFTWARE.
  */
 .rating {
   display: none;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
-  color: #3af;
+  color: #ef005a;
   white-space: nowrap; }
 
 .rating .star {
@@ -63,5 +63,13 @@ SOFTWARE.
 
 .rating .star.active.half::after {
   width: 0.5em; }
+
+
+
+@media (max-width: 400px) {
+  .rating {
+    font-size: 40px;
+  }
+}
 
 /*# sourceMappingURL=SimpleStarRating.css.map */
