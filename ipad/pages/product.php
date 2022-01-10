@@ -122,7 +122,7 @@
                             style="margin-top: 15px; margin-right: 25px;"></span>
                         <span><a href="#" onclick="collectchat.open()">
                                 <img src="../../common/assets/images/icons/chat.png" alt="chat"
-                                    style="height: 40px; margin-top: 15px; mnargin-left:35px; margin-right: 25px;">
+                                    style="height: 40px; margin-top: 15px; margin-right: 25px;">
                             </a></span>
                         <span>
                             <a href="#cart-feedback" data-rel="popup" data-position-to="window" data-transition="pop">
@@ -272,26 +272,26 @@
 
             fetch("../../common/functions/checkout.php?origin=<?php echo $origin ?? 'iPhone' ?>", {
                 method: "POST",
-                body: JSON.stringify([{ "id": <? php echo $id?>, "qty": 1}]),
+                body: JSON.stringify([{"id": <?php echo $id ?>, "qty": 1}]),
             })
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (session) {
-                return stripe.redirectToCheckout({ sessionId: session.id });
-            })
-            .then(function (result) {
-                // If redirectToCheckout fails due to a browser or network
-                // error, you should display the localized error message to your
-                // customer using error.message.
-                if (result.error) {
-                    alert(result.error.message);
-                }
-            })
-            .catch(function (error) {
-                console.error("Error:", error);
-            });
-    });
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (session) {
+                    return stripe.redirectToCheckout({sessionId: session.id});
+                })
+                .then(function (result) {
+                    // If redirectToCheckout fails due to a browser or network
+                    // error, you should display the localized error message to your
+                    // customer using error.message.
+                    if (result.error) {
+                        alert(result.error.message);
+                    }
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
     });
 
     function favourite(e) {
@@ -310,7 +310,7 @@
             data.push(id);
             $(e).css('color', 'red')
         }
-        $.cookie('wishList', JSON.stringify(data), { path: '/' });
+        $.cookie('wishList', JSON.stringify(data), {path: '/'});
     }
 
     $addCartButton = $('#addToCart');
@@ -320,21 +320,21 @@
         if ($.cookie('cart') != null) {
             data = JSON.parse($.cookie('cart'));
             for (let i = 0; i < data.length; i++) {
-                if (data[i]['id'] === <? php echo $id ?>) {
-        data[i]['qty'] = data[i]['qty'] + 1;
-        qty = data[i]['qty'];
-        found = true;
-        break;
-    }
+                if (data[i]['id'] === <?php echo $id ?>) {
+                    data[i]['qty'] = data[i]['qty'] + 1;
+                    qty = data[i]['qty'];
+                    found = true;
+                    break;
+                }
             }
         } else {
-        data = [];
-    }
-    if (!found) {
-        data.push({ "id": <? php echo $id?>, "qty": qty});
+            data = [];
         }
-    $.cookie('cart', JSON.stringify(data), { path: '/' });
-    $('#addToCart').html('Added ' + qty);
+        if (!found) {
+            data.push({"id": <?php echo $id ?>, "qty": qty});
+        }
+        $.cookie('cart', JSON.stringify(data), {path: '/'});
+        $('#addToCart').html('Added ' + qty);
         // alert("Added to the cart");
     });
 </script>
