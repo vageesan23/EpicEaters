@@ -50,7 +50,7 @@
                 </a>
 
             <img src="../../common/assets/images/clicker/img-iPad.png" 
-                style="width: 40%;">
+                style="width: 40%; margin: 0px 0px 22px 0px;">
             <img class="regulationiPad" src="../../common/assets/images/clicker/regulation_iPad.png">
         </div>
 
