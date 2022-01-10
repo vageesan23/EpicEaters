@@ -50,12 +50,12 @@
     .product-table table {
         margin: 5px 80px 20px 20px;
         width: 95%;
+        background-color: #e9ecef;
+        border-radius: 10px;
     }
 
     .table-order table tr,
     .product-table table tr {
-        background-color: #e9ecef;
-        border-radius: 50px;
         margin: 15px auto;
     }
 
@@ -84,16 +84,13 @@
         text-align: center;
     }
 
-    .btns {
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-
     .btns button {
         opacity: 1;
         font-size: 15px;
         width: 60%;
         text-align: center;
+        margin-top: 30px;
+        margin-left: 70px;
     }
 
     @media (max-width: 800px) {
@@ -115,12 +112,9 @@
             padding: 5px;
         }
 
-        .btns {
-            margin-left: 80px;
-        }
-
         .btns button {
             font-size: 13px;
+            margin-left: 60px;
         }
     }
 </style>
@@ -160,9 +154,9 @@
                             <td>Harper</td>
                         </tr>
                     </table>
-                    <div class="btns">
+                    <a class="btns" data-rel="popup" data-position-to="window" href="#editprofile">
                         <button>Edit Details</button>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="ui-block-b"></div>
@@ -256,6 +250,7 @@
             </div>
         </div>
     </div>
+    <?php include '../popups/editProfile.php' ?>
     <?php include '../parts/chatbot.php' ?>
     <?php include '../parts/bottomNavbar.php' ?>
     <?php include '../parts/footer.php' ?>

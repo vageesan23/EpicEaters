@@ -73,12 +73,12 @@
                         <div class="ui-block-a" style="width: 100%">
                             <div class="ui-block-b"
                                 style="width: 100%; margin-left: 240px; transform: transitionY(15px); margin-bottom: -10px;">
-                                <a href="#viewAR" data-rel="popup" data-position-to="window" data-transition="pop"><img
+                                <!-- <a href="#viewAR" data-rel="popup" data-position-to="window" data-transition="pop"><img
                                         alt="page_icon" class="ar-view" src="../../common/assets/images/icons/ar-1.png"
-                                        style="height: 75px; width: 75px;"></a>
+                                        style="height: 75px; width: 75px;"></a> -->
                             </div>
                             <p
-                                style="font-size: 26px; font-family: 'Poppins',serif; color: #333; font-weight: 400; text-align: center;">
+                                style="font-size: 26px; font-family: 'Poppins',serif; margin-top: 20px; color: #333; font-weight: 400; text-align: center;">
                                 <?php echo $json[$id]['name'] ?? '' ?>
                             </p>
                             <?php

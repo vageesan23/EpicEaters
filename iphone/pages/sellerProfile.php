@@ -12,13 +12,13 @@
     .btns {
         display: flex;
         text-align: center;
-        margin: 10px 0px 30px 145px;
+        margin: 10px 0px 30px 115px;
     }
 
-    .btns button {
+    .btns a button {
         opacity: 1;
         font-size: 14px;
-        width: 35%;
+        width: 250px;
     }
 
     button .ui-link {
@@ -33,18 +33,22 @@
         overflow: hidden;
     }
 
-    .back-box table, .table-order table, .table-prodcut table {
+    .back-box table, .table-order table, .table-product table {
         width: 100%;
         border-collapse: collapse;
     }
 
+    .table-order table, .table-product table {
+        background-color: #e9ecef;
+        border-radius: 10px;
+        margin: 0px 1px;
+    }
+
     .table-order table tr,
     .table-product table tr {
-        background-color: #e9ecef;
         /*notice*/
         margin: 15px 5px 15px 5px;
         padding: 15px;
-        border-radius: 100px;
         height: 0px;
     }
 
@@ -81,13 +85,13 @@
         .btns {
             display: flex;
             text-align: center;
-            margin: 10px -45px 30px 45px;
+            margin: 10px -25px 30px 25px;
         }
 
-        .btns button {
+        .btns a button {
             opacity: 1;
             font-size: 14px;
-            width: 35%;
+            width: 150px;
         }
 
         .btn-space {
@@ -130,9 +134,11 @@
             </table>
         </div>
         <div class="btns">
-            <button><a href="orderHistory.php">Order History</a></button>
+            <a href="../pages/orderHistory.php"><button>Order History</button></a>
             <div class="btn-space"></div>
-            <button><a href="">Edit Details</a></button>
+            <a data-rel="popup" data-position-to="window" href="#editprofile">
+                <button>Edit Details</button>
+            </a>
         </div>
 
         <!-- table -->
@@ -226,6 +232,7 @@
         <div style="margin-bottom: 20px;"></div>
 
 
+        <?php include '../popups/editProfile.php' ?>
         <?php include '../parts/bottomNavbar.php' ?>
         <?php include '../parts/chatbot.php' ?>
         <?php include '../parts/footer.php' ?>
