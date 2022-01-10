@@ -88,8 +88,10 @@ session_start();
         }
 
         .rating-icon {
-            margin-top: -30px;
-            margin-left: -35px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            margin-left: -5px;
+            width: 50px;
         }
 
         .xfactor span {
