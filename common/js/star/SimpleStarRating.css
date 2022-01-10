@@ -38,8 +38,9 @@ SOFTWARE.
 
 .rating .star::before {
   display: inline-block;
-  color: #aaa;
+  color: #aaaaaa;
   content: '☆';
+  /* content: url(../../assets/images/icons/face-emoji-gray.png); */
   width: 1em;
   height: 1em; }
 
@@ -47,6 +48,7 @@ SOFTWARE.
   display: inline-block;
   position: absolute;
   content: '★';
+  /* content: url(../../assets/images/icons/face-emoj-pink.png); */
   top: 0;
   left: 0;
   opacity: 0;
