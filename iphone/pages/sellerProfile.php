@@ -33,7 +33,7 @@
         overflow: hidden;
     }
 
-    table {
+    .back-box table, .table-order table, .table-prodcut table {
         width: 100%;
         border-collapse: collapse;
     }

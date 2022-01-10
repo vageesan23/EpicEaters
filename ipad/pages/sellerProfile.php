@@ -22,7 +22,7 @@
         width: 100%;
     }
 
-    table {
+    .back-box table, .table-order table, .product-table table {
         width: 100%;
         border-collapse: collapse;
         line-height: 2.0rem;

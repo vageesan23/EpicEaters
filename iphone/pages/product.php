@@ -347,7 +347,7 @@
                                             </a>
                                         </span>
                                         <span>
-                                            <a style="margin: 10px">
+                                            <a href="cart.php" style="margin: 10px">
                                                 <button id="buyNow" class="buy-btn">Buy</button>
                                             </a>
                                         </span>

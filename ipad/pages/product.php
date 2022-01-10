@@ -131,7 +131,7 @@
                             </a>
                         </span>
                         <span>
-                            <a style="margin: 10px">
+                            <a href="cart.php" style="margin: 10px">
                                 <button id="buyNow"
                                     style="margin-left: 15px; margin-top: -30px; width: 100px; border-radius: 30px; font-family: 'Poppins'; font-size: 18px;">Buy</button>
                             </a>
