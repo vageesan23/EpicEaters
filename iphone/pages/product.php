@@ -288,8 +288,8 @@
 
                 <div class="ui-grid-a">
                     <div class="ui-block-a main-content" style="width: 100%">
-                        <a href="#viewAR" data-rel="popup" data-position-to="window" data-transition="pop"
-                            class="ar-view"><img alt="page_icon" src="../../common/assets/images/icons/ar-1.png"></a>
+                        <!-- <a href="#viewAR" data-rel="popup" data-position-to="window" data-transition="pop"
+                            class="ar-view"><img alt="page_icon" src="../../common/assets/images/icons/ar-1.png"></a> -->
                         <p class="main-pr-name">
                             <?php echo $json[$id]['name'] ?? '' ?>
                         </p>

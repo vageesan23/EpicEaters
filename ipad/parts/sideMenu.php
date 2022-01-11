@@ -42,7 +42,7 @@
             <p>Coins Awarded: <span id="coinCount"></span></p>
             <div style="border-radius: 15px; width: 150px; display: flex; background-color:#ffffff">
             &nbsp<span style=" padding-left:4px; padding-top:2px" class="iconify" alt="page_icon" data-icon="bx:bxs-offer" data-width="20" data-height="20"></span>
-            <p style="font-size: 12px; padding-left:11px;padding-top:2px"><a data-ajax="false" href="../pages/profile.php">Check My Offers</a></p>
+            <p style="font-size: 10px; padding-left:11px;padding-top:2px"><a data-ajax="false" href="../pages/sellerProfile.php">Check Seller Profile</a></p>
 </div>
         </div>
 </div>
