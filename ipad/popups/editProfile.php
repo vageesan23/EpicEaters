@@ -37,28 +37,28 @@
         <div class="form-content">
             <div class="ui-block-a">
                 <center><p>Edit User Data</p></center>
-                <div class="edit-users">
-                    <input type="text" name="firstName" id="firstName" value="Smith" style="margin-bottom: -33px">
+                <div class="edit-user">
+                    <input type="text" name="firstName" id="firstName" value="Janice" style="margin-bottom: -33px">
                     <img src="../../common/assets/images/editprof.png">
                 </div>
-                <div class="edit-users">
-                    <input type="text" name="lastName" id="lastName" value="Jackson" style="margin-bottom: -33px">
+                <div class="edit-user">
+                    <input type="text" name="lastName" id="lastName" value="Harper" style="margin-bottom: -33px">
                     <img src="../../common/assets/images/editprof.png">
                 </div>
-                <div class="edit-users">
-                    <input type="text" name="username" id="username" value="smith" style="margin-bottom: -33px">
+                <div class="edit-user">
+                    <input type="text" name="username" id="username" value="Janice45" style="margin-bottom: -33px">
                     <img src="../../common/assets/images/editprof.png">
                 </div>
             </div>
             <div class="ui-block-b"></div>
             <div class="ui-block-c">
                 <center><p>Change Passwords</p></center>
-                <div class="edit-users">
+                <div class="edit-user">
                     <input type="password" name="password" id="password" value="" placeholder="New Password"
                         style="margin-bottom: -33px">
                     <img src="../../common/assets/images/editlock.png">
                 </div>
-                <div class="edit-users">
+                <div class="edit-user">
                     <input type="password" name="rePassword" id="rePassword" value="" placeholder="Re-type New Password"
                         style="margin-bottom: -33px">
                     <img src="../../common/assets/images/editlock.png">

@@ -13,15 +13,15 @@
     <form>
         <center><p>Edit User Data</p></center>
         <div class="edit-user">
-            <input type="text" name="firstName" id="firstName" value="Smith">
+            <input type="text" name="firstName" id="firstName" value="Janice">
             <img src="../../common/assets/images/editprof.png">
         </div>
         <div class="edit-user">
-            <input type="text" name="lastName" id="lastName" value="Jackson">
+            <input type="text" name="lastName" id="lastName" value="Harper">
             <img src="../../common/assets/images/editprof.png">
         </div>
         <div class="edit-user">
-            <input type="text" name="username" id="username" value="smith">
+            <input type="text" name="username" id="username" value="Janice45">
             <img src="../../common/assets/images/editprof.png">
         </div>
 
